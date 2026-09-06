@@ -1,0 +1,29 @@
+{
+  "recipe": "service-locator",
+  "title": "Service locator",
+  "description": "The France-services locator pattern: address autocomplete input with geolocation button and result cards. Observed live on service-public.gouv.fr.",
+  "aliases": ["collection:service-locator", "autocomplete-pattern"],
+  "provenance": { "observed": "2026-09-06", "source": "https://www.service-public.gouv.fr/particuliers", "method": "live-site observation" },
+  "components": [
+    { "order": 1, "component": "input", "variant": "default", "file": "input/default.html", "role": "input", "required": true, "reason": "Address entry — the suggestion list is a custom pattern (DSFR has no official autocomplete component); keep fr-input + a role='listbox' suggestion list" },
+    { "order": 2, "component": "button", "variant": "icon-left", "file": "button/icon-left.html", "role": "action", "required": true, "reason": "'Utiliser votre position' geolocation action (fr-icon-map-pin-2-line style icon)" },
+    { "order": 3, "component": "card", "variant": "default", "file": "card/default.html", "role": "data-display", "required": false, "reason": "One card per located France services point" }
+  ],
+  "nesting": "Input + geolocation button side by side; result cards below",
+  "validationOrder": [
+    "The suggestion list is announced via an aria-live region or listbox semantics",
+    "Geolocation requires a user gesture and a permission fallback for manual entry",
+    "Never make the input a required field — geolocation is an alternative"
+  ],
+  "a11yNotes": [
+    "Pattern note: this composition is NOT an official DSFR component — it is the field-observed France-services locator implemented with fr-input + fr-btn",
+    "Suggestion selection must be keyboard operable",
+    "Announce 'no results found' states textually"
+  ],
+  "agentPromptSequence": [
+    "1. Place the address input with its label and hint",
+    "2. Add the geolocation button beside it",
+    "3. Render located services as cards below",
+    "4. Wire the suggestion list with listbox semantics and aria-live announcements"
+  ]
+}
