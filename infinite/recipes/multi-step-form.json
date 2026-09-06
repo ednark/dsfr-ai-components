@@ -1,0 +1,27 @@
+{
+  "recipe": "multi-step-form",
+  "title": "Formulaire multi-étapes",
+  "titleEn": "Multi-step form",
+  "description": "Formulaire en plusieurs étapes : indicateur d'étapes, champs par étape, navigation.",
+  "aliases": ["collection:multi-step-form"],
+  "components": [
+    { "order": 1, "component": "stepper", "variant": "default", "file": "stepper/default.html", "role": "feedback", "required": true, "reason": "Position dans le parcours ; data-fr-current-step / data-fr-steps" },
+    { "order": 2, "component": "input", "variant": "default", "file": "input/default.html", "role": "input", "required": true, "reason": "Champs de l'étape courante — instancier autant que nécessaire" },
+    { "order": 3, "component": "button", "variant": "primary", "file": "button/default.html", "role": "action", "required": true, "reason": "Continuer vers l'étape suivante" }
+  ],
+  "nesting": "Ordre 1 → 2 → 3 ; l'étape suivante remplace le contenu du formulaire, le stepper persiste",
+  "validationOrder": [
+    "Le titre de l'étape est le h2, la question le fr-label",
+    "Erreurs par champ : fr-input-group--error + fr-error-text",
+    "Le stepper reste synchronisé avec l'étape réelle"
+  ],
+  "a11yNotes": [
+    "Le titre de l'étape dans le stepper doit refléter le h2 de la page",
+    "Conserver les données saisies entre les étapes"
+  ],
+  "agentPromptSequence": [
+    "1. Placer le stepper en tête de contenu",
+    "2. Rendre les champs de l'étape courante",
+    "3. Bouton Continuer en fin de formulaire ; gérer le retour avec un lien"
+  ]
+}

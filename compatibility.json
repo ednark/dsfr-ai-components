@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "source": { "designSystem": "Système de Design de l'État (DSFR)", "version": "1.15", "registry": "dsfr-ai-components" },
+  "_scope": "Family-level hints for translating DSFR components to the USWDS and GOV.UK registries. structural entries are advisory only — never fabricate translations.",
+  "dsfr-to-uswds": {
+    "target": { "designSystem": "U.S. Web Design System", "version": "3.13.0", "registry": "https://raw.githubusercontent.com/ednark/uswds-ai-components/main" },
+    "button": {
+      "target_component": "button", "adaptation": "css-only",
+      "classMap": { "fr-btn": "usa-button", "fr-btn--secondary": "usa-button usa-button--secondary", "fr-btn--tertiary": "usa-button usa-button--outline" },
+      "mismatches": ["DSFR tertiary ≈ USWDS outline", "USWDS has no exact disabled-class equivalent"],
+      "notes": "Same <button> semantics"
+    },
+    "input": {
+      "target_component": "text-input", "adaptation": "css-only",
+      "classMap": { "fr-input": "usa-input" },
+      "mismatches": ["DSFR error text is a fr-error-text sibling; USWDS uses usa-error-message with aria-describedby wiring", "USWDS marks errors with aria-invalid"],
+      "notes": "Keep fr-error-text semantics when translating back"
+    },
+    "select": {
+      "target_component": "select", "adaptation": "css-only",
+      "classMap": { "fr-select": "usa-select" },
+      "mismatches": [],
+      "notes": "Direct swap"
+    },
+    "alert": {
+      "target_component": "alert", "adaptation": "css-only",
+      "classMap": { "fr-alert": "usa-alert", "fr-alert--success": "usa-alert usa-alert--success", "fr-alert--error": "usa-alert usa-alert--error", "fr-alert--warning": "usa-alert usa-alert--warning", "fr-alert--info": "usa-alert usa-alert--info" },
+      "mismatches": ["DSFR alert icon is position-styled; USWDS alert icon is a background image"],
+      "notes": "Heading levels map directly"
+    },
+    "table": {
+      "target_component": "table", "adaptation": "css-only",
+      "classMap": { "fr-table": "usa-table" },
+      "mismatches": ["DSFR wraps tables in .fr-table for scroll behaviour"],
+      "notes": "Caption required in both"
+    },
+    "breadcrumb": {
+      "target_component": "breadcrumb", "adaptation": "css-only",
+      "classMap": { "fr-breadcrumb": "usa-breadcrumb" },
+      "mismatches": ["DSFR mobile collapse uses a button+collapse pair — drop it on USWDS"],
+      "notes": "aria-current convention identical"
+    },
+    "tag": {
+      "target_component": "tag", "adaptation": "css-only",
+      "classMap": { "fr-tag": "usa-tag" },
+      "mismatches": ["USWDS tags have no interactive variant"],
+      "notes": "Text carries meaning in both"
+    },
+    "card": {
+      "target_component": "card", "adaptation": "structural",
+      "mismatches": ["fr-enlarge-link whole-card click has no USWDS automatic equivalent — wrap content or restyle"],
+      "notes": "Single accessible name per card must survive"
+    },
+    "checkbox": {
+      "target_component": "checkbox", "adaptation": "structural",
+      "mismatches": ["DSFR nests options in fr-fieldset__element; USWDS uses simpler wrappers"],
+      "notes": "Carry fieldset/legend"
+    },
+    "radio": {
+      "target_component": "radio-buttons", "adaptation": "structural",
+      "mismatches": ["fr-radio-rich pictograms have no USWDS equivalent"],
+      "notes": "Carry fieldset/legend"
+    }
+  },
+  "dsfr-to-govuk": {
+    "target": { "designSystem": "GOV.UK Design System", "version": "5.x", "registry": "https://raw.githubusercontent.com/ednark/govuk-ai-components/main" },
+    "button": {
+      "target_component": "button", "adaptation": "css-only",
+      "classMap": { "fr-btn": "govuk-button", "fr-btn--secondary": "govuk-button govuk-button--secondary", "fr-btn--tertiary": "govuk-button" },
+      "mismatches": ["GOV.UK has no tertiary variant"],
+      "notes": "Both sentence-case labels"
+    },
+    "input": {
+      "target_component": "text-input", "adaptation": "css-only",
+      "classMap": { "fr-input": "govuk-input", "fr-input-group": "govuk-form-group" },
+      "mismatches": ["DSFR hint nests inside fr-label; GOV.UK hint is a sibling div — restructure", "DSFR has valid-text; GOV.UK does not"],
+      "notes": "Both link errors via aria-describedby-style pairing"
+    },
+    "alert": {
+      "target_component": "notification-banner", "adaptation": "css-only",
+      "classMap": { "fr-alert": "govuk-notification-banner", "fr-alert--success": "govuk-notification-banner govuk-notification-banner--success" },
+      "mismatches": ["GOV.UK banner has a header bar with title; DSFR alert title is inline", "DSFR warning variant has no GOV.UK banner equivalent"],
+      "notes": "Info/warning may need govuk-notification-banner without variant"
+    },
+    "table": {
+      "target_component": "table", "adaptation": "css-only",
+      "classMap": { "fr-table": "govuk-table" },
+      "mismatches": [],
+      "notes": "Caption required in both"
+    },
+    "breadcrumb": {
+      "target_component": "breadcrumbs", "adaptation": "css-only",
+      "classMap": { "fr-breadcrumb": "govuk-breadcrumbs" },
+      "mismatches": ["Drop the mobile-collapse button pair"],
+      "notes": ""
+    },
+    "badge": {
+      "target_component": "tag", "adaptation": "css-only",
+      "classMap": { "fr-badge": "govuk-tag" },
+      "mismatches": ["Colour semantics map: success→(default), error→--red"],
+      "notes": ""
+    },
+    "callout": {
+      "target_component": "inset-text", "adaptation": "css-only",
+      "classMap": { "fr-callout": "govuk-inset-text" },
+      "mismatches": ["GOV.UK inset-text has no title element — move title into body or a heading outside"],
+      "notes": ""
+    },
+    "accordion": {
+      "target_component": "accordion", "adaptation": "structural",
+      "mismatches": ["DSFR uses section>h3>button+collapse; GOV.UK uses h2>button+region — restructure with aria-expanded/aria-controls"],
+      "notes": "Both are JS-enhanced"
+    },
+    "tabs": {
+      "target_component": "tabs", "adaptation": "structural",
+      "mismatches": ["Panel visibility classes differ (fr-tabs__panel--hidden vs govuk-tabs__panel--hidden)"],
+      "notes": "Both JS-enhanced with full ARIA wiring"
+    }
+  }
+}

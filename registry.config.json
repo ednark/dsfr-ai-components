@@ -1,0 +1,81 @@
+{
+  "name": "dsfr-ai-components",
+  "description": "Système de Design de l'État (DSFR) component registry for AI coding agents. Self-contained, accessible French government components with full adaptation and coordination metadata.",
+  "repo": "https://github.com/ednark/dsfr-ai-components",
+  "base": "https://raw.githubusercontent.com/ednark/dsfr-ai-components/main",
+  "count": 39,
+  "facetsUrl": "https://raw.githubusercontent.com/ednark/dsfr-ai-components/main/infinite/facets.json",
+  "index": "https://raw.githubusercontent.com/ednark/dsfr-ai-components/main/infinite/components.index.json",
+  "indexSchemaVersion": 1,
+  "metadataSchemaVersion": 2,
+  "tileFetchPattern": "https://raw.githubusercontent.com/ednark/dsfr-ai-components/main/infinite/{file}",
+  "designSystem": {
+    "name": "Système de Design de l'État (DSFR)",
+    "version": "1.15",
+    "url": "https://www.systeme-de-design.gouv.fr"
+  },
+  "agentMetaId": "dsfr-agent-meta",
+  "tileDir": "infinite",
+  "facets": [
+    "dsfrComponentType",
+    "section",
+    "variant",
+    "requiresJs",
+    "interaction",
+    "a11y",
+    "govCompliance",
+    "costTier",
+    "compositionRecipes",
+    "piiHandling",
+    "touchTargetSize",
+    "supportedTokenProfiles"
+  ],
+  "metadataCategories": {
+    "discovery": "Facets for filtering in code (not sent to model)",
+    "selection": "useWhen/avoidWhen — helps choose the right component",
+    "instruction": "agentPrompt — direct guidance for adaptation",
+    "coordination": "prerequisites/incompatibleWith/compositionCost/agentPromptSequence — plan before composing",
+    "constraints": "preserve/editable/limitations/portableInvariants — hard boundaries on changes",
+    "portability": "classMapping for cross-registry class substitution"
+  },
+  "constraintPriority": [
+    "constraints.preserve (never modify)",
+    "constraints.limitations (respect)",
+    "instruction.agentPrompt (adapt within boundaries)",
+    "constraints.editable (prefer)"
+  ],
+  "mcp": {
+    "enabled": true,
+    "server": "_base/mcp/server.mjs",
+    "transport": "stdio",
+    "tools": [
+      "search_components",
+      "get_component",
+      "list_facets",
+      "get_index",
+      "get_adapter",
+      "translate_component",
+      "get_recipe",
+      "query_compliance",
+      "get_versions"
+    ]
+  },
+  "tokenProfiles": {
+    "highContrast": {
+      "description": "forced-colors / high-contrast mode support (DSFR testé en modes contraste élevé)",
+      "tokenOverrides": {
+        "border": "2px solid currentColor",
+        "background": "transparent"
+      }
+    },
+    "darkMode": {
+      "description": "DSFR ships official light and dark themes via the fr-theme data attribute",
+      "tokenOverrides": {
+        "background": "#1e1e1e",
+        "text": "#ffffff"
+      }
+    }
+  },
+  "compatibilityPath": "compatibility.json",
+  "updated": "0.1.0"
+}

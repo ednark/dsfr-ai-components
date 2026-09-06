@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Système de Design de l'État notice demonstrating the default variant.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Notice (default)</title>
+<script type="application/json" id="dsfr-agent-meta">
+{
+  "_schemaVersion": 2,
+  "discovery": {
+    "dsfrComponentType": "notice",
+    "frClass": "fr-notice",
+    "section": "feedback",
+    "variant": "default",
+    "requiresJs": "optional",
+    "interaction": [
+      "click"
+    ],
+    "a11y": {
+      "wcag21AA": true,
+      "keyboardNav": true,
+      "screenReader": true,
+      "reducedMotion": true,
+      "forcedColors": true,
+      "ariaAttributes": true
+    },
+    "govCompliance": [
+      "RGAA 4.1",
+      "WCAG 2.1 AA",
+      "Directive (UE) 2016/2102"
+    ],
+    "tier": "curated",
+    "tags": [
+      "notice",
+      "bandeau",
+      "site-wide",
+      "maintenance"
+    ],
+    "description": "Site-wide information banner placed above the header.",
+    "compliance": {
+      "nistControls": [],
+      "rgaa": true,
+      "wcag21AA": true,
+      "webAccessibilityDirective": true,
+      "piiHandling": "displays_only",
+      "auditTrailCompatible": false,
+      "dataMaskingCompatible": false
+    },
+    "mobileUX": {
+      "touchTargetSize": "44px",
+      "requiredMinSpacing": "8px",
+      "orientationLocked": false,
+      "fullscreenSafe": true
+    }
+  },
+  "selection": {
+    "useWhen": [
+      "Site-wide notices above the header (maintenance, new version, weather alerts)"
+    ],
+    "avoidWhen": [
+      "Page-level messages — use alert"
+    ]
+  },
+  "instruction": {
+    "agentPrompt": "Variants: fr-notice--info, --warning, --alert (weather). The close button (fr-btn--close) requires DSFR JS.",
+    "relatedComponents": [
+      "alert",
+      "header"
+    ]
+  },
+  "coordination": {
+    "prerequisiteComponents": [],
+    "incompatibleWith": [],
+    "compositionCost": {
+      "costTier": "moderate",
+      "estimatedTokens": 46,
+      "renderingTimeMs": 35,
+      "recommendedModel": "haiku"
+    }
+  },
+  "constraints": {
+    "preserve": [
+      "fr-notice__body with title structure",
+      "Placement above the header"
+    ],
+    "editable": [
+      "Title",
+      "Body text"
+    ],
+    "limitations": [
+      "One notice per page, above the header"
+    ],
+    "portableInvariants": [
+      "Notice precedes the header"
+    ]
+  },
+  "supportedTokenProfiles": [
+    "highContrast"
+  ],
+  "file": "notice/default.html",
+  "title": "Notice (default)"
+}
+</script>
+<style>
+body{font-family:'Marianne',Arial,Helvetica,sans-serif;font-size:1rem;line-height:1.5rem;color:#161616;padding:2rem;background:#fff;margin:0}
+.cap{position:fixed;bottom:12px;left:16px;font-size:11px;letter-spacing:.08em;color:#666;text-transform:uppercase}
+a{color:#000091}
+:focus-visible{outline:2px solid #0a76f6;outline-offset:2px}
+.govuk-visually-hidden,.fr-visually-hidden{position:absolute!important;width:1px;height:1px;margin:0;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.fr-label{display:block;font-weight:500;font-size:.875rem;line-height:1.5rem;color:#161616}
+.fr-hint-text{display:block;font-weight:400;font-size:.75rem;line-height:1.25rem;color:#666;margin-top:0}
+.fr-error-text{display:block;font-weight:500;font-size:.75rem;line-height:1.5rem;color:#ce0500;margin-top:4px}
+.fr-valid-text{display:block;font-weight:500;font-size:.75rem;line-height:1.5rem;color:#18753c;margin-top:4px}
+.fr-text--lg{font-size:1.25rem;line-height:2rem}
+.fr-text--sm,.fr-callout p{font-size:.875rem;line-height:1.5rem}
+
+.fr-notice{background:#e8edff;padding:1rem;margin:-2rem -2rem 2rem}
+.fr-notice__title{margin:0;font-weight:500}
+
+</style>
+</head>
+<body>
+<div class="fr-notice fr-notice--info">
+  <div class="fr-notice__body">
+    <p class="fr-notice__title">
+      Maintenance programmée le dimanche de 2h à 4h
+    </p>
+  </div>
+</div>
+<div class="cap">notice default</div>
+</body>
+</html>

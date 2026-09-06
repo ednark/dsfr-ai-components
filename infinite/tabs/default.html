@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Système de Design de l'État tabs demonstrating the default variant.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tabs (default)</title>
+<script type="application/json" id="dsfr-agent-meta">
+{
+  "_schemaVersion": 2,
+  "discovery": {
+    "dsfrComponentType": "tabs",
+    "frClass": "fr-tabs",
+    "section": "navigation",
+    "variant": "default",
+    "requiresJs": "required",
+    "interaction": [
+      "click",
+      "focus",
+      "keyboard"
+    ],
+    "a11y": {
+      "wcag21AA": true,
+      "keyboardNav": true,
+      "screenReader": true,
+      "reducedMotion": true,
+      "forcedColors": true,
+      "ariaAttributes": true
+    },
+    "govCompliance": [
+      "RGAA 4.1",
+      "WCAG 2.1 AA",
+      "Directive (UE) 2016/2102"
+    ],
+    "tier": "curated",
+    "tags": [
+      "tabs",
+      "onglets",
+      "content",
+      "views"
+    ],
+    "description": "Tabbed content panels with full ARIA wiring (fr-tabs).",
+    "compliance": {
+      "nistControls": [],
+      "rgaa": true,
+      "wcag21AA": true,
+      "webAccessibilityDirective": true,
+      "piiHandling": "displays_only",
+      "auditTrailCompatible": false,
+      "dataMaskingCompatible": false
+    },
+    "mobileUX": {
+      "touchTargetSize": "44px",
+      "requiredMinSpacing": "8px",
+      "orientationLocked": false,
+      "fullscreenSafe": true
+    }
+  },
+  "selection": {
+    "useWhen": [
+      "Switching between related views of the same data"
+    ],
+    "avoidWhen": [
+      "Splitting one continuous topic",
+      "Content that must be printable in full"
+    ]
+  },
+  "instruction": {
+    "agentPrompt": "Edit tab titles and panel content. The role='tablist'/'tab'/'tabpanel' wiring and keyboard navigation are JS-managed — keep ids and aria attributes paired.",
+    "relatedComponents": [
+      "accordion"
+    ]
+  },
+  "coordination": {
+    "prerequisiteComponents": [],
+    "incompatibleWith": [],
+    "compositionCost": {
+      "costTier": "moderate",
+      "estimatedTokens": 209,
+      "renderingTimeMs": 60,
+      "recommendedModel": "haiku"
+    }
+  },
+  "constraints": {
+    "preserve": [
+      "role='tablist' / role='tab' / role='tabpanel' structure",
+      "fr-tabs__panel--selected state class",
+      "aria-selected + aria-controls pairing"
+    ],
+    "editable": [
+      "Tab titles",
+      "Panel content"
+    ],
+    "limitations": [
+      "All panels exist in the DOM — hidden ones stay accessible to screen readers via JS state only",
+      "Keyboard arrows are JS-provided"
+    ],
+    "portableInvariants": [
+      "tab/tabpanel ARIA relationships intact"
+    ]
+  },
+  "supportedTokenProfiles": [
+    "highContrast"
+  ],
+  "file": "tabs/default.html",
+  "title": "Tabs (default)"
+}
+</script>
+<style>
+body{font-family:'Marianne',Arial,Helvetica,sans-serif;font-size:1rem;line-height:1.5rem;color:#161616;padding:2rem;background:#fff;margin:0}
+.cap{position:fixed;bottom:12px;left:16px;font-size:11px;letter-spacing:.08em;color:#666;text-transform:uppercase}
+a{color:#000091}
+:focus-visible{outline:2px solid #0a76f6;outline-offset:2px}
+.govuk-visually-hidden,.fr-visually-hidden{position:absolute!important;width:1px;height:1px;margin:0;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.fr-label{display:block;font-weight:500;font-size:.875rem;line-height:1.5rem;color:#161616}
+.fr-hint-text{display:block;font-weight:400;font-size:.75rem;line-height:1.25rem;color:#666;margin-top:0}
+.fr-error-text{display:block;font-weight:500;font-size:.75rem;line-height:1.5rem;color:#ce0500;margin-top:4px}
+.fr-valid-text{display:block;font-weight:500;font-size:.75rem;line-height:1.5rem;color:#18753c;margin-top:4px}
+.fr-text--lg{font-size:1.25rem;line-height:2rem}
+.fr-text--sm,.fr-callout p{font-size:.875rem;line-height:1.5rem}
+
+.fr-tabs{border:1px solid #ddd;border-radius:.25rem .25rem 0 0}
+.fr-tabs__list{list-style:none;margin:0;padding:.5rem .5rem 0;display:flex;gap:.25rem;box-shadow:inset 0 -1px 0 #ddd}
+.fr-tabs__tab{font:inherit;color:#000091;background:none;border:0;padding:.5rem 1rem;cursor:pointer;text-decoration:underline;border-radius:.25rem .25rem 0 0}
+.fr-tabs__tab[aria-selected=true]{background:#fff;box-shadow:inset 0 2px 0 #000091,inset 0 -1px 0 #fff;font-weight:700;text-decoration:none}
+.fr-tabs__panel{padding:1rem}
+.fr-tabs__panel--hidden{display:none}
+
+</style>
+</head>
+<body>
+<div class="fr-tabs">
+  <ul class="fr-tabs__list" role="tablist" aria-label="Sections">
+    <li role="presentation"><button id="tabpanel-1" class="fr-tabs__tab" aria-selected="true" role="tab" aria-controls="tabpanel-1-panel">Section 1</button></li>
+    <li role="presentation"><button id="tabpanel-2" class="fr-tabs__tab" aria-selected="false" role="tab" aria-controls="tabpanel-2-panel" tabindex="-1">Section 2</button></li>
+  </ul>
+  <div class="fr-tabs__panel fr-tabs__panel--selected" role="tabpanel" id="tabpanel-1-panel" aria-labelledby="tabpanel-1" tabindex="0">
+    <p class="fr-text--lg">Contenu de la première section.</p>
+  </div>
+  <div class="fr-tabs__panel" role="tabpanel" id="tabpanel-2-panel" aria-labelledby="tabpanel-2" tabindex="0">
+    <p class="fr-text--lg">Contenu de la deuxième section.</p>
+  </div>
+</div>
+<div class="cap">tabs default</div>
+</body>
+</html>

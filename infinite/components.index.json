@@ -1,0 +1,2011 @@
+{
+  "schemaVersion": 1,
+  "metadataSchemaVersion": 2,
+  "generatedBy": "_base/generate-index.mjs",
+  "counts": {
+    "total": 39,
+    "bySection": {
+      "data-display": 6,
+      "feedback": 8,
+      "navigation": 6,
+      "forms": 19
+    }
+  },
+  "components": [
+    {
+      "file": "accordion/default.html",
+      "title": "Accordion (default)",
+      "_schemaVersion": 2,
+      "dsfrComponentType": "accordion",
+      "frClass": "fr-accordion",
+      "section": "data-display",
+      "variant": "default",
+      "requiresJs": "required",
+      "interaction": [
+        "click",
+        "keyboard"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "RGAA 4.1",
+        "WCAG 2.1 AA",
+        "Directive (UE) 2016/2102"
+      ],
+      "tier": "curated",
+      "tags": [
+        "accordion",
+        "accordéon",
+        "sections",
+        "disclosure"
+      ],
+      "description": "Expandable content sections (fr-accordion, DSFR JS required).",
+      "piiHandling": "displays_only",
+      "auditTrailCompatible": false,
+      "nistControls": [],
+      "touchTargetSize": "44px",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "tabs",
+        "highlight"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "moderate"
+    },
+    {
+      "file": "alert/error.html",
+      "title": "Alert (error)",
+      "_schemaVersion": 2,
+      "dsfrComponentType": "alert",
+      "frClass": "fr-alert",
+      "section": "feedback",
+      "variant": "error",
+      "requiresJs": "optional",
+      "interaction": [
+        "focus"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "RGAA 4.1",
+        "WCAG 2.1 AA",
+        "Directive (UE) 2016/2102"
+      ],
+      "tier": "curated",
+      "tags": [
+        "alert",
+        "alerte",
+        "info",
+        "success",
+        "error",
+        "warning"
+      ],
+      "description": "Information, success, error, and warning alerts (fr-alert).",
+      "piiHandling": "displays_only",
+      "auditTrailCompatible": false,
+      "nistControls": [],
+      "touchTargetSize": "44px",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "badge",
+        "callout",
+        "notice"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "moderate",
+      "compositionRecipes": [
+        "confirmation-page"
+      ]
+    },
+    {
+      "file": "alert/info.html",
+      "title": "Alert (info)",
+      "_schemaVersion": 2,
+      "dsfrComponentType": "alert",
+      "frClass": "fr-alert",
+      "section": "feedback",
+      "variant": "info",
+      "requiresJs": "optional",
+      "interaction": [
+        "focus"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "RGAA 4.1",
+        "WCAG 2.1 AA",
+        "Directive (UE) 2016/2102"
+      ],
+      "tier": "curated",
+      "tags": [
+        "alert",
+        "alerte",
+        "info",
+        "success",
+        "error",
+        "warning"
+      ],
+      "description": "Information, success, error, and warning alerts (fr-alert).",
+      "piiHandling": "displays_only",
+      "auditTrailCompatible": false,
+      "nistControls": [],
+      "touchTargetSize": "44px",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "badge",
+        "callout",
+        "notice"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "moderate",
+      "compositionRecipes": [
+        "confirmation-page"
+      ]
+    },
+    {
+      "file": "alert/success.html",
+      "title": "Alert (success)",
+      "_schemaVersion": 2,
+      "dsfrComponentType": "alert",
+      "frClass": "fr-alert",
+      "section": "feedback",
+      "variant": "success",
+      "requiresJs": "optional",
+      "interaction": [
+        "focus"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "RGAA 4.1",
+        "WCAG 2.1 AA",
+        "Directive (UE) 2016/2102"
+      ],
+      "tier": "curated",
+      "tags": [
+        "alert",
+        "alerte",
+        "info",
+        "success",
+        "error",
+        "warning"
+      ],
+      "description": "Information, success, error, and warning alerts (fr-alert).",
+      "piiHandling": "displays_only",
+      "auditTrailCompatible": false,
+      "nistControls": [],
+      "touchTargetSize": "44px",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "badge",
+        "callout",
+        "notice"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "moderate",
+      "compositionRecipes": [
+        "confirmation-page"
+      ]
+    },
+    {
+      "file": "alert/warning.html",
+      "title": "Alert (warning)",
+      "_schemaVersion": 2,
+      "dsfrComponentType": "alert",
+      "frClass": "fr-alert",
+      "section": "feedback",
+      "variant": "warning",
+      "requiresJs": "optional",
+      "interaction": [
+        "focus"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "RGAA 4.1",
+        "WCAG 2.1 AA",
+        "Directive (UE) 2016/2102"
+      ],
+      "tier": "curated",
+      "tags": [
+        "alert",
+        "alerte",
+        "info",
+        "success",
+        "error",
+        "warning"
+      ],
+      "description": "Information, success, error, and warning alerts (fr-alert).",
+      "piiHandling": "displays_only",
+      "auditTrailCompatible": false,
+      "nistControls": [],
+      "touchTargetSize": "44px",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "badge",
+        "callout",
+        "notice"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "moderate",
+      "compositionRecipes": [
+        "confirmation-page"
+      ]
+    },
+    {
+      "file": "badge/default.html",
+      "title": "Badge (default)",
+      "_schemaVersion": 2,
+      "dsfrComponentType": "badge",
+      "frClass": "fr-badge",
+      "section": "feedback",
+      "variant": "default",
+      "requiresJs": "no",
+      "interaction": [],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": false,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "RGAA 4.1",
+        "WCAG 2.1 AA",
+        "Directive (UE) 2016/2102"
+      ],
+      "tier": "curated",
+      "tags": [
+        "badge",
+        "status",
+        "label",
+        "severity"
+      ],
+      "description": "Status badges with severity colour variants (fr-badge).",
+      "piiHandling": "displays_only",
+      "auditTrailCompatible": false,
+      "nistControls": [],
+      "touchTargetSize": "n/a",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "tag",
+        "alert"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap"
+    },
+    {
+      "file": "breadcrumb/default.html",
+      "title": "Breadcrumb (default)",
+      "_schemaVersion": 2,
+      "dsfrComponentType": "breadcrumb",
+      "frClass": "fr-breadcrumb",
+      "section": "navigation",
+      "variant": "default",
+      "requiresJs": "optional",
+      "interaction": [
+        "click",
+        "focus"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "RGAA 4.1",
+        "WCAG 2.1 AA",
+        "Directive (UE) 2016/2102"
+      ],
+      "tier": "curated",
+      "tags": [
+        "breadcrumb",
+        "fil",
+        "ariane",
+        "navigation",
+        "hierarchy"
+      ],
+      "description": "Breadcrumb trail (fil d'Ariane) with mobile collapse.",
+      "piiHandling": "displays_only",
+      "auditTrailCompatible": false,
+      "nistControls": [],
+      "touchTargetSize": "44px",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "header",
+        "footer"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "moderate",
+      "compositionRecipes": [
+        "content-page"
+      ]
+    },
+    {
+      "file": "button/default.html",
+      "title": "Button (primary)",
+      "_schemaVersion": 2,
+      "dsfrComponentType": "button",
+      "frClass": "fr-btn",
+      "section": "forms",
+      "variant": "primary",
+      "requiresJs": "no",
+      "interaction": [
+        "click",
+        "focus",
+        "keyboard"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "RGAA 4.1",
+        "WCAG 2.1 AA",
+        "Directive (UE) 2016/2102"
+      ],
+      "tier": "curated",
+      "tags": [
+        "button",
+        "bouton",
+        "submit",
+        "action",
+        "cta"
+      ],
+      "description": "Primary, secondary, tertiary, and icon buttons (fr-btn).",
+      "piiHandling": "none",
+      "auditTrailCompatible": false,
+      "nistControls": [],
+      "touchTargetSize": "44px",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "input",
+        "error-summary-none-dsfr-uses-inline-errors"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap",
+      "compositionRecipes": [
+        "confirmation-page",
+        "formulaire-contact",
+        "multi-step-form"
+      ]
+    },
+    {
+      "file": "button/disabled.html",
+      "title": "Button (disabled)",
+      "_schemaVersion": 2,
+      "dsfrComponentType": "button",
+      "frClass": "fr-btn",
+      "section": "forms",
+      "variant": "disabled",
+      "requiresJs": "no",
+      "interaction": [
+        "click",
+        "focus",
+        "keyboard"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "RGAA 4.1",
+        "WCAG 2.1 AA",
+        "Directive (UE) 2016/2102"
+      ],
+      "tier": "curated",
+      "tags": [
+        "button",
+        "bouton",
+        "submit",
+        "action",
+        "cta"
+      ],
+      "description": "Primary, secondary, tertiary, and icon buttons (fr-btn).",
+      "piiHandling": "none",
+      "auditTrailCompatible": false,
+      "nistControls": [],
+      "touchTargetSize": "44px",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "input",
+        "error-summary-none-dsfr-uses-inline-errors"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap",
+      "compositionRecipes": [
+        "confirmation-page",
+        "formulaire-contact",
+        "multi-step-form"
+      ]
+    },
+    {
+      "file": "button/icon-left.html",
+      "title": "Button (icon-left)",
+      "_schemaVersion": 2,
+      "dsfrComponentType": "button",
+      "frClass": "fr-btn",
+      "section": "forms",
+      "variant": "icon-left",
+      "requiresJs": "no",
+      "interaction": [
+        "click",
+        "focus",
+        "keyboard"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "RGAA 4.1",
+        "WCAG 2.1 AA",
+        "Directive (UE) 2016/2102"
+      ],
+      "tier": "curated",
+      "tags": [
+        "button",
+        "bouton",
+        "submit",
+        "action",
+        "cta"
+      ],
+      "description": "Primary, secondary, tertiary, and icon buttons (fr-btn).",
+      "piiHandling": "none",
+      "auditTrailCompatible": false,
+      "nistControls": [],
+      "touchTargetSize": "44px",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "input",
+        "error-summary-none-dsfr-uses-inline-errors"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap",
+      "compositionRecipes": [
+        "confirmation-page",
+        "formulaire-contact",
+        "multi-step-form"
+      ]
+    },
+    {
+      "file": "button/secondary.html",
+      "title": "Button (secondary)",
+      "_schemaVersion": 2,
+      "dsfrComponentType": "button",
+      "frClass": "fr-btn",
+      "section": "forms",
+      "variant": "secondary",
+      "requiresJs": "no",
+      "interaction": [
+        "click",
+        "focus",
+        "keyboard"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "RGAA 4.1",
+        "WCAG 2.1 AA",
+        "Directive (UE) 2016/2102"
+      ],
+      "tier": "curated",
+      "tags": [
+        "button",
+        "bouton",
+        "submit",
+        "action",
+        "cta"
+      ],
+      "description": "Primary, secondary, tertiary, and icon buttons (fr-btn).",
+      "piiHandling": "none",
+      "auditTrailCompatible": false,
+      "nistControls": [],
+      "touchTargetSize": "44px",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "input",
+        "error-summary-none-dsfr-uses-inline-errors"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap",
+      "compositionRecipes": [
+        "confirmation-page",
+        "formulaire-contact",
+        "multi-step-form"
+      ]
+    },
+    {
+      "file": "button/tertiary.html",
+      "title": "Button (tertiary)",
+      "_schemaVersion": 2,
+      "dsfrComponentType": "button",
+      "frClass": "fr-btn",
+      "section": "forms",
+      "variant": "tertiary",
+      "requiresJs": "no",
+      "interaction": [
+        "click",
+        "focus",
+        "keyboard"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "RGAA 4.1",
+        "WCAG 2.1 AA",
+        "Directive (UE) 2016/2102"
+      ],
+      "tier": "curated",
+      "tags": [
+        "button",
+        "bouton",
+        "submit",
+        "action",
+        "cta"
+      ],
+      "description": "Primary, secondary, tertiary, and icon buttons (fr-btn).",
+      "piiHandling": "none",
+      "auditTrailCompatible": false,
+      "nistControls": [],
+      "touchTargetSize": "44px",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "input",
+        "error-summary-none-dsfr-uses-inline-errors"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap",
+      "compositionRecipes": [
+        "confirmation-page",
+        "formulaire-contact",
+        "multi-step-form"
+      ]
+    },
+    {
+      "file": "callout/default.html",
+      "title": "Callout (default)",
+      "_schemaVersion": 2,
+      "dsfrComponentType": "callout",
+      "frClass": "fr-callout",
+      "section": "feedback",
+      "variant": "default",
+      "requiresJs": "no",
+      "interaction": [],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": false,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "RGAA 4.1",
+        "WCAG 2.1 AA",
+        "Directive (UE) 2016/2102"
+      ],
+      "tier": "curated",
+      "tags": [
+        "callout",
+        "mise",
+        "avant",
+        "emphasis"
+      ],
+      "description": "Highlighted key information block (fr-callout).",
+      "piiHandling": "displays_only",
+      "auditTrailCompatible": false,
+      "nistControls": [],
+      "touchTargetSize": "n/a",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "highlight",
+        "alert"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap"
+    },
+    {
+      "file": "card/default.html",
+      "title": "Card (default)",
+      "_schemaVersion": 2,
+      "dsfrComponentType": "card",
+      "frClass": "fr-card",
+      "section": "data-display",
+      "variant": "default",
+      "requiresJs": "no",
+      "interaction": [
+        "click",
+        "focus"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "RGAA 4.1",
+        "WCAG 2.1 AA",
+        "Directive (UE) 2016/2102"
+      ],
+      "tier": "curated",
+      "tags": [
+        "card",
+        "carte",
+        "tuile",
+        "content",
+        "grid"
+      ],
+      "description": "Content card with enlarged link (fr-card).",
+      "piiHandling": "displays_only",
+      "auditTrailCompatible": false,
+      "nistControls": [],
+      "touchTargetSize": "44px",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "badge",
+        "tag",
+        "download"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap"
+    },
+    {
+      "file": "checkbox/default.html",
+      "title": "Checkbox (default)",
+      "_schemaVersion": 2,
+      "dsfrComponentType": "checkbox",
+      "frClass": "fr-checkbox-group",
+      "section": "forms",
+      "variant": "default",
+      "requiresJs": "no",
+      "interaction": [
+        "focus",
+        "click",
+        "keyboard"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "RGAA 4.1",
+        "WCAG 2.1 AA",
+        "Directive (UE) 2016/2102"
+      ],
+      "tier": "curated",
+      "tags": [
+        "checkbox",
+        "case",
+        "multiple",
+        "form"
+      ],
+      "description": "Checkbox group with fieldset, legend, and error support.",
+      "piiHandling": "accepts_input",
+      "auditTrailCompatible": true,
+      "nistControls": [],
+      "touchTargetSize": "44px",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "radio",
+        "button"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap"
+    },
+    {
+      "file": "download/default.html",
+      "title": "Download (default)",
+      "_schemaVersion": 2,
+      "dsfrComponentType": "download",
+      "frClass": "fr-download",
+      "section": "data-display",
+      "variant": "default",
+      "requiresJs": "no",
+      "interaction": [
+        "click",
+        "focus"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "RGAA 4.1",
+        "WCAG 2.1 AA",
+        "Directive (UE) 2016/2102"
+      ],
+      "tier": "curated",
+      "tags": [
+        "download",
+        "téléchargement",
+        "file"
+      ],
+      "description": "File download link with visible format and size metadata.",
+      "piiHandling": "none",
+      "auditTrailCompatible": false,
+      "nistControls": [],
+      "touchTargetSize": "44px",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "card"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap"
+    },
+    {
+      "file": "footer/default.html",
+      "title": "Footer (default)",
+      "_schemaVersion": 2,
+      "dsfrComponentType": "footer",
+      "frClass": "fr-footer",
+      "section": "navigation",
+      "variant": "default",
+      "requiresJs": "no",
+      "interaction": [
+        "click",
+        "focus"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "RGAA 4.1",
+        "WCAG 2.1 AA",
+        "Directive (UE) 2016/2102"
+      ],
+      "tier": "curated",
+      "tags": [
+        "footer",
+        "pied",
+        "legal",
+        "licence"
+      ],
+      "description": "DSFR footer with mandatory legal links and licence.",
+      "piiHandling": "displays_only",
+      "auditTrailCompatible": false,
+      "nistControls": [],
+      "touchTargetSize": "44px",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "header"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap",
+      "compositionRecipes": [
+        "content-page"
+      ]
+    },
+    {
+      "file": "header/default.html",
+      "title": "Header (default)",
+      "_schemaVersion": 2,
+      "dsfrComponentType": "header",
+      "frClass": "fr-header",
+      "section": "navigation",
+      "variant": "default",
+      "requiresJs": "optional",
+      "interaction": [
+        "click",
+        "focus"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "RGAA 4.1",
+        "WCAG 2.1 AA",
+        "Directive (UE) 2016/2102"
+      ],
+      "tier": "curated",
+      "tags": [
+        "header",
+        "en-tête",
+        "marianne",
+        "banner",
+        "identity"
+      ],
+      "description": "DSFR header with Marianne block, service name, and tools.",
+      "piiHandling": "displays_only",
+      "auditTrailCompatible": false,
+      "nistControls": [],
+      "touchTargetSize": "44px",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "footer",
+        "skiplinks",
+        "breadcrumb"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "moderate",
+      "compositionRecipes": [
+        "content-page"
+      ]
+    },
+    {
+      "file": "highlight/default.html",
+      "title": "Highlight (default)",
+      "_schemaVersion": 2,
+      "dsfrComponentType": "highlight",
+      "frClass": "fr-highlight",
+      "section": "feedback",
+      "variant": "default",
+      "requiresJs": "no",
+      "interaction": [],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": false,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "RGAA 4.1",
+        "WCAG 2.1 AA",
+        "Directive (UE) 2016/2102"
+      ],
+      "tier": "curated",
+      "tags": [
+        "highlight",
+        "exergue",
+        "quote",
+        "emphasis"
+      ],
+      "description": "Left-bordered emphasis for key sentences (fr-highlight).",
+      "piiHandling": "displays_only",
+      "auditTrailCompatible": false,
+      "nistControls": [],
+      "touchTargetSize": "n/a",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "callout"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap"
+    },
+    {
+      "file": "input/default.html",
+      "title": "Text input (default)",
+      "_schemaVersion": 2,
+      "dsfrComponentType": "input",
+      "frClass": "fr-input",
+      "section": "forms",
+      "variant": "default",
+      "requiresJs": "no",
+      "interaction": [
+        "type",
+        "focus"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "RGAA 4.1",
+        "WCAG 2.1 AA",
+        "Directive (UE) 2016/2102"
+      ],
+      "tier": "curated",
+      "tags": [
+        "input",
+        "champ",
+        "text",
+        "form",
+        "field"
+      ],
+      "description": "Text input with label, hint, error, and valid states (fr-input).",
+      "piiHandling": "accepts_input",
+      "auditTrailCompatible": true,
+      "nistControls": [],
+      "touchTargetSize": "44px",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "button",
+        "alert"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap",
+      "compositionRecipes": [
+        "formulaire-contact",
+        "multi-step-form"
+      ]
+    },
+    {
+      "file": "input/error.html",
+      "title": "Text input (error)",
+      "_schemaVersion": 2,
+      "dsfrComponentType": "input",
+      "frClass": "fr-input",
+      "section": "forms",
+      "variant": "error",
+      "requiresJs": "no",
+      "interaction": [
+        "type",
+        "focus"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "RGAA 4.1",
+        "WCAG 2.1 AA",
+        "Directive (UE) 2016/2102"
+      ],
+      "tier": "curated",
+      "tags": [
+        "input",
+        "champ",
+        "text",
+        "form",
+        "field"
+      ],
+      "description": "Text input with label, hint, error, and valid states (fr-input).",
+      "piiHandling": "accepts_input",
+      "auditTrailCompatible": true,
+      "nistControls": [],
+      "touchTargetSize": "44px",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "button",
+        "alert"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap",
+      "compositionRecipes": [
+        "formulaire-contact",
+        "multi-step-form"
+      ]
+    },
+    {
+      "file": "input/valid.html",
+      "title": "Text input (valid)",
+      "_schemaVersion": 2,
+      "dsfrComponentType": "input",
+      "frClass": "fr-input",
+      "section": "forms",
+      "variant": "valid",
+      "requiresJs": "no",
+      "interaction": [
+        "type",
+        "focus"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "RGAA 4.1",
+        "WCAG 2.1 AA",
+        "Directive (UE) 2016/2102"
+      ],
+      "tier": "curated",
+      "tags": [
+        "input",
+        "champ",
+        "text",
+        "form",
+        "field"
+      ],
+      "description": "Text input with label, hint, error, and valid states (fr-input).",
+      "piiHandling": "accepts_input",
+      "auditTrailCompatible": true,
+      "nistControls": [],
+      "touchTargetSize": "44px",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "button",
+        "alert"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap",
+      "compositionRecipes": [
+        "formulaire-contact",
+        "multi-step-form"
+      ]
+    },
+    {
+      "file": "notice/default.html",
+      "title": "Notice (default)",
+      "_schemaVersion": 2,
+      "dsfrComponentType": "notice",
+      "frClass": "fr-notice",
+      "section": "feedback",
+      "variant": "default",
+      "requiresJs": "optional",
+      "interaction": [
+        "click"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "RGAA 4.1",
+        "WCAG 2.1 AA",
+        "Directive (UE) 2016/2102"
+      ],
+      "tier": "curated",
+      "tags": [
+        "notice",
+        "bandeau",
+        "site-wide",
+        "maintenance"
+      ],
+      "description": "Site-wide information banner placed above the header.",
+      "piiHandling": "displays_only",
+      "auditTrailCompatible": false,
+      "nistControls": [],
+      "touchTargetSize": "44px",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "alert",
+        "header"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "moderate"
+    },
+    {
+      "file": "pagination/default.html",
+      "title": "Pagination (default)",
+      "_schemaVersion": 2,
+      "dsfrComponentType": "pagination",
+      "frClass": "fr-pagination",
+      "section": "navigation",
+      "variant": "default",
+      "requiresJs": "no",
+      "interaction": [
+        "click",
+        "focus"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "RGAA 4.1",
+        "WCAG 2.1 AA",
+        "Directive (UE) 2016/2102"
+      ],
+      "tier": "curated",
+      "tags": [
+        "pagination",
+        "pages",
+        "results"
+      ],
+      "description": "Numbered pagination with first/prev/next/last controls.",
+      "piiHandling": "displays_only",
+      "auditTrailCompatible": false,
+      "nistControls": [],
+      "touchTargetSize": "44px",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "table",
+        "search"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap",
+      "compositionRecipes": [
+        "search-results"
+      ]
+    },
+    {
+      "file": "radio/default.html",
+      "title": "Radio (default)",
+      "_schemaVersion": 2,
+      "dsfrComponentType": "radio",
+      "frClass": "fr-radio-group",
+      "section": "forms",
+      "variant": "default",
+      "requiresJs": "no",
+      "interaction": [
+        "focus",
+        "click",
+        "keyboard"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "RGAA 4.1",
+        "WCAG 2.1 AA",
+        "Directive (UE) 2016/2102"
+      ],
+      "tier": "curated",
+      "tags": [
+        "radio",
+        "single-choice",
+        "form",
+        "rich"
+      ],
+      "description": "Radio group with standard and rich (illustrated) variants.",
+      "piiHandling": "accepts_input",
+      "auditTrailCompatible": true,
+      "nistControls": [],
+      "touchTargetSize": "44px",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "checkbox",
+        "button"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap"
+    },
+    {
+      "file": "search/default.html",
+      "title": "Search bar (default)",
+      "_schemaVersion": 2,
+      "dsfrComponentType": "search",
+      "frClass": "fr-search-bar",
+      "section": "forms",
+      "variant": "default",
+      "requiresJs": "no",
+      "interaction": [
+        "type",
+        "focus",
+        "click"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "RGAA 4.1",
+        "WCAG 2.1 AA",
+        "Directive (UE) 2016/2102"
+      ],
+      "tier": "curated",
+      "tags": [
+        "search",
+        "recherche",
+        "query"
+      ],
+      "description": "Search bar with hidden label and icon submit button.",
+      "piiHandling": "accepts_input",
+      "auditTrailCompatible": true,
+      "nistControls": [],
+      "touchTargetSize": "44px",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "table",
+        "pagination"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap",
+      "compositionRecipes": [
+        "search-results"
+      ]
+    },
+    {
+      "file": "select/default.html",
+      "title": "Select (default)",
+      "_schemaVersion": 2,
+      "dsfrComponentType": "select",
+      "frClass": "fr-select",
+      "section": "forms",
+      "variant": "default",
+      "requiresJs": "no",
+      "interaction": [
+        "focus",
+        "change"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "RGAA 4.1",
+        "WCAG 2.1 AA",
+        "Directive (UE) 2016/2102"
+      ],
+      "tier": "curated",
+      "tags": [
+        "select",
+        "liste",
+        "dropdown",
+        "form"
+      ],
+      "description": "Dropdown select with label and error support (fr-select).",
+      "piiHandling": "accepts_input",
+      "auditTrailCompatible": true,
+      "nistControls": [],
+      "touchTargetSize": "44px",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "checkbox",
+        "button"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap"
+    },
+    {
+      "file": "select/error.html",
+      "title": "Select (error)",
+      "_schemaVersion": 2,
+      "dsfrComponentType": "select",
+      "frClass": "fr-select",
+      "section": "forms",
+      "variant": "error",
+      "requiresJs": "no",
+      "interaction": [
+        "focus",
+        "change"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "RGAA 4.1",
+        "WCAG 2.1 AA",
+        "Directive (UE) 2016/2102"
+      ],
+      "tier": "curated",
+      "tags": [
+        "select",
+        "liste",
+        "dropdown",
+        "form"
+      ],
+      "description": "Dropdown select with label and error support (fr-select).",
+      "piiHandling": "accepts_input",
+      "auditTrailCompatible": true,
+      "nistControls": [],
+      "touchTargetSize": "44px",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "checkbox",
+        "button"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap"
+    },
+    {
+      "file": "skiplinks/default.html",
+      "title": "Skip links (default)",
+      "_schemaVersion": 2,
+      "dsfrComponentType": "skiplinks",
+      "frClass": "fr-skiplinks",
+      "section": "navigation",
+      "variant": "default",
+      "requiresJs": "optional",
+      "interaction": [
+        "focus",
+        "keyboard"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "RGAA 4.1",
+        "WCAG 2.1 AA",
+        "Directive (UE) 2016/2102"
+      ],
+      "tier": "curated",
+      "tags": [
+        "skip",
+        "évitement",
+        "a11y",
+        "keyboard"
+      ],
+      "description": "Keyboard skip links for quick access to page regions.",
+      "piiHandling": "none",
+      "auditTrailCompatible": false,
+      "nistControls": [],
+      "touchTargetSize": "44px",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "header"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "moderate",
+      "compositionRecipes": [
+        "content-page"
+      ]
+    },
+    {
+      "file": "stepper/default.html",
+      "title": "Stepper (default)",
+      "_schemaVersion": 2,
+      "dsfrComponentType": "stepper",
+      "frClass": "fr-stepper",
+      "section": "forms",
+      "variant": "default",
+      "requiresJs": "no",
+      "interaction": [],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": false,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "RGAA 4.1",
+        "WCAG 2.1 AA",
+        "Directive (UE) 2016/2102"
+      ],
+      "tier": "curated",
+      "tags": [
+        "stepper",
+        "étapes",
+        "progress",
+        "multi-step"
+      ],
+      "description": "Multi-step progress indicator with title and step count.",
+      "piiHandling": "displays_only",
+      "auditTrailCompatible": false,
+      "nistControls": [],
+      "touchTargetSize": "n/a",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "button",
+        "input"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap",
+      "compositionRecipes": [
+        "multi-step-form"
+      ]
+    },
+    {
+      "file": "summary/default.html",
+      "title": "Summary (table of contents) (default)",
+      "_schemaVersion": 2,
+      "dsfrComponentType": "summary",
+      "frClass": "fr-summary",
+      "section": "data-display",
+      "variant": "default",
+      "requiresJs": "no",
+      "interaction": [
+        "click",
+        "focus"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "RGAA 4.1",
+        "WCAG 2.1 AA",
+        "Directive (UE) 2016/2102"
+      ],
+      "tier": "curated",
+      "tags": [
+        "summary",
+        "sommaire",
+        "toc",
+        "anchors"
+      ],
+      "description": "Table of contents with anchor links (fr-summary).",
+      "piiHandling": "displays_only",
+      "auditTrailCompatible": false,
+      "nistControls": [],
+      "touchTargetSize": "44px",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "breadcrumb"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap"
+    },
+    {
+      "file": "table/default.html",
+      "title": "Table (default)",
+      "_schemaVersion": 2,
+      "dsfrComponentType": "table",
+      "frClass": "fr-table",
+      "section": "data-display",
+      "variant": "default",
+      "requiresJs": "optional",
+      "interaction": [],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": false,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "RGAA 4.1",
+        "WCAG 2.1 AA",
+        "Directive (UE) 2016/2102"
+      ],
+      "tier": "curated",
+      "tags": [
+        "table",
+        "tableau",
+        "data",
+        "numbers"
+      ],
+      "description": "Accessible data table with caption, bordered and striped variants.",
+      "piiHandling": "displays_only",
+      "auditTrailCompatible": false,
+      "nistControls": [],
+      "touchTargetSize": "n/a",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "pagination",
+        "search",
+        "badge"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "moderate",
+      "compositionRecipes": [
+        "search-results"
+      ]
+    },
+    {
+      "file": "tabs/default.html",
+      "title": "Tabs (default)",
+      "_schemaVersion": 2,
+      "dsfrComponentType": "tabs",
+      "frClass": "fr-tabs",
+      "section": "navigation",
+      "variant": "default",
+      "requiresJs": "required",
+      "interaction": [
+        "click",
+        "focus",
+        "keyboard"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "RGAA 4.1",
+        "WCAG 2.1 AA",
+        "Directive (UE) 2016/2102"
+      ],
+      "tier": "curated",
+      "tags": [
+        "tabs",
+        "onglets",
+        "content",
+        "views"
+      ],
+      "description": "Tabbed content panels with full ARIA wiring (fr-tabs).",
+      "piiHandling": "displays_only",
+      "auditTrailCompatible": false,
+      "nistControls": [],
+      "touchTargetSize": "44px",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "accordion"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "moderate"
+    },
+    {
+      "file": "tag/default.html",
+      "title": "Tag (default)",
+      "_schemaVersion": 2,
+      "dsfrComponentType": "tag",
+      "frClass": "fr-tag",
+      "section": "data-display",
+      "variant": "default",
+      "requiresJs": "no",
+      "interaction": [
+        "click"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "RGAA 4.1",
+        "WCAG 2.1 AA",
+        "Directive (UE) 2016/2102"
+      ],
+      "tier": "curated",
+      "tags": [
+        "tag",
+        "label",
+        "filter",
+        "keyword"
+      ],
+      "description": "Interactive or static keyword tags (fr-tag).",
+      "piiHandling": "displays_only",
+      "auditTrailCompatible": false,
+      "nistControls": [],
+      "touchTargetSize": "44px",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "badge",
+        "card"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap"
+    },
+    {
+      "file": "textarea/default.html",
+      "title": "Textarea (default)",
+      "_schemaVersion": 2,
+      "dsfrComponentType": "textarea",
+      "frClass": "fr-input",
+      "section": "forms",
+      "variant": "default",
+      "requiresJs": "no",
+      "interaction": [
+        "type",
+        "focus"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "RGAA 4.1",
+        "WCAG 2.1 AA",
+        "Directive (UE) 2016/2102"
+      ],
+      "tier": "curated",
+      "tags": [
+        "textarea",
+        "zone",
+        "multiline",
+        "form"
+      ],
+      "description": "Multi-line text input with label and error support (fr-textarea).",
+      "piiHandling": "accepts_input",
+      "auditTrailCompatible": true,
+      "nistControls": [],
+      "touchTargetSize": "44px",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "input",
+        "button"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap",
+      "compositionRecipes": [
+        "formulaire-contact"
+      ]
+    },
+    {
+      "file": "textarea/error.html",
+      "title": "Textarea (error)",
+      "_schemaVersion": 2,
+      "dsfrComponentType": "textarea",
+      "frClass": "fr-input",
+      "section": "forms",
+      "variant": "error",
+      "requiresJs": "no",
+      "interaction": [
+        "type",
+        "focus"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "RGAA 4.1",
+        "WCAG 2.1 AA",
+        "Directive (UE) 2016/2102"
+      ],
+      "tier": "curated",
+      "tags": [
+        "textarea",
+        "zone",
+        "multiline",
+        "form"
+      ],
+      "description": "Multi-line text input with label and error support (fr-textarea).",
+      "piiHandling": "accepts_input",
+      "auditTrailCompatible": true,
+      "nistControls": [],
+      "touchTargetSize": "44px",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "input",
+        "button"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap",
+      "compositionRecipes": [
+        "formulaire-contact"
+      ]
+    },
+    {
+      "file": "toggle/default.html",
+      "title": "Toggle switch (default)",
+      "_schemaVersion": 2,
+      "dsfrComponentType": "toggle",
+      "frClass": "fr-toggle",
+      "section": "forms",
+      "variant": "default",
+      "requiresJs": "no",
+      "interaction": [
+        "click",
+        "focus",
+        "keyboard"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "RGAA 4.1",
+        "WCAG 2.1 AA",
+        "Directive (UE) 2016/2102"
+      ],
+      "tier": "curated",
+      "tags": [
+        "toggle",
+        "interrupteur",
+        "switch",
+        "settings"
+      ],
+      "description": "On/off toggle switch with optional state labels.",
+      "piiHandling": "none",
+      "auditTrailCompatible": false,
+      "nistControls": [],
+      "touchTargetSize": "44px",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "checkbox"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap"
+    },
+    {
+      "file": "upload/default.html",
+      "title": "File upload (default)",
+      "_schemaVersion": 2,
+      "dsfrComponentType": "upload",
+      "frClass": "fr-upload",
+      "section": "forms",
+      "variant": "default",
+      "requiresJs": "no",
+      "interaction": [
+        "focus",
+        "click",
+        "keyboard"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "RGAA 4.1",
+        "WCAG 2.1 AA",
+        "Directive (UE) 2016/2102"
+      ],
+      "tier": "curated",
+      "tags": [
+        "file",
+        "upload",
+        "fichier",
+        "form"
+      ],
+      "description": "File upload control with error state (fr-upload).",
+      "piiHandling": "accepts_input",
+      "auditTrailCompatible": true,
+      "nistControls": [],
+      "touchTargetSize": "44px",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "input"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap"
+    },
+    {
+      "file": "upload/error.html",
+      "title": "File upload (error)",
+      "_schemaVersion": 2,
+      "dsfrComponentType": "upload",
+      "frClass": "fr-upload",
+      "section": "forms",
+      "variant": "error",
+      "requiresJs": "no",
+      "interaction": [
+        "focus",
+        "click",
+        "keyboard"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "RGAA 4.1",
+        "WCAG 2.1 AA",
+        "Directive (UE) 2016/2102"
+      ],
+      "tier": "curated",
+      "tags": [
+        "file",
+        "upload",
+        "fichier",
+        "form"
+      ],
+      "description": "File upload control with error state (fr-upload).",
+      "piiHandling": "accepts_input",
+      "auditTrailCompatible": true,
+      "nistControls": [],
+      "touchTargetSize": "44px",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "input"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap"
+    }
+  ]
+}

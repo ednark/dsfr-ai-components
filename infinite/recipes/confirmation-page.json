@@ -1,0 +1,25 @@
+{
+  "recipe": "confirmation-page",
+  "title": "Page de confirmation",
+  "titleEn": "Confirmation page",
+  "description": "Confirmation après transaction : alerte succès et action suivante.",
+  "aliases": ["collection:confirmation-page"],
+  "components": [
+    { "order": 1, "component": "alert", "variant": "success", "file": "alert/success.html", "role": "feedback", "required": true, "reason": "Confirmation visible ; le titre porte le résultat (fr-alert__title)" },
+    { "order": 2, "component": "button", "variant": "secondary", "file": "button/secondary.html", "role": "action", "required": false, "reason": "Action suivante (retour à l'accueil, consulter le dossier)" }
+  ],
+  "nesting": "L'alerte 1 en tête du contenu principal ; le bouton 2 sous l'alerte",
+  "validationOrder": [
+    "Un seul h1 par page",
+    "Le titre de l'alerte énonce le résultat, pas seulement 'Succès'",
+    "Les numéros de référence restent dans le corps de l'alerte"
+  ],
+  "a11yNotes": [
+    "Le titre h3 de l'alerte structure le contenu",
+    "La référence de dossier doit être copiable (texte, pas image)"
+  ],
+  "agentPromptSequence": [
+    "1. Placer l'alerte succès avec le titre du résultat",
+    "2. Ajouter l'action suivante en bouton secondaire"
+  ]
+}

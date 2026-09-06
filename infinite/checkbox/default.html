@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Système de Design de l'État checkbox demonstrating the default variant.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Checkbox (default)</title>
+<script type="application/json" id="dsfr-agent-meta">
+{
+  "_schemaVersion": 2,
+  "discovery": {
+    "dsfrComponentType": "checkbox",
+    "frClass": "fr-checkbox-group",
+    "section": "forms",
+    "variant": "default",
+    "requiresJs": "no",
+    "interaction": [
+      "focus",
+      "click",
+      "keyboard"
+    ],
+    "a11y": {
+      "wcag21AA": true,
+      "keyboardNav": true,
+      "screenReader": true,
+      "reducedMotion": true,
+      "forcedColors": true,
+      "ariaAttributes": true
+    },
+    "govCompliance": [
+      "RGAA 4.1",
+      "WCAG 2.1 AA",
+      "Directive (UE) 2016/2102"
+    ],
+    "tier": "curated",
+    "tags": [
+      "checkbox",
+      "case",
+      "multiple",
+      "form"
+    ],
+    "description": "Checkbox group with fieldset, legend, and error support.",
+    "compliance": {
+      "nistControls": [],
+      "rgaa": true,
+      "wcag21AA": true,
+      "webAccessibilityDirective": true,
+      "piiHandling": "accepts_input",
+      "auditTrailCompatible": true,
+      "dataMaskingCompatible": false
+    },
+    "mobileUX": {
+      "touchTargetSize": "44px",
+      "requiredMinSpacing": "8px",
+      "orientationLocked": false,
+      "fullscreenSafe": true
+    }
+  },
+  "selection": {
+    "useWhen": [
+      "Multiple selections from a set",
+      "Single consent checkbox"
+    ],
+    "avoidWhen": [
+      "Exactly one choice — use radio"
+    ]
+  },
+  "instruction": {
+    "agentPrompt": "Edit labels and values. Group errors: fr-fieldset--error on the fieldset + fr-error-text. Individual hint text nests inside fr-label.",
+    "relatedComponents": [
+      "radio",
+      "button"
+    ]
+  },
+  "coordination": {
+    "prerequisiteComponents": [],
+    "incompatibleWith": [],
+    "compositionCost": {
+      "costTier": "cheap",
+      "estimatedTokens": 214,
+      "renderingTimeMs": 15,
+      "recommendedModel": "haiku"
+    }
+  },
+  "constraints": {
+    "preserve": [
+      "fieldset + fr-fieldset__legend structure for groups",
+      "input/label pairing via for/id",
+      "fr-fieldset__element wrapper per option"
+    ],
+    "editable": [
+      "Legend text",
+      "Option labels and values"
+    ],
+    "limitations": [
+      "Do not pre-check consent boxes"
+    ],
+    "portableInvariants": [
+      "fieldset/legend for groups",
+      "Real <input type='checkbox'> elements"
+    ]
+  },
+  "supportedTokenProfiles": [
+    "highContrast"
+  ],
+  "file": "checkbox/default.html",
+  "title": "Checkbox (default)",
+  "portability": {
+    "classMapping": {
+      "uswds": {
+        "base": "usa-checkbox__input",
+        "label": "usa-checkbox__label"
+      }
+    }
+  }
+}
+</script>
+<style>
+body{font-family:'Marianne',Arial,Helvetica,sans-serif;font-size:1rem;line-height:1.5rem;color:#161616;padding:2rem;background:#fff;margin:0}
+.cap{position:fixed;bottom:12px;left:16px;font-size:11px;letter-spacing:.08em;color:#666;text-transform:uppercase}
+a{color:#000091}
+:focus-visible{outline:2px solid #0a76f6;outline-offset:2px}
+.govuk-visually-hidden,.fr-visually-hidden{position:absolute!important;width:1px;height:1px;margin:0;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.fr-label{display:block;font-weight:500;font-size:.875rem;line-height:1.5rem;color:#161616}
+.fr-hint-text{display:block;font-weight:400;font-size:.75rem;line-height:1.25rem;color:#666;margin-top:0}
+.fr-error-text{display:block;font-weight:500;font-size:.75rem;line-height:1.5rem;color:#ce0500;margin-top:4px}
+.fr-valid-text{display:block;font-weight:500;font-size:.75rem;line-height:1.5rem;color:#18753c;margin-top:4px}
+.fr-text--lg{font-size:1.25rem;line-height:2rem}
+.fr-text--sm,.fr-callout p{font-size:.875rem;line-height:1.5rem}
+
+.fr-checkbox-group,.fr-radio-group{margin-bottom:1.5rem}
+.fr-fieldset{border:0;padding:0;margin:0}
+.fr-fieldset__legend{font-weight:500;padding:0}
+.fr-fieldset__element{margin-bottom:1rem}
+.fr-fieldset--error{border-left:2px solid #ce0500;padding-left:1rem}
+.fr-checkbox-group input[type=checkbox]{position:absolute;opacity:0;width:20px;height:20px;margin:0}
+.fr-checkbox-group label{position:relative;padding-left:2rem;cursor:pointer;display:inline-block}
+.fr-checkbox-group input[type=checkbox]+label:before{content:"";position:absolute;left:0;top:1px;width:18px;height:18px;border:1px solid #161616;border-radius:.15rem;background:#fff}
+.fr-checkbox-group input[type=checkbox]:checked+label:after{content:"✓";position:absolute;left:4px;top:-2px;color:#000091;font-weight:700}
+.fr-checkbox-group input[type=checkbox]:focus+label:before{outline:2px solid #0a76f6;outline-offset:2px}
+
+</style>
+</head>
+<body>
+<div class="fr-checkbox-group fr-fieldset">
+  <fieldset class="fr-fieldset" aria-labelledby="cb-legend cb-messages">
+    <legend class="fr-fieldset__legend fr-text--regular" id="cb-legend">
+      Quels sont les modes de transport que vous utilisez ?
+    </legend>
+    <div class="fr-fieldset__element">
+      <input type="checkbox" id="cb-transport-1" name="transport-1">
+      <label class="fr-label" for="cb-transport-1">Voiture</label>
+    </div>
+    <div class="fr-fieldset__element">
+      <input type="checkbox" id="cb-transport-2" name="transport-2">
+      <label class="fr-label" for="cb-transport-2">Transports en commun</label>
+    </div>
+    <div class="fr-fieldset__element">
+      <input type="checkbox" id="cb-transport-3" name="transport-3">
+      <label class="fr-label" for="cb-transport-3">Vélo</label>
+    </div>
+  </fieldset>
+</div>
+<div class="cap">checkbox default</div>
+</body>
+</html>

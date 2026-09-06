@@ -1,0 +1,62 @@
+> DSFR AI Components — Plain-text agent protocol
+> Tuiles auto-contenues du Système de Design de l'État. Markup et métadonnées are original works; fr-* class names used under DSFR terms.
+> Home: https://github.com/ednark/dsfr-ai-components
+> Base layer: https://github.com/ednark/ai-component-registry-spec (submodule at _base/)
+
+---
+
+## Overview
+
+Registre de composants DSFR pour agents de programmation IA construisant des services de l'État français. 38 tuiles auto-contenues across 26 component families with categorized adaptation, coordination, and compliance metadata (RGAA 4.1, WCAG 2.1 AA, Directive (UE) 2016/2102).
+
+## Machine manifest
+
+> https://raw.githubusercontent.com/ednark/dsfr-ai-components/main/agents.json
+
+---
+
+## Quick start
+
+1. Filter vocab: GET https://raw.githubusercontent.com/ednark/dsfr-ai-components/main/infinite/facets.json
+2. Discovery index (lean): GET https://raw.githubusercontent.com/ednark/dsfr-ai-components/main/infinite/components.index.json
+3. Component source: GET https://raw.githubusercontent.com/ednark/dsfr-ai-components/main/infinite/{file}
+4. Recipes: GET https://raw.githubusercontent.com/ednark/dsfr-ai-components/main/infinite/recipes/index.json
+   (formulaire-contact, confirmation-page, search-results, multi-step-form, content-page)
+5. Version history: GET https://raw.githubusercontent.com/ednark/dsfr-ai-components/main/infinite/versions.json
+
+---
+
+## Facets
+
+- dsfrComponentType — button, input, select, checkbox, radio, alert, table, card, etc.
+- section — forms, navigation, feedback, data-display
+- variant — component variant
+- requiresJs — no, optional, required
+- interaction — passive, click, focus, keyboard, type, change
+- govCompliance — RGAA 4.1, WCAG 2.1 AA, Directive (UE) 2016/2102
+- a11y — wcag21AA, keyboardNav, screenReader, reducedMotion, forcedColors, ariaAttributes
+- costTier — cheap, moderate, expensive
+- compositionRecipes — recipes this component participates in
+- piiHandling — accepts_input, displays_only, none
+- touchTargetSize — 44px on interactive components
+- supportedTokenProfiles — highContrast, darkMode (official DSFR themes)
+
+---
+
+## DSFR rules
+
+- Erreurs par champ : fr-error-text + fr-*-group--error — pas de résumé d'erreurs global
+- Chaque contrôle inclut son groupe (fr-input-group, fr-select-group, fr-fieldset) — pas de prerequisite externe
+- Thèmes clair/sombre officiels via data-fr-theme
+- RGAA 4.1 pour l'accessibilité
+
+---
+
+## Output contract
+
+1. Reason — why this component over alternatives
+2. Selected components — file paths and titles
+3. DSFR classes needed — exact fr-* class names
+4. Constraint verification — preserve elements intact
+5. Remaining work — what the component does not cover
+6. Recommended next — what to retrieve next

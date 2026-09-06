@@ -1,0 +1,28 @@
+{
+  "recipe": "formulaire-contact",
+  "title": "Formulaire de contact",
+  "titleEn": "Contact form",
+  "description": "Formulaire de contact : champ texte, zone de message, bouton d'envoi.",
+  "aliases": ["collection:formulaire-contact", "contact-form"],
+  "components": [
+    { "order": 1, "component": "input", "variant": "default", "file": "input/default.html", "role": "input", "required": true, "reason": "Adresse électronique — l'état d'erreur se câble avec fr-input-group--error + fr-error-text" },
+    { "order": 2, "component": "textarea", "variant": "default", "file": "textarea/default.html", "role": "input", "required": true, "reason": "Message de l'utilisateur" },
+    { "order": 3, "component": "button", "variant": "primary", "file": "button/default.html", "role": "action", "required": true, "reason": "Envoyer — unique bouton primaire de la page" }
+  ],
+  "nesting": "Les composants 1-2 sont auto-porteurs (le groupe fr-input-group est inclus) ; le composant 3 clôt le formulaire",
+  "validationOrder": [
+    "Chaque contrôle porte un fr-label associé via for/id",
+    "Erreurs : fr-input-group--error + fr-error-text par champ (le DSFR n'utilise pas de résumé d'erreurs global)",
+    "Attributs autocomplete sur l'adresse électronique"
+  ],
+  "a11yNotes": [
+    "Les fr-hint-text sont dans le fr-label — aucun aria-describedby nécessaire pour les indications",
+    "fr-error-text doit rester frère immédiat du contrôle",
+    "Un seul bouton primaire par vue"
+  ],
+  "agentPromptSequence": [
+    "1. Placer le champ texte (adresse électronique) avec son groupe",
+    "2. Ajouter la zone de message",
+    "3. Clôturer avec le bouton d'envoi"
+  ]
+}

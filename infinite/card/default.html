@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Système de Design de l'État card demonstrating the default variant.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Card (default)</title>
+<script type="application/json" id="dsfr-agent-meta">
+{
+  "_schemaVersion": 2,
+  "discovery": {
+    "dsfrComponentType": "card",
+    "frClass": "fr-card",
+    "section": "data-display",
+    "variant": "default",
+    "requiresJs": "no",
+    "interaction": [
+      "click",
+      "focus"
+    ],
+    "a11y": {
+      "wcag21AA": true,
+      "keyboardNav": true,
+      "screenReader": true,
+      "reducedMotion": true,
+      "forcedColors": true,
+      "ariaAttributes": true
+    },
+    "govCompliance": [
+      "RGAA 4.1",
+      "WCAG 2.1 AA",
+      "Directive (UE) 2016/2102"
+    ],
+    "tier": "curated",
+    "tags": [
+      "card",
+      "carte",
+      "tuile",
+      "content",
+      "grid"
+    ],
+    "description": "Content card with enlarged link (fr-card).",
+    "compliance": {
+      "nistControls": [],
+      "rgaa": true,
+      "wcag21AA": true,
+      "webAccessibilityDirective": true,
+      "piiHandling": "displays_only",
+      "auditTrailCompatible": false,
+      "dataMaskingCompatible": false
+    },
+    "mobileUX": {
+      "touchTargetSize": "44px",
+      "requiredMinSpacing": "8px",
+      "orientationLocked": false,
+      "fullscreenSafe": true
+    }
+  },
+  "selection": {
+    "useWhen": [
+      "Linking to content pages in grids (news, services, articles)"
+    ],
+    "avoidWhen": [
+      "Action buttons — use fr-btn",
+      "Tabular data — use fr-table"
+    ]
+  },
+  "instruction": {
+    "agentPrompt": "The title link with fr-enlarge-link makes the whole card clickable. Add fr-card--horizontal for side-by-side layout, fr-card--download for download cards. Detail chips (fr-badge) go in fr-card__detail.",
+    "relatedComponents": [
+      "badge",
+      "tag",
+      "download"
+    ]
+  },
+  "coordination": {
+    "prerequisiteComponents": [],
+    "incompatibleWith": [],
+    "compositionCost": {
+      "costTier": "cheap",
+      "estimatedTokens": 75,
+      "renderingTimeMs": 15,
+      "recommendedModel": "haiku"
+    }
+  },
+  "constraints": {
+    "preserve": [
+      "fr-card__title with fr-card__link inside (h3 default)",
+      "fr-enlarge-link mechanism for whole-card click",
+      "Body/media structure"
+    ],
+    "editable": [
+      "Title",
+      "Description",
+      "Detail badges",
+      "Media",
+      "Layout modifiers"
+    ],
+    "limitations": [
+      "One primary link per card",
+      "Keep descriptions short"
+    ],
+    "portableInvariants": [
+      "Single accessible name per card via the title link"
+    ]
+  },
+  "supportedTokenProfiles": [
+    "highContrast"
+  ],
+  "file": "card/default.html",
+  "title": "Card (default)",
+  "portability": {
+    "classMapping": {
+      "uswds": {
+        "base": "usa-card"
+      }
+    }
+  }
+}
+</script>
+<style>
+body{font-family:'Marianne',Arial,Helvetica,sans-serif;font-size:1rem;line-height:1.5rem;color:#161616;padding:2rem;background:#fff;margin:0}
+.cap{position:fixed;bottom:12px;left:16px;font-size:11px;letter-spacing:.08em;color:#666;text-transform:uppercase}
+a{color:#000091}
+:focus-visible{outline:2px solid #0a76f6;outline-offset:2px}
+.govuk-visually-hidden,.fr-visually-hidden{position:absolute!important;width:1px;height:1px;margin:0;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.fr-label{display:block;font-weight:500;font-size:.875rem;line-height:1.5rem;color:#161616}
+.fr-hint-text{display:block;font-weight:400;font-size:.75rem;line-height:1.25rem;color:#666;margin-top:0}
+.fr-error-text{display:block;font-weight:500;font-size:.75rem;line-height:1.5rem;color:#ce0500;margin-top:4px}
+.fr-valid-text{display:block;font-weight:500;font-size:.75rem;line-height:1.5rem;color:#18753c;margin-top:4px}
+.fr-text--lg{font-size:1.25rem;line-height:2rem}
+.fr-text--sm,.fr-callout p{font-size:.875rem;line-height:1.5rem}
+
+.fr-card{border:1px solid #ddd;border-radius:.25rem;overflow:hidden;max-width:24rem;background:#fff}
+.fr-card__body{padding:1rem}
+.fr-card__title{font-size:1.125rem;margin:0 0 .5rem}
+.fr-card__link{color:#000091;text-decoration:underline;font-weight:500}
+.fr-card__desc{margin:0;font-size:.875rem;color:#666}
+
+</style>
+</head>
+<body>
+<div class="fr-card">
+  <div class="fr-card__body">
+    <div class="fr-card__content">
+      <h3 class="fr-card__title">
+        <a class="fr-card__link" href="#">Titre de la carte</a>
+      </h3>
+      <p class="fr-card__desc">Description courte du contenu proposé.</p>
+    </div>
+  </div>
+</div>
+<div class="cap">card default</div>
+</body>
+</html>

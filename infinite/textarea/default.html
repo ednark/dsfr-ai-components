@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Système de Design de l'État textarea demonstrating the default variant.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Textarea (default)</title>
+<script type="application/json" id="dsfr-agent-meta">
+{
+  "_schemaVersion": 2,
+  "discovery": {
+    "dsfrComponentType": "textarea",
+    "frClass": "fr-input",
+    "section": "forms",
+    "variant": "default",
+    "requiresJs": "no",
+    "interaction": [
+      "type",
+      "focus"
+    ],
+    "a11y": {
+      "wcag21AA": true,
+      "keyboardNav": true,
+      "screenReader": true,
+      "reducedMotion": true,
+      "forcedColors": true,
+      "ariaAttributes": true
+    },
+    "govCompliance": [
+      "RGAA 4.1",
+      "WCAG 2.1 AA",
+      "Directive (UE) 2016/2102"
+    ],
+    "tier": "curated",
+    "tags": [
+      "textarea",
+      "zone",
+      "multiline",
+      "form"
+    ],
+    "description": "Multi-line text input with label and error support (fr-textarea).",
+    "compliance": {
+      "nistControls": [],
+      "rgaa": true,
+      "wcag21AA": true,
+      "webAccessibilityDirective": true,
+      "piiHandling": "accepts_input",
+      "auditTrailCompatible": true,
+      "dataMaskingCompatible": false
+    },
+    "mobileUX": {
+      "touchTargetSize": "44px",
+      "requiredMinSpacing": "8px",
+      "orientationLocked": false,
+      "fullscreenSafe": true
+    }
+  },
+  "selection": {
+    "useWhen": [
+      "Longer free-text answers (description, message, motif)"
+    ],
+    "avoidWhen": [
+      "Single-line values — use input"
+    ]
+  },
+  "instruction": {
+    "agentPrompt": "Adjust the rows attribute for height. Error state follows the same fr-input-group--error + fr-error-text pattern as inputs.",
+    "relatedComponents": [
+      "input",
+      "button"
+    ]
+  },
+  "coordination": {
+    "prerequisiteComponents": [],
+    "incompatibleWith": [],
+    "compositionCost": {
+      "costTier": "cheap",
+      "estimatedTokens": 71,
+      "renderingTimeMs": 15,
+      "recommendedModel": "haiku"
+    },
+    "compositionRecipes": [
+      "formulaire-contact"
+    ]
+  },
+  "constraints": {
+    "preserve": [
+      ".fr-input class on the textarea",
+      ".fr-input-group wrapper",
+      "fr-label 'for' association"
+    ],
+    "editable": [
+      "Label text",
+      "rows attribute"
+    ],
+    "limitations": [
+      "Fixed height by rows"
+    ],
+    "portableInvariants": [
+      "Semantic <textarea> element",
+      "Label association via for/id"
+    ]
+  },
+  "supportedTokenProfiles": [
+    "highContrast"
+  ],
+  "file": "textarea/default.html",
+  "title": "Textarea (default)",
+  "portability": {
+    "classMapping": {
+      "uswds": {
+        "base": "usa-textarea"
+      }
+    }
+  }
+}
+</script>
+<style>
+body{font-family:'Marianne',Arial,Helvetica,sans-serif;font-size:1rem;line-height:1.5rem;color:#161616;padding:2rem;background:#fff;margin:0}
+.cap{position:fixed;bottom:12px;left:16px;font-size:11px;letter-spacing:.08em;color:#666;text-transform:uppercase}
+a{color:#000091}
+:focus-visible{outline:2px solid #0a76f6;outline-offset:2px}
+.govuk-visually-hidden,.fr-visually-hidden{position:absolute!important;width:1px;height:1px;margin:0;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.fr-label{display:block;font-weight:500;font-size:.875rem;line-height:1.5rem;color:#161616}
+.fr-hint-text{display:block;font-weight:400;font-size:.75rem;line-height:1.25rem;color:#666;margin-top:0}
+.fr-error-text{display:block;font-weight:500;font-size:.75rem;line-height:1.5rem;color:#ce0500;margin-top:4px}
+.fr-valid-text{display:block;font-weight:500;font-size:.75rem;line-height:1.5rem;color:#18753c;margin-top:4px}
+.fr-text--lg{font-size:1.25rem;line-height:2rem}
+.fr-text--sm,.fr-callout p{font-size:.875rem;line-height:1.5rem}
+
+
+</style>
+</head>
+<body>
+<div class="fr-input-group">
+  <label class="fr-label" for="textarea-example">
+    Votre message
+    <span class="fr-hint-text">Décrivez votre demande en quelques lignes.</span>
+  </label>
+  <textarea class="fr-input" id="textarea-example" name="message" rows="5"></textarea>
+</div>
+<div class="cap">textarea default</div>
+</body>
+</html>

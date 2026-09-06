@@ -1,0 +1,30 @@
+{
+  "recipe": "content-page",
+  "title": "Page de contenu",
+  "titleEn": "Content page",
+  "description": "Chrome de page officiel : liens d'évitement, en-tête, fil d'Ariane, pied de page.",
+  "aliases": ["collection:content-page", "page-template"],
+  "components": [
+    { "order": 1, "component": "skiplinks", "variant": "default", "file": "skiplinks/default.html", "role": "a11y", "required": true, "reason": "Premier élément du body ; cibles réelles requises" },
+    { "order": 2, "component": "header", "variant": "default", "file": "header/default.html", "role": "page-chrome", "required": true, "reason": "Bloc Marianne + nom du service" },
+    { "order": 3, "component": "breadcrumb", "variant": "default", "file": "breadcrumb/default.html", "role": "navigation", "required": false, "reason": "Fil d'Ariane sous l'en-tête pour les pages profondes" },
+    { "order": 4, "component": "footer", "variant": "default", "file": "footer/default.html", "role": "page-chrome", "required": true, "reason": "Liens légaux obligatoires + mention de licence" }
+  ],
+  "nesting": "Ordre DOM 1 → 2 → 3 → <main id='contenu'>…</main> → 4. Les ancres des skiplinks ciblent en-tête/contenu/pied",
+  "validationOrder": [
+    "Les ancres des skiplinks existent sur la page",
+    "Le dernier élément du fil d'Ariane porte aria-current='page' sans lien",
+    "Liens légaux obligatoires dans le pied de page (mentions légales, données personnelles, cookies)"
+  ],
+  "a11yNotes": [
+    "Ne jamais supprimer les liens d'évitement",
+    "Landmarks : banner (header), contentinfo (footer), navigation (fil d'Ariane)",
+    "Le bloc Marianne est réservé aux services de l'État (procédure d'agrément)"
+  ],
+  "agentPromptSequence": [
+    "1. Placer les liens d'évitement en premier dans le body",
+    "2. Ajouter l'en-tête avec le bloc Marianne et le nom du service",
+    "3. Fil d'Ariane si la page est profonde",
+    "4. Envelopper le contenu dans <main id='contenu'>, fermer avec le pied de page"
+  ]
+}

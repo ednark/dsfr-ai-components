@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "registry": "dsfr-ai-components",
+  "designSystem": { "name": "Système de Design de l'État (DSFR)", "version": "1.15", "url": "https://www.systeme-de-design.gouv.fr" },
+  "versions": [
+    {
+      "version": "0.1.0",
+      "releaseDate": "2026-09-06",
+      "componentCount": 38,
+      "breakingChanges": [],
+      "addedCategories": ["discovery", "selection", "instruction", "coordination", "constraints", "portability"],
+      "addedFacets": ["dsfrComponentType", "section", "variant", "requiresJs", "interaction", "a11y", "govCompliance", "costTier", "compositionRecipes", "piiHandling", "touchTargetSize", "supportedTokenProfiles"],
+      "migrationPath": "Version initiale.",
+      "notes": "26 familles de composants DSFR ; 5 recettes de patterns ; cartes de compatibilité dsfr→uswds et dsfr→govuk ; métadonnées en anglais, classes fr-* faisant autorité"
+    }
+  ],
+  "designSystemVersions": [
+    { "version": "1.15", "status": "current", "notes": "Tuiles ciblant le balisage des composants DSFR v1.15" }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "recipe": "search-results",
+  "title": "Résultats de recherche",
+  "titleEn": "Search results",
+  "description": "Barre de recherche, tableau de résultats, pagination.",
+  "aliases": ["collection:search-results"],
+  "components": [
+    { "order": 1, "component": "search", "variant": "default", "file": "search/default.html", "role": "input", "required": true, "reason": "Requête ; form action pointe vers l'endpoint de recherche" },
+    { "order": 2, "component": "table", "variant": "default", "file": "table/default.html", "role": "data-display", "required": true, "reason": "Résultats ; caption obligatoire décrivant le contenu" },
+    { "order": 3, "component": "pagination", "variant": "default", "file": "pagination/default.html", "role": "navigation", "required": true, "reason": "Navigation entre pages de résultats" }
+  ],
+  "nesting": "Ordre DOM 1 → 2 → 3 ; le tableau peut être enveloppé dans fr-table__wrapper pour le défilement horizontal",
+  "validationOrder": [
+    "Caption du tableau renseignée",
+    "scope='col' sur les en-têtes",
+    "aria-current='page' sur la page active de la pagination"
+  ],
+  "a11yNotes": [
+    "Le label visuellement masqué de la barre de recherche est obligatoire",
+    "Le nombre total de résultats doit être annoncé en texte"
+  ],
+  "agentPromptSequence": [
+    "1. Placer la barre de recherche avec l'action du formulaire",
+    "2. Rendre le tableau de résultats avec caption",
+    "3. Ajouter la pagination sous le tableau"
+  ]
+}
