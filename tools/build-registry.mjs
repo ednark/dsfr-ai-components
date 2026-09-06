@@ -174,6 +174,9 @@ const CSS = {
 .fr-table td{padding:.5rem .75rem;border-bottom:1px solid #ddd}
 `,
   'card': `.fr-card{border:1px solid #ddd;border-radius:.25rem;overflow:hidden;max-width:24rem;background:#fff}
+.fr-card--horizontal{display:flex;max-width:34rem}
+.fr-card--horizontal .fr-card__media{width:42%;flex:none}
+.fr-responsive-img{width:100%;height:100%;object-fit:cover;display:block}
 .fr-card__body{padding:1rem}
 .fr-card__title{font-size:1.125rem;margin:0 0 .5rem}
 .fr-card__link{color:#000091;text-decoration:underline;font-weight:500}
@@ -189,7 +192,14 @@ button.fr-tag[aria-pressed=true]{background:#000091;color:#fff}
 .fr-download__name{font-weight:500}
 .fr-download__meta{display:block;font-size:.75rem;color:#666}
 `,
-  'summary': `.fr-summary{background:#f6f6f6;padding:1rem 1.5rem;max-width:24rem}
+  'summary': `.fr-follow{background:#f6f6f6;padding:2rem;margin:2rem 0}
+.fr-follow form{display:flex;gap:.5rem;max-width:28rem;margin-top:.75rem}
+.fr-follow .fr-input{flex:1;font:inherit;padding:.5rem .75rem;border:1px solid #161616;border-radius:.25rem .25rem 0 0}
+.fr-follow .fr-btn{border-radius:0 .25rem 0 0}
+.fr-follow .fr-h5{font-size:1.125rem;margin:0 0 .25rem}
+.fr-btns-group{list-style:none;margin:0;padding:0;display:flex;gap:.5rem;flex-wrap:wrap}
+.fr-btns-group .fr-btn{background:#000091;color:#fff;text-decoration:none;border-radius:.25rem .25rem 0 0;padding:.5rem 1rem}
+.fr-summary{background:#f6f6f6;padding:1rem 1.5rem;max-width:24rem}
 .fr-summary__title{font-weight:700;margin:0 0 .5rem;font-size:.875rem}
 .fr-summary__list{list-style:none;margin:0;padding:0}
 .fr-summary__list li{border-top:1px solid #ddd;padding:.25rem 0;font-size:.875rem}
@@ -297,6 +307,7 @@ function buildMeta(component, variant, relPath, html) {
       portableInvariants: component.invariants,
     },
     supportedTokenProfiles: ['highContrast'],
+    ...(component.provenance && { provenance: component.provenance }),
     file: relPath,
     title: `${component.name} (${variant})`,
   };

@@ -3,10 +3,10 @@
   "metadataSchemaVersion": 2,
   "generatedBy": "_base/generate-index.mjs",
   "counts": {
-    "total": 39,
+    "total": 42,
     "bySection": {
-      "data-display": 6,
-      "feedback": 8,
+      "data-display": 7,
+      "feedback": 10,
       "navigation": 6,
       "forms": 19
     }
@@ -754,6 +754,57 @@
       "costTier": "cheap"
     },
     {
+      "file": "card/horizontal-media.html",
+      "title": "Card (horizontal-media)",
+      "_schemaVersion": 2,
+      "dsfrComponentType": "card",
+      "frClass": "fr-card",
+      "section": "data-display",
+      "variant": "horizontal-media",
+      "requiresJs": "no",
+      "interaction": [
+        "click",
+        "focus"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "RGAA 4.1",
+        "WCAG 2.1 AA",
+        "Directive (UE) 2016/2102"
+      ],
+      "tier": "curated",
+      "tags": [
+        "card",
+        "carte",
+        "tuile",
+        "content",
+        "grid"
+      ],
+      "description": "Content card with enlarged link (fr-card).",
+      "piiHandling": "displays_only",
+      "auditTrailCompatible": false,
+      "nistControls": [],
+      "touchTargetSize": "44px",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "badge",
+        "tag",
+        "download"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap"
+    },
+    {
       "file": "checkbox/default.html",
       "title": "Checkbox (default)",
       "_schemaVersion": 2,
@@ -845,6 +896,110 @@
       ],
       "relatedComponents": [
         "card"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap"
+    },
+    {
+      "file": "follow/newsletter.html",
+      "title": "Follow (newsletter + social) (newsletter)",
+      "_schemaVersion": 2,
+      "dsfrComponentType": "follow",
+      "frClass": "fr-follow",
+      "section": "feedback",
+      "variant": "newsletter",
+      "requiresJs": "no",
+      "interaction": [
+        "type",
+        "click",
+        "focus"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "RGAA 4.1",
+        "WCAG 2.1 AA",
+        "Directive (UE) 2016/2102"
+      ],
+      "tier": "curated",
+      "tags": [
+        "follow",
+        "newsletter",
+        "social",
+        "réseaux",
+        "abonnement"
+      ],
+      "description": "Newsletter subscription and social-media follow block (fr-follow).",
+      "piiHandling": "accepts_input",
+      "auditTrailCompatible": false,
+      "nistControls": [],
+      "touchTargetSize": "44px",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "input",
+        "button",
+        "footer"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap"
+    },
+    {
+      "file": "follow/social.html",
+      "title": "Follow (newsletter + social) (social)",
+      "_schemaVersion": 2,
+      "dsfrComponentType": "follow",
+      "frClass": "fr-follow",
+      "section": "feedback",
+      "variant": "social",
+      "requiresJs": "no",
+      "interaction": [
+        "type",
+        "click",
+        "focus"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "RGAA 4.1",
+        "WCAG 2.1 AA",
+        "Directive (UE) 2016/2102"
+      ],
+      "tier": "curated",
+      "tags": [
+        "follow",
+        "newsletter",
+        "social",
+        "réseaux",
+        "abonnement"
+      ],
+      "description": "Newsletter subscription and social-media follow block (fr-follow).",
+      "piiHandling": "accepts_input",
+      "auditTrailCompatible": false,
+      "nistControls": [],
+      "touchTargetSize": "44px",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "input",
+        "button",
+        "footer"
       ],
       "prerequisites": [],
       "incompatibleWith": [],

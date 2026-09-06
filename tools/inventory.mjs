@@ -1030,6 +1030,7 @@ export const inventory = [
     classMappingGovuk: { base: "govuk-card" },
     tags: ["card", "carte", "tuile", "content", "grid"],
     description: "Content card with enlarged link (fr-card).",
+    provenance: { observed: "2026-09-06", source: "https://www.service-public.gouv.fr/particuliers", method: "live-site observation" },
     defaultMarkup: `<div class="fr-card">
   <div class="fr-card__body">
     <div class="fr-card__content">
@@ -1040,6 +1041,110 @@ export const inventory = [
     </div>
   </div>
 </div>`,
+    variants: [
+      {
+        file: "default", variant: "default",
+        desc: "Standard card.",
+        markup: `<div class="fr-card">
+  <div class="fr-card__body">
+    <div class="fr-card__content">
+      <h3 class="fr-card__title">
+        <a class="fr-card__link" href="#">Titre de la carte</a>
+      </h3>
+      <p class="fr-card__desc">Description courte du contenu proposé.</p>
+    </div>
+  </div>
+</div>`
+      },
+      {
+        file: "horizontal-media", variant: "horizontal-media",
+        desc: "Horizontal card with image — the news-listing pattern used on service-public.gouv.fr.",
+        markup: `<div class="fr-card fr-card--horizontal fr-enlarge-link">
+  <div class="fr-card__media">
+    <div class="fr-responsive-img-wrapper">
+      <img class="fr-responsive-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='260'%3E%3Crect width='400' height='260' fill='%23e3e3fd'/%3E%3Ctext x='200' y='135' fill='%23000091' text-anchor='middle' font-size='18'%3EImage%3C/text%3E%3C/svg%3E" alt="">
+    </div>
+  </div>
+  <div class="fr-card__body">
+    <div class="fr-card__content">
+      <h3 class="fr-card__title">
+        <a class="fr-card__link" href="#">Ce qui change en septembre 2026</a>
+      </h3>
+      <p class="fr-card__desc">Retraite - Assurance chômage - Arrêt de travail.</p>
+    </div>
+  </div>
+</div>`
+      }
+    ]
+  },
+  {
+    dir: "follow",
+    name: "Follow (newsletter + social)",
+    frName: "Lettre d'information et réseaux sociaux",
+    cls: "fr-follow",
+    section: "feedback",
+    requiresJs: "no",
+    interaction: ["type", "click", "focus"],
+    pii: "accepts_input",
+    audit: false,
+    useWhen: ["Newsletter subscription and social-media links at the bottom of content pages", "The service-public.gouv.fr home page pattern"],
+    avoidWhen: ["Do not place before the main content", "Never collect emails without a data-protection notice"],
+    agentPrompt: "The fr-follow block combines fr-follow__newsletter (label + fr-input + fr-btn) and fr-follow__social (fr-btns-group with fr-icon-* network buttons). Use both columns or a single one via the grid classes.",
+    preserve: [
+      "fr-follow wrapper with fr-follow__newsletter / fr-follow__social structure",
+      "Newsletter form label association via for/id",
+      "Social links carry accessible network names"
+    ],
+    editable: ["Newsletter title and text", "Social networks list", "Subscription action"],
+    limitations: ["Newsletter endpoints must handle double opt-in", "Social button icons come from DSFR icon classes"],
+    invariants: ["Email input labelled", "Social links have accessible names beyond the icon"],
+    related: ["input", "button", "footer"],
+    tags: ["follow", "newsletter", "social", "réseaux", "abonnement"],
+    description: "Newsletter subscription and social-media follow block (fr-follow).",
+    provenance: { observed: "2026-09-06", source: "https://www.service-public.gouv.fr/particuliers", method: "live-site observation" },
+    variants: [
+      {
+        file: "newsletter", variant: "newsletter",
+        desc: "Newsletter subscription block.",
+        markup: `<div class="fr-follow">
+  <div class="fr-container">
+    <div class="fr-grid-row">
+      <div class="fr-col-12">
+        <h2 class="fr-h5">Abonnez-vous à notre lettre d'information</h2>
+        <p class="fr-text--sm">Recevez chaque semaine les actualités de vos droits et démarches.</p>
+        <div class="fr-follow__newsletter">
+          <form action="#" method="post">
+            <label class="fr-label" for="follow-email">Votre adresse électronique</label>
+            <input class="fr-input" type="email" id="follow-email" name="email" autocomplete="email">
+            <button class="fr-btn" type="submit">S'abonner</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>`
+      },
+      {
+        file: "social", variant: "social",
+        desc: "Social-media follow links block.",
+        markup: `<div class="fr-follow">
+  <div class="fr-container">
+    <div class="fr-grid-row">
+      <div class="fr-col-12">
+        <h2 class="fr-h5">Suivez-nous sur les réseaux sociaux</h2>
+        <div class="fr-follow__social">
+          <ul class="fr-btns-group">
+            <li><a class="fr-btn fr-icon-facebook-circle-line" href="#" title="Facebook">Facebook</a></li>
+            <li><a class="fr-btn fr-icon-linkedin-box-line" href="#" title="LinkedIn">LinkedIn</a></li>
+            <li><a class="fr-btn fr-icon-youtube-line" href="#" title="YouTube">YouTube</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>`
+      }
+    ]
   },
   {
     dir: "tag",

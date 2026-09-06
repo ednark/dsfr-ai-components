@@ -3,7 +3,7 @@
   "description": "Système de Design de l'État (DSFR) component registry for AI coding agents. Self-contained, accessible French government components with full adaptation and coordination metadata.",
   "repo": "https://github.com/ednark/dsfr-ai-components",
   "base": "https://raw.githubusercontent.com/ednark/dsfr-ai-components/main",
-  "count": 39,
+  "count": 42,
   "facetsUrl": "https://raw.githubusercontent.com/ednark/dsfr-ai-components/main/infinite/facets.json",
   "index": "https://raw.githubusercontent.com/ednark/dsfr-ai-components/main/infinite/components.index.json",
   "indexSchemaVersion": 1,
@@ -77,5 +77,5 @@
     }
   },
   "compatibilityPath": "compatibility.json",
-  "updated": "0.1.0"
+  "updated": "0.2.0"
 }

@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="description" content="Système de Design de l'État card demonstrating the default variant.">
+<meta name="description" content="Système de Design de l'État card demonstrating the horizontal-media variant.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Card (default)</title>
+<title>Card (horizontal-media)</title>
 <script type="application/json" id="dsfr-agent-meta">
 {
   "_schemaVersion": 2,
@@ -12,7 +12,7 @@
     "dsfrComponentType": "card",
     "frClass": "fr-card",
     "section": "data-display",
-    "variant": "default",
+    "variant": "horizontal-media",
     "requiresJs": "no",
     "interaction": [
       "click",
@@ -78,7 +78,7 @@
     "incompatibleWith": [],
     "compositionCost": {
       "costTier": "cheap",
-      "estimatedTokens": 75,
+      "estimatedTokens": 188,
       "renderingTimeMs": 15,
       "recommendedModel": "haiku"
     }
@@ -112,8 +112,8 @@
     "source": "https://www.service-public.gouv.fr/particuliers",
     "method": "live-site observation"
   },
-  "file": "card/default.html",
-  "title": "Card (default)",
+  "file": "card/horizontal-media.html",
+  "title": "Card (horizontal-media)",
   "portability": {
     "classMapping": {
       "uswds": {
@@ -148,16 +148,21 @@ a{color:#000091}
 </style>
 </head>
 <body>
-<div class="fr-card">
+<div class="fr-card fr-card--horizontal fr-enlarge-link">
+  <div class="fr-card__media">
+    <div class="fr-responsive-img-wrapper">
+      <img class="fr-responsive-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='260'%3E%3Crect width='400' height='260' fill='%23e3e3fd'/%3E%3Ctext x='200' y='135' fill='%23000091' text-anchor='middle' font-size='18'%3EImage%3C/text%3E%3C/svg%3E" alt="">
+    </div>
+  </div>
   <div class="fr-card__body">
     <div class="fr-card__content">
       <h3 class="fr-card__title">
-        <a class="fr-card__link" href="#">Titre de la carte</a>
+        <a class="fr-card__link" href="#">Ce qui change en septembre 2026</a>
       </h3>
-      <p class="fr-card__desc">Description courte du contenu proposé.</p>
+      <p class="fr-card__desc">Retraite - Assurance chômage - Arrêt de travail.</p>
     </div>
   </div>
 </div>
-<div class="cap">card default</div>
+<div class="cap">card horizontal-media</div>
 </body>
 </html>

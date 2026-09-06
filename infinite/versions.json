@@ -12,6 +12,17 @@
       "addedFacets": ["dsfrComponentType", "section", "variant", "requiresJs", "interaction", "a11y", "govCompliance", "costTier", "compositionRecipes", "piiHandling", "touchTargetSize", "supportedTokenProfiles"],
       "migrationPath": "Version initiale.",
       "notes": "27 familles de composants DSFR ; 5 recettes de patterns ; cartes de compatibilité dsfr→uswds et dsfr→govuk ; métadonnées en anglais, classes fr-* faisant autorité"
+    },
+    {
+      "version": "0.2.0",
+      "releaseDate": "2026-09-06",
+      "componentCount": 42,
+      "breakingChanges": [],
+      "addedCategories": ["provenance"],
+      "addedFacets": [],
+      "metadataChanges": ["provenance block on field-observed tiles"],
+      "migrationPath": "Fully additive.",
+      "notes": "Field-research pass (service-public.gouv.fr): card/horizontal-media, follow/newsletter + follow/social; provenance.json session log added"
     }
   ],
   "designSystemVersions": [

@@ -2,19 +2,20 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="description" content="Système de Design de l'État card demonstrating the default variant.">
+<meta name="description" content="Système de Design de l'État follow (newsletter + social) demonstrating the newsletter variant.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Card (default)</title>
+<title>Follow (newsletter + social) (newsletter)</title>
 <script type="application/json" id="dsfr-agent-meta">
 {
   "_schemaVersion": 2,
   "discovery": {
-    "dsfrComponentType": "card",
-    "frClass": "fr-card",
-    "section": "data-display",
-    "variant": "default",
+    "dsfrComponentType": "follow",
+    "frClass": "fr-follow",
+    "section": "feedback",
+    "variant": "newsletter",
     "requiresJs": "no",
     "interaction": [
+      "type",
       "click",
       "focus"
     ],
@@ -33,19 +34,19 @@
     ],
     "tier": "curated",
     "tags": [
-      "card",
-      "carte",
-      "tuile",
-      "content",
-      "grid"
+      "follow",
+      "newsletter",
+      "social",
+      "réseaux",
+      "abonnement"
     ],
-    "description": "Content card with enlarged link (fr-card).",
+    "description": "Newsletter subscription and social-media follow block (fr-follow).",
     "compliance": {
       "nistControls": [],
       "rgaa": true,
       "wcag21AA": true,
       "webAccessibilityDirective": true,
-      "piiHandling": "displays_only",
+      "piiHandling": "accepts_input",
       "auditTrailCompatible": false,
       "dataMaskingCompatible": false
     },
@@ -58,19 +59,20 @@
   },
   "selection": {
     "useWhen": [
-      "Linking to content pages in grids (news, services, articles)"
+      "Newsletter subscription and social-media links at the bottom of content pages",
+      "The service-public.gouv.fr home page pattern"
     ],
     "avoidWhen": [
-      "Action buttons — use fr-btn",
-      "Tabular data — use fr-table"
+      "Do not place before the main content",
+      "Never collect emails without a data-protection notice"
     ]
   },
   "instruction": {
-    "agentPrompt": "The title link with fr-enlarge-link makes the whole card clickable. Add fr-card--horizontal for side-by-side layout, fr-card--download for download cards. Detail chips (fr-badge) go in fr-card__detail.",
+    "agentPrompt": "The fr-follow block combines fr-follow__newsletter (label + fr-input + fr-btn) and fr-follow__social (fr-btns-group with fr-icon-* network buttons). Use both columns or a single one via the grid classes.",
     "relatedComponents": [
-      "badge",
-      "tag",
-      "download"
+      "input",
+      "button",
+      "footer"
     ]
   },
   "coordination": {
@@ -78,30 +80,29 @@
     "incompatibleWith": [],
     "compositionCost": {
       "costTier": "cheap",
-      "estimatedTokens": 75,
+      "estimatedTokens": 178,
       "renderingTimeMs": 15,
       "recommendedModel": "haiku"
     }
   },
   "constraints": {
     "preserve": [
-      "fr-card__title with fr-card__link inside (h3 default)",
-      "fr-enlarge-link mechanism for whole-card click",
-      "Body/media structure"
+      "fr-follow wrapper with fr-follow__newsletter / fr-follow__social structure",
+      "Newsletter form label association via for/id",
+      "Social links carry accessible network names"
     ],
     "editable": [
-      "Title",
-      "Description",
-      "Detail badges",
-      "Media",
-      "Layout modifiers"
+      "Newsletter title and text",
+      "Social networks list",
+      "Subscription action"
     ],
     "limitations": [
-      "One primary link per card",
-      "Keep descriptions short"
+      "Newsletter endpoints must handle double opt-in",
+      "Social button icons come from DSFR icon classes"
     ],
     "portableInvariants": [
-      "Single accessible name per card via the title link"
+      "Email input labelled",
+      "Social links have accessible names beyond the icon"
     ]
   },
   "supportedTokenProfiles": [
@@ -112,15 +113,8 @@
     "source": "https://www.service-public.gouv.fr/particuliers",
     "method": "live-site observation"
   },
-  "file": "card/default.html",
-  "title": "Card (default)",
-  "portability": {
-    "classMapping": {
-      "uswds": {
-        "base": "usa-card"
-      }
-    }
-  }
+  "file": "follow/newsletter.html",
+  "title": "Follow (newsletter + social) (newsletter)"
 }
 </script>
 <style>
@@ -136,28 +130,27 @@ a{color:#000091}
 .fr-text--lg{font-size:1.25rem;line-height:2rem}
 .fr-text--sm,.fr-callout p{font-size:.875rem;line-height:1.5rem}
 
-.fr-card{border:1px solid #ddd;border-radius:.25rem;overflow:hidden;max-width:24rem;background:#fff}
-.fr-card--horizontal{display:flex;max-width:34rem}
-.fr-card--horizontal .fr-card__media{width:42%;flex:none}
-.fr-responsive-img{width:100%;height:100%;object-fit:cover;display:block}
-.fr-card__body{padding:1rem}
-.fr-card__title{font-size:1.125rem;margin:0 0 .5rem}
-.fr-card__link{color:#000091;text-decoration:underline;font-weight:500}
-.fr-card__desc{margin:0;font-size:.875rem;color:#666}
 
 </style>
 </head>
 <body>
-<div class="fr-card">
-  <div class="fr-card__body">
-    <div class="fr-card__content">
-      <h3 class="fr-card__title">
-        <a class="fr-card__link" href="#">Titre de la carte</a>
-      </h3>
-      <p class="fr-card__desc">Description courte du contenu proposé.</p>
+<div class="fr-follow">
+  <div class="fr-container">
+    <div class="fr-grid-row">
+      <div class="fr-col-12">
+        <h2 class="fr-h5">Abonnez-vous à notre lettre d'information</h2>
+        <p class="fr-text--sm">Recevez chaque semaine les actualités de vos droits et démarches.</p>
+        <div class="fr-follow__newsletter">
+          <form action="#" method="post">
+            <label class="fr-label" for="follow-email">Votre adresse électronique</label>
+            <input class="fr-input" type="email" id="follow-email" name="email" autocomplete="email">
+            <button class="fr-btn" type="submit">S'abonner</button>
+          </form>
+        </div>
+      </div>
     </div>
   </div>
 </div>
-<div class="cap">card default</div>
+<div class="cap">follow newsletter</div>
 </body>
 </html>

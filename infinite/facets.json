@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "metadataSchemaVersion": 2,
   "generatedBy": "_base/generate-index.mjs",
-  "total": 39,
+  "total": 42,
   "designSystem": "Système de Design de l'État (DSFR) 1.15",
   "facets": {
     "dsfrComponentType": {
@@ -12,9 +12,10 @@
       "breadcrumb": 1,
       "button": 5,
       "callout": 1,
-      "card": 1,
+      "card": 2,
       "checkbox": 1,
       "download": 1,
+      "follow": 2,
       "footer": 1,
       "header": 1,
       "highlight": 1,
@@ -35,8 +36,8 @@
       "upload": 2
     },
     "section": {
-      "data-display": 6,
-      "feedback": 8,
+      "data-display": 7,
+      "feedback": 10,
       "navigation": 6,
       "forms": 19
     },
@@ -51,36 +52,39 @@
       "icon-left": 1,
       "secondary": 1,
       "tertiary": 1,
+      "horizontal-media": 1,
+      "newsletter": 1,
+      "social": 1,
       "valid": 1
     },
     "requiresJs": {
       "required": 2,
       "optional": 9,
-      "no": 28
+      "no": 31
     },
     "interaction": {
-      "click": 22,
+      "click": 25,
       "keyboard": 13,
-      "focus": 31,
-      "type": 6,
+      "focus": 34,
+      "type": 8,
       "change": 2
     },
     "a11y": {
-      "wcag21AA": 39,
-      "keyboardNav": 34,
-      "screenReader": 39,
-      "reducedMotion": 39,
-      "forcedColors": 39,
-      "ariaAttributes": 39
+      "wcag21AA": 42,
+      "keyboardNav": 37,
+      "screenReader": 42,
+      "reducedMotion": 42,
+      "forcedColors": 42,
+      "ariaAttributes": 42
     },
     "govCompliance": {
-      "RGAA 4.1": 39,
-      "WCAG 2.1 AA": 39,
-      "Directive (UE) 2016/2102": 39
+      "RGAA 4.1": 42,
+      "WCAG 2.1 AA": 42,
+      "Directive (UE) 2016/2102": 42
     },
     "costTier": {
       "moderate": 11,
-      "cheap": 28
+      "cheap": 31
     },
     "compositionRecipes": {
       "confirmation-page": 9,
@@ -90,16 +94,16 @@
       "search-results": 3
     },
     "piiHandling": {
-      "displays_only": 19,
+      "displays_only": 20,
       "none": 8,
-      "accepts_input": 12
+      "accepts_input": 14
     },
     "touchTargetSize": {
-      "44px": 34,
+      "44px": 37,
       "n/a": 5
     },
     "supportedTokenProfiles": {
-      "highContrast": 39
+      "highContrast": 42
     }
   }
 }

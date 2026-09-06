@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "registry": "dsfr-ai-components",
+  "note": "Session log of field research. Per-tile provenance lives in each tile's provenance block.",
+  "sessions": [
+    {
+      "date": "2026-09-06",
+      "source": "https://www.service-public.gouv.fr/particuliers",
+      "title": "Service-Public homepage (live-site observation)",
+      "method": "live-site observation",
+      "findings": [
+        "Icon card grids (Fiches pratiques par événement de vie) — card customization",
+        "Horizontal media cards for news (fr-card--horizontal + image) — added as card/horizontal-media",
+        "fr-follow newsletter + social media block — official DSFR component, added as follow/*",
+        "France Services address autocomplete with geolocation — NOT an official DSFR component; documented as the service-locator recipe pattern",
+        "Skip links present (Contenu/Menu/Recherche/Pied de page) — already covered by skiplinks/*"
+      ],
+      "tilesAdded": [
+        "card/horizontal-media",
+        "follow/newsletter",
+        "follow/social"
+      ]
+    }
+  ]
+}
