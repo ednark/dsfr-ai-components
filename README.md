@@ -1,6 +1,6 @@
 # DSFR AI Components
 
-Registre de composants IA pour le [Système de Design de l'État (DSFR)](https://www.systeme-de-design.gouv.fr) — 38 tuiles auto-contenues across 26 component families, for AI coding agents building French state services.
+Registre de composants IA pour le [Système de Design de l'État (DSFR)](https://www.systeme-de-design.gouv.fr) — 39 tuiles auto-contenues across 27 component families, for AI coding agents building French state services.
 
 Implements the [ai-component-registry-spec](https://github.com/ednark/ai-component-registry-spec) protocol (submodule at `_base/`). Sibling to [uswds-ai-components](https://github.com/ednark/uswds-ai-components) and [govuk-ai-components](https://github.com/ednark/govuk-ai-components).
 

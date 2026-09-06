@@ -6,12 +6,12 @@
     {
       "version": "0.1.0",
       "releaseDate": "2026-09-06",
-      "componentCount": 38,
+      "componentCount": 39,
       "breakingChanges": [],
       "addedCategories": ["discovery", "selection", "instruction", "coordination", "constraints", "portability"],
       "addedFacets": ["dsfrComponentType", "section", "variant", "requiresJs", "interaction", "a11y", "govCompliance", "costTier", "compositionRecipes", "piiHandling", "touchTargetSize", "supportedTokenProfiles"],
       "migrationPath": "Version initiale.",
-      "notes": "26 familles de composants DSFR ; 5 recettes de patterns ; cartes de compatibilité dsfr→uswds et dsfr→govuk ; métadonnées en anglais, classes fr-* faisant autorité"
+      "notes": "27 familles de composants DSFR ; 5 recettes de patterns ; cartes de compatibilité dsfr→uswds et dsfr→govuk ; métadonnées en anglais, classes fr-* faisant autorité"
     }
   ],
   "designSystemVersions": [

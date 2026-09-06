@@ -7,7 +7,7 @@
 
 ## Overview
 
-Registre de composants DSFR pour agents de programmation IA construisant des services de l'État français. 38 tuiles auto-contenues across 26 component families with categorized adaptation, coordination, and compliance metadata (RGAA 4.1, WCAG 2.1 AA, Directive (UE) 2016/2102).
+Registre de composants DSFR pour agents de programmation IA construisant des services de l'État français. 39 tuiles auto-contenues across 27 component families with categorized adaptation, coordination, and compliance metadata (RGAA 4.1, WCAG 2.1 AA, Directive (UE) 2016/2102).
 
 ## Machine manifest
 

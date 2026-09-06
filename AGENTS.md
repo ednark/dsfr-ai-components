@@ -2,7 +2,7 @@
 
 ## What This Is
 
-A structured component knowledge base for AI coding agents building French state services with the Système de Design de l'État (DSFR). 38 component tiles across 26 component families, with categorized adaptation metadata (schema v2), coordination metadata, pattern recipes, and compliance facts (RGAA 4.1 / WCAG 2.1 AA / Directive (UE) 2016/2102).
+A structured component knowledge base for AI coding agents building French state services with the Système de Design de l'État (DSFR). 39 component tiles across 27 component families, with categorized adaptation metadata (schema v2), coordination metadata, pattern recipes, and compliance facts (RGAA 4.1 / WCAG 2.1 AA / Directive (UE) 2016/2102).
 
 Metadata is written in English for agent consistency; French class names (`fr-*`) are the authoritative identifiers, and tile markup labels are in French.
 
