@@ -11,8 +11,7 @@
   "tileFetchPattern": "https://raw.githubusercontent.com/ednark/dsfr-ai-components/main/infinite/{file}",
   "designSystem": {
     "name": "Système de Design de l'État (DSFR)",
-    "version": "1.15",
-    "url": "https://www.systeme-de-design.gouv.fr"
+    "version": "1.15"
   },
   "agentMetaId": "dsfr-agent-meta",
   "tileDir": "infinite",
@@ -30,7 +29,6 @@
     "touchTargetSize",
     "supportedTokenProfiles"
   ],
-  "adaptationDetail": "embedded in each tile as <script type=\"application/json\" id=\"dsfr-agent-meta\">",
   "flow": [
     "GET agents.json",
     "GET facets.json",
@@ -61,22 +59,6 @@
       "query_compliance",
       "get_versions"
     ]
-  },
-  "tokenProfiles": {
-    "highContrast": {
-      "description": "forced-colors / high-contrast mode support (DSFR testé en modes contraste élevé)",
-      "tokenOverrides": {
-        "border": "2px solid currentColor",
-        "background": "transparent"
-      }
-    },
-    "darkMode": {
-      "description": "DSFR ships official light and dark themes via the fr-theme data attribute",
-      "tokenOverrides": {
-        "background": "#1e1e1e",
-        "text": "#ffffff"
-      }
-    }
   },
   "compatibilityPath": "compatibility.json",
   "updated": "0.1.0",
