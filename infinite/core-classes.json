@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "registry": "dsfr-ai-components",
+  "description": "Real, documented design-system classes that are NOT tiled components — the untiled core layer for page assembly. Consumed by cross-registry coverage checking.",
+  "categories": {
+    "layout": [
+      "fr-container",
+      "fr-grid-row",
+      "fr-col-3",
+      "fr-col-6",
+      "fr-col-12",
+      "fr-col-md-6"
+    ],
+    "typography": [
+      "fr-h5",
+      "fr-text--sm",
+      "fr-text--lg"
+    ],
+    "elements": [
+      "fr-link",
+      "fr-logo",
+      "fr-label",
+      "fr-hint-text",
+      "fr-collapse",
+      "fr-accordions-group",
+      "fr-btns-group",
+      "fr-tags-group",
+      "fr-responsive-img",
+      "fr-enlarge-link",
+      "fr-links-group"
+    ],
+    "states": [
+      "fr-error-text",
+      "fr-valid-text"
+    ]
+  }
+}

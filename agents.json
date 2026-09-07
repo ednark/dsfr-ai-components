@@ -42,7 +42,10 @@
   "recipesUrl": "https://raw.githubusercontent.com/ednark/dsfr-ai-components/main/infinite/recipes/index.json",
   "versionsUrl": "https://raw.githubusercontent.com/ednark/dsfr-ai-components/main/infinite/versions.json",
   "compatibilityUrl": "https://raw.githubusercontent.com/ednark/dsfr-ai-components/main/compatibility.json",
-  "compatibilityTargets": ["uswds", "govuk"],
+  "compatibilityTargets": [
+    "uswds",
+    "govuk"
+  ],
   "mcp": {
     "enabled": true,
     "server": "_base/mcp/server.mjs",
@@ -62,13 +65,20 @@
   "tokenProfiles": {
     "highContrast": {
       "description": "forced-colors / high-contrast mode support (DSFR testé en modes contraste élevé)",
-      "tokenOverrides": { "border": "2px solid currentColor", "background": "transparent" }
+      "tokenOverrides": {
+        "border": "2px solid currentColor",
+        "background": "transparent"
+      }
     },
     "darkMode": {
       "description": "DSFR ships official light and dark themes via the fr-theme data attribute",
-      "tokenOverrides": { "background": "#1e1e1e", "text": "#ffffff" }
+      "tokenOverrides": {
+        "background": "#1e1e1e",
+        "text": "#ffffff"
+      }
     }
   },
   "compatibilityPath": "compatibility.json",
-  "updated": "0.1.0"
+  "updated": "0.1.0",
+  "language": "fr"
 }
