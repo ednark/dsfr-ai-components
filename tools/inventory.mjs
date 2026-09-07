@@ -1016,7 +1016,7 @@ export const inventory = [
     audit: false,
     useWhen: ["Linking to content pages in grids (news, services, articles)"],
     avoidWhen: ["Action buttons — use fr-btn", "Tabular data — use fr-table"],
-    agentPrompt: "The title link with fr-enlarge-link makes the whole card clickable. Add fr-card--horizontal for side-by-side layout, fr-card--download for download cards. Detail chips (fr-badge) go in fr-card__detail.",
+    agentPrompt: "The title link with fr-enlarge-link makes the whole card clickable. Add fr-card--horizontal for side-by-side layout, fr-card--download for download cards. Detail chips (fr-badge) go in fr-card__detail. Icon treatments (circular icon badges as seen on service-public.gouv.fr life-event cards) are site customizations — compose the icon inside fr-card__body above the title.",
     preserve: [
       "fr-card__title with fr-card__link inside (h3 default)",
       "fr-enlarge-link mechanism for whole-card click",

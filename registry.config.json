@@ -78,5 +78,19 @@
   },
   "compatibilityPath": "compatibility.json",
   "updated": "0.2.0",
-  "language": "fr"
+  "language": "fr",
+  "gaps": [
+    {
+      "concept": "combobox/autocomplete",
+      "status": "deferred",
+      "nearestAlternative": "input (compose per the service-locator recipe)",
+      "reason": "DSFR has no official autocomplete component; the France-services locator is a custom composition"
+    },
+    {
+      "concept": "mega-menu",
+      "status": "deferred",
+      "nearestAlternative": "header (service links)",
+      "reason": "JS-heavy navigation observed live but deferred in the initial build"
+    }
+  ]
 }
