@@ -59,7 +59,8 @@
       ],
       "prerequisites": [],
       "incompatibleWith": [],
-      "costTier": "moderate"
+      "costTier": "moderate",
+      "resolvedView": "accordion/default.resolved.html"
     },
     {
       "file": "alert/error.html",
@@ -113,7 +114,8 @@
       "costTier": "moderate",
       "compositionRecipes": [
         "confirmation-page"
-      ]
+      ],
+      "resolvedView": "alert/error.resolved.html"
     },
     {
       "file": "alert/info.html",
@@ -167,7 +169,8 @@
       "costTier": "moderate",
       "compositionRecipes": [
         "confirmation-page"
-      ]
+      ],
+      "resolvedView": "alert/info.resolved.html"
     },
     {
       "file": "alert/success.html",
@@ -221,7 +224,8 @@
       "costTier": "moderate",
       "compositionRecipes": [
         "confirmation-page"
-      ]
+      ],
+      "resolvedView": "alert/success.resolved.html"
     },
     {
       "file": "alert/warning.html",
@@ -275,7 +279,8 @@
       "costTier": "moderate",
       "compositionRecipes": [
         "confirmation-page"
-      ]
+      ],
+      "resolvedView": "alert/warning.resolved.html"
     },
     {
       "file": "badge/default.html",
@@ -321,7 +326,8 @@
       ],
       "prerequisites": [],
       "incompatibleWith": [],
-      "costTier": "cheap"
+      "costTier": "cheap",
+      "resolvedView": "badge/default.resolved.html"
     },
     {
       "file": "breadcrumb/default.html",
@@ -374,7 +380,8 @@
       "costTier": "moderate",
       "compositionRecipes": [
         "content-page"
-      ]
+      ],
+      "resolvedView": "breadcrumb/default.resolved.html"
     },
     {
       "file": "button/default.html",
@@ -430,7 +437,8 @@
         "confirmation-page",
         "formulaire-contact",
         "multi-step-form"
-      ]
+      ],
+      "resolvedView": "button/default.resolved.html"
     },
     {
       "file": "button/disabled.html",
@@ -486,7 +494,8 @@
         "confirmation-page",
         "formulaire-contact",
         "multi-step-form"
-      ]
+      ],
+      "resolvedView": "button/disabled.resolved.html"
     },
     {
       "file": "button/icon-left.html",
@@ -542,7 +551,8 @@
         "confirmation-page",
         "formulaire-contact",
         "multi-step-form"
-      ]
+      ],
+      "resolvedView": "button/icon-left.resolved.html"
     },
     {
       "file": "button/secondary.html",
@@ -598,7 +608,8 @@
         "confirmation-page",
         "formulaire-contact",
         "multi-step-form"
-      ]
+      ],
+      "resolvedView": "button/secondary.resolved.html"
     },
     {
       "file": "button/tertiary.html",
@@ -654,7 +665,8 @@
         "confirmation-page",
         "formulaire-contact",
         "multi-step-form"
-      ]
+      ],
+      "resolvedView": "button/tertiary.resolved.html"
     },
     {
       "file": "callout/default.html",
@@ -700,7 +712,8 @@
       ],
       "prerequisites": [],
       "incompatibleWith": [],
-      "costTier": "cheap"
+      "costTier": "cheap",
+      "resolvedView": "callout/default.resolved.html"
     },
     {
       "file": "card/default.html",
@@ -751,7 +764,8 @@
       ],
       "prerequisites": [],
       "incompatibleWith": [],
-      "costTier": "cheap"
+      "costTier": "cheap",
+      "resolvedView": "card/default.resolved.html"
     },
     {
       "file": "card/horizontal-media.html",
@@ -802,7 +816,8 @@
       ],
       "prerequisites": [],
       "incompatibleWith": [],
-      "costTier": "cheap"
+      "costTier": "cheap",
+      "resolvedView": "card/horizontal-media.resolved.html"
     },
     {
       "file": "checkbox/default.html",
@@ -852,7 +867,8 @@
       ],
       "prerequisites": [],
       "incompatibleWith": [],
-      "costTier": "cheap"
+      "costTier": "cheap",
+      "resolvedView": "checkbox/default.resolved.html"
     },
     {
       "file": "download/default.html",
@@ -899,7 +915,8 @@
       ],
       "prerequisites": [],
       "incompatibleWith": [],
-      "costTier": "cheap"
+      "costTier": "cheap",
+      "resolvedView": "download/default.resolved.html"
     },
     {
       "file": "follow/newsletter.html",
@@ -951,7 +968,8 @@
       ],
       "prerequisites": [],
       "incompatibleWith": [],
-      "costTier": "cheap"
+      "costTier": "cheap",
+      "resolvedView": "follow/newsletter.resolved.html"
     },
     {
       "file": "follow/social.html",
@@ -1003,7 +1021,8 @@
       ],
       "prerequisites": [],
       "incompatibleWith": [],
-      "costTier": "cheap"
+      "costTier": "cheap",
+      "resolvedView": "follow/social.resolved.html"
     },
     {
       "file": "footer/default.html",
@@ -1054,7 +1073,8 @@
       "costTier": "cheap",
       "compositionRecipes": [
         "content-page"
-      ]
+      ],
+      "resolvedView": "footer/default.resolved.html"
     },
     {
       "file": "header/default.html",
@@ -1108,7 +1128,8 @@
       "costTier": "moderate",
       "compositionRecipes": [
         "content-page"
-      ]
+      ],
+      "resolvedView": "header/default.resolved.html"
     },
     {
       "file": "highlight/default.html",
@@ -1153,7 +1174,8 @@
       ],
       "prerequisites": [],
       "incompatibleWith": [],
-      "costTier": "cheap"
+      "costTier": "cheap",
+      "resolvedView": "highlight/default.resolved.html"
     },
     {
       "file": "input/default.html",
@@ -1207,7 +1229,8 @@
       "compositionRecipes": [
         "formulaire-contact",
         "multi-step-form"
-      ]
+      ],
+      "resolvedView": "input/default.resolved.html"
     },
     {
       "file": "input/error.html",
@@ -1261,7 +1284,8 @@
       "compositionRecipes": [
         "formulaire-contact",
         "multi-step-form"
-      ]
+      ],
+      "resolvedView": "input/error.resolved.html"
     },
     {
       "file": "input/valid.html",
@@ -1315,7 +1339,8 @@
       "compositionRecipes": [
         "formulaire-contact",
         "multi-step-form"
-      ]
+      ],
+      "resolvedView": "input/valid.resolved.html"
     },
     {
       "file": "notice/default.html",
@@ -1363,7 +1388,8 @@
       ],
       "prerequisites": [],
       "incompatibleWith": [],
-      "costTier": "moderate"
+      "costTier": "moderate",
+      "resolvedView": "notice/default.resolved.html"
     },
     {
       "file": "pagination/default.html",
@@ -1414,7 +1440,8 @@
       "costTier": "cheap",
       "compositionRecipes": [
         "search-results"
-      ]
+      ],
+      "resolvedView": "pagination/default.resolved.html"
     },
     {
       "file": "radio/default.html",
@@ -1464,7 +1491,8 @@
       ],
       "prerequisites": [],
       "incompatibleWith": [],
-      "costTier": "cheap"
+      "costTier": "cheap",
+      "resolvedView": "radio/default.resolved.html"
     },
     {
       "file": "search/default.html",
@@ -1516,7 +1544,8 @@
       "costTier": "cheap",
       "compositionRecipes": [
         "search-results"
-      ]
+      ],
+      "resolvedView": "search/default.resolved.html"
     },
     {
       "file": "select/default.html",
@@ -1565,7 +1594,8 @@
       ],
       "prerequisites": [],
       "incompatibleWith": [],
-      "costTier": "cheap"
+      "costTier": "cheap",
+      "resolvedView": "select/default.resolved.html"
     },
     {
       "file": "select/error.html",
@@ -1614,7 +1644,8 @@
       ],
       "prerequisites": [],
       "incompatibleWith": [],
-      "costTier": "cheap"
+      "costTier": "cheap",
+      "resolvedView": "select/error.resolved.html"
     },
     {
       "file": "skiplinks/default.html",
@@ -1665,7 +1696,8 @@
       "costTier": "moderate",
       "compositionRecipes": [
         "content-page"
-      ]
+      ],
+      "resolvedView": "skiplinks/default.resolved.html"
     },
     {
       "file": "stepper/default.html",
@@ -1714,7 +1746,8 @@
       "costTier": "cheap",
       "compositionRecipes": [
         "multi-step-form"
-      ]
+      ],
+      "resolvedView": "stepper/default.resolved.html"
     },
     {
       "file": "summary/default.html",
@@ -1762,7 +1795,8 @@
       ],
       "prerequisites": [],
       "incompatibleWith": [],
-      "costTier": "cheap"
+      "costTier": "cheap",
+      "resolvedView": "summary/default.resolved.html"
     },
     {
       "file": "table/default.html",
@@ -1812,7 +1846,8 @@
       "costTier": "moderate",
       "compositionRecipes": [
         "search-results"
-      ]
+      ],
+      "resolvedView": "table/default.resolved.html"
     },
     {
       "file": "tabs/default.html",
@@ -1861,7 +1896,8 @@
       ],
       "prerequisites": [],
       "incompatibleWith": [],
-      "costTier": "moderate"
+      "costTier": "moderate",
+      "resolvedView": "tabs/default.resolved.html"
     },
     {
       "file": "tag/default.html",
@@ -1909,7 +1945,8 @@
       ],
       "prerequisites": [],
       "incompatibleWith": [],
-      "costTier": "cheap"
+      "costTier": "cheap",
+      "resolvedView": "tag/default.resolved.html"
     },
     {
       "file": "textarea/default.html",
@@ -1961,7 +1998,8 @@
       "costTier": "cheap",
       "compositionRecipes": [
         "formulaire-contact"
-      ]
+      ],
+      "resolvedView": "textarea/default.resolved.html"
     },
     {
       "file": "textarea/error.html",
@@ -2013,7 +2051,8 @@
       "costTier": "cheap",
       "compositionRecipes": [
         "formulaire-contact"
-      ]
+      ],
+      "resolvedView": "textarea/error.resolved.html"
     },
     {
       "file": "toggle/default.html",
@@ -2062,7 +2101,8 @@
       ],
       "prerequisites": [],
       "incompatibleWith": [],
-      "costTier": "cheap"
+      "costTier": "cheap",
+      "resolvedView": "toggle/default.resolved.html"
     },
     {
       "file": "upload/default.html",
@@ -2111,7 +2151,8 @@
       ],
       "prerequisites": [],
       "incompatibleWith": [],
-      "costTier": "cheap"
+      "costTier": "cheap",
+      "resolvedView": "upload/default.resolved.html"
     },
     {
       "file": "upload/error.html",
@@ -2160,7 +2201,8 @@
       ],
       "prerequisites": [],
       "incompatibleWith": [],
-      "costTier": "cheap"
+      "costTier": "cheap",
+      "resolvedView": "upload/error.resolved.html"
     }
   ]
 }

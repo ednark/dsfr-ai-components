@@ -15,6 +15,12 @@ Registre de composants DSFR pour agents de programmation IA construisant des ser
 
 ---
 
+## Appearance (resolved views)
+
+Tiles carry their component CSS inline; a generated resolved view sibling ({tile}.resolved.html) additionally carries computed geometry, colors, and typography inline for design tools and standalone preview. Index records expose the path as the resolvedView field.
+
+---
+
 ## Quick start
 
 1. Filter vocab: GET https://raw.githubusercontent.com/ednark/dsfr-ai-components/main/infinite/facets.json
