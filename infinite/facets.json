@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "metadataSchemaVersion": 2,
   "generatedBy": "_base/generate-index.mjs",
-  "total": 43,
+  "total": 46,
   "designSystem": "Système de Design de l'État (DSFR) 1.15",
   "facets": {
     "dsfrComponentType": {
@@ -21,10 +21,12 @@
       "highlight": 1,
       "input": 3,
       "mega-menu": 1,
+      "modal": 1,
       "notice": 1,
       "pagination": 1,
       "radio": 1,
       "search": 1,
+      "search-bar": 1,
       "select": 2,
       "skiplinks": 1,
       "stepper": 1,
@@ -33,17 +35,19 @@
       "tabs": 1,
       "tag": 1,
       "textarea": 2,
+      "tile": 1,
       "toggle": 1,
       "upload": 2
     },
     "section": {
       "data-display": 7,
       "feedback": 10,
-      "navigation": 7,
-      "forms": 19
+      "navigation": 9,
+      "forms": 19,
+      "overlays": 1
     },
     "variant": {
-      "default": 26,
+      "default": 29,
       "error": 5,
       "info": 1,
       "success": 1,
@@ -59,20 +63,22 @@
       "valid": 1
     },
     "requiresJs": {
-      "required": 3,
+      "required": 4,
       "optional": 9,
-      "no": 31
+      "no": 33
     },
     "interaction": {
-      "click": 26,
-      "keyboard": 14,
-      "focus": 35,
+      "click": 29,
+      "keyboard": 15,
+      "focus": 38,
       "type": 8,
-      "change": 2
+      "submit": 1,
+      "change": 2,
+      "hover": 1
     },
     "a11y": {
-      "wcag21AA": 43,
-      "keyboardNav": 38,
+      "wcag21AA": 46,
+      "keyboardNav": 41,
       "screenReader": 42,
       "reducedMotion": 42,
       "forcedColors": 42,
@@ -82,11 +88,11 @@
       "RGAA 4.1": 42,
       "WCAG 2.1 AA": 42,
       "Directive (UE) 2016/2102": 42,
-      "RGAA": 1
+      "RGAA": 4
     },
     "costTier": {
-      "moderate": 12,
-      "cheap": 31
+      "moderate": 13,
+      "cheap": 33
     },
     "compositionRecipes": {
       "confirmation-page": 9,

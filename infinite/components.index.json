@@ -3,12 +3,13 @@
   "metadataSchemaVersion": 2,
   "generatedBy": "_base/generate-index.mjs",
   "counts": {
-    "total": 43,
+    "total": 46,
     "bySection": {
       "data-display": 7,
       "feedback": 10,
-      "navigation": 7,
-      "forms": 19
+      "navigation": 9,
+      "forms": 19,
+      "overlays": 1
     }
   },
   "components": [
@@ -1391,6 +1392,42 @@
       "resolvedView": "mega-menu/default.resolved.html"
     },
     {
+      "file": "modal/default.html",
+      "title": "Modale (Défaut)",
+      "_schemaVersion": 2,
+      "description": "Modale : fenêtre de dialogue superposée, ouverte par un bouton, avec zone de fermeture et contenu.",
+      "dsfrComponentType": "modal",
+      "frClass": "fr-modal",
+      "section": "overlays",
+      "variant": "default",
+      "requiresJs": "required",
+      "interaction": [
+        "click",
+        "focus",
+        "keyboard"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true
+      },
+      "govCompliance": [
+        "RGAA"
+      ],
+      "tier": "curated",
+      "tags": [
+        "modale",
+        "modal",
+        "dialog",
+        "overlay"
+      ],
+      "origin": "design-system",
+      "relatedComponents": [
+        "button",
+        "header"
+      ],
+      "costTier": "moderate"
+    },
+    {
       "file": "notice/default.html",
       "title": "Notice (default)",
       "_schemaVersion": 2,
@@ -1594,6 +1631,42 @@
         "search-results"
       ],
       "resolvedView": "search/default.resolved.html"
+    },
+    {
+      "file": "search-bar/default.html",
+      "title": "Barre de recherche (Défaut)",
+      "_schemaVersion": 2,
+      "description": "Barre de recherche : champ de saisie de recherche avec bouton d'action, variante étiquetée disponible.",
+      "dsfrComponentType": "search-bar",
+      "frClass": "fr-search-bar",
+      "section": "navigation",
+      "variant": "default",
+      "requiresJs": "no",
+      "interaction": [
+        "click",
+        "focus",
+        "submit"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true
+      },
+      "govCompliance": [
+        "RGAA"
+      ],
+      "tier": "curated",
+      "tags": [
+        "recherche",
+        "search",
+        "barre",
+        "formulaire"
+      ],
+      "origin": "design-system",
+      "relatedComponents": [
+        "header",
+        "search"
+      ],
+      "costTier": "cheap"
     },
     {
       "file": "select/default.html",
@@ -2101,6 +2174,42 @@
         "formulaire-contact"
       ],
       "resolvedView": "textarea/error.resolved.html"
+    },
+    {
+      "file": "tile/default.html",
+      "title": "Tuile (Défaut)",
+      "_schemaVersion": 2,
+      "description": "Tuile : bloc de liens vers une page de contenu, avec pictogramme et détail optionnel.",
+      "dsfrComponentType": "tile",
+      "frClass": "fr-tile",
+      "section": "navigation",
+      "variant": "default",
+      "requiresJs": "no",
+      "interaction": [
+        "click",
+        "focus",
+        "hover"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true
+      },
+      "govCompliance": [
+        "RGAA"
+      ],
+      "tier": "curated",
+      "tags": [
+        "tuile",
+        "tile",
+        "navigation",
+        "lien"
+      ],
+      "origin": "design-system",
+      "relatedComponents": [
+        "card",
+        "header"
+      ],
+      "costTier": "cheap"
     },
     {
       "file": "toggle/default.html",

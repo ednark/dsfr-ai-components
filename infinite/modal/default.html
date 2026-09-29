@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Modale : fenêtre de dialogue bloquant l'application jusqu'à sa fermeture.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Modale (Défaut)</title>
+  <script type="application/json" id="dsfr-agent-meta">
+  {
+    "file": "modal/default.html",
+    "title": "Modale (Défaut)",
+    "_schemaVersion": 2,
+    "discovery": {
+      "description": "Modale : fenêtre de dialogue superposée, ouverte par un bouton, avec zone de fermeture et contenu.",
+      "dsfrComponentType": "modal",
+      "frClass": "fr-modal",
+      "section": "overlays",
+      "variant": "default",
+      "requiresJs": "required",
+      "interaction": ["click", "focus", "keyboard"],
+      "a11y": { "wcag21AA": true, "keyboardNav": true },
+      "govCompliance": ["RGAA"],
+      "tier": "curated",
+      "tags": ["modale", "modal", "dialog", "overlay"],
+      "origin": "design-system"
+    },
+    "selection": {
+      "useWhen": [
+        "interruption nécessaire exigeant une action explicite",
+        "contenu court complémentaire sans changement de page"
+      ],
+      "avoidWhen": [
+        "formulaires longs ou contenus complexes — utiliser une page dédiée",
+        "messages non bloquants — utiliser l'alerte ou la notification"
+      ],
+      "guidance": [
+        { "guidance": true, "description": "Le bouton déclencheur porte aria-controls + data-fr-opened et l'id button-<id modale>" },
+        { "guidance": true, "description": "Utiliser dialog avec aria-labelledby pointant vers fr-modal__title" },
+        { "guidance": false, "description": "Ne pas imbriquer des composants interactifs complexes dans la modale" }
+      ]
+    },
+    "instruction": {
+      "agentPrompt": "Adapter titre et contenu. Le tile montre l'état de repos (fermée) : le dialog est masqué par le JS DSFR. Tailles disponibles : --sm, --lg.",
+      "relatedComponents": ["button", "header"],
+      "behavior": {
+        "requires": "required",
+        "source": "host",
+        "script": "dsfr.module.min.js",
+        "init": "auto — DSFR gère l'ouverture/fermeture (data-fr-opened, aria-controls) et le focus",
+        "fallback": "modale masquée ; le contenu reste inaccessible sans JS"
+      }
+    },
+    "coordination": {
+      "compositionCost": { "costTier": "moderate", "estimatedTokens": 3400, "renderingTimeMs": 20, "recommendedModel": "sonnet" },
+      "agentPromptSequence": [
+        "1. Placer le bouton déclencheur (fr-btn) avec data-fr-opened + aria-controls",
+        "2. Ajouter le dialog fr-modal relié par l'id",
+        "3. Vérifier aria-labelledby ↔ fr-modal__title et le bouton de fermeture"
+      ]
+    },
+    "constraints": {
+      "preserve": [
+        "dialog.fr-modal avec id et aria-labelledby",
+        "button déclencheur avec data-fr-opened + aria-controls + id button-<id>",
+        "fr-modal__header avec fr-btn--close contrôlant le même id",
+        "fr-modal__title référencé par aria-labelledby"
+      ],
+      "portableInvariants": [
+        "dialog semantics + aria-labelledby",
+        "trigger/panel id pairing",
+        "close control targeting the same id"
+      ],
+      "editable": ["Titre, contenu, libellés des boutons", "Taille (--sm, --lg)"],
+      "limitations": [
+        "Nécessite le JS DSFR ; sans JS la modale reste masquée",
+        "L'état de repos est fermé — le contenu n'est visible qu'après ouverture"
+      ]
+    },
+    "provenance": {
+      "observed": "2026-09-29",
+      "method": "design-system documentation",
+      "source": "DSFR modal.ejs + button.ejs (GouvernementFR/dsfr, version courante); canon vérifié dans le paquet officiel",
+      "designSystemVersion": "1.15"
+    }
+  }
+  </script>
+  <style>
+    body{font-family:'Marianne',Arial,Helvetica,sans-serif;font-size:1rem;line-height:1.5rem;color:#161616;padding:2rem;background:#fff;margin:0}
+    .cap{position:fixed;bottom:12px;left:16px;font-size:11px;letter-spacing:.08em;color:#666;text-transform:uppercase}
+    .fr-btn{background:#000091;color:#fff;border:0;padding:.5rem 1.5rem;font-family:inherit;font-size:1rem;cursor:pointer}
+    dialog.fr-modal{background:#fff;border:1px solid #ddd;box-shadow:0 4px 16px rgba(0,0,0,.2);max-width:32rem;padding:0;position:fixed;top:10%;left:50%;transform:translateX(-50%)}
+    .fr-container{padding:0}
+    .fr-grid-row{display:flex;flex-wrap:wrap}
+    .fr-col-12{width:100%}
+    .fr-modal__body{padding:1rem;background:#fff}
+    .fr-modal__header{display:flex;justify-content:flex-end;align-items:flex-start;padding:.5rem}
+    .fr-btn--close{background:none;color:#000091;border:0;font-family:inherit;font-size:.85rem;font-weight:700;cursor:pointer;display:flex;align-items:center;gap:.4rem}
+    .fr-btn--close::before{content:"✕";font-weight:400}
+    .fr-modal__content{padding:.5rem 1rem 1rem}
+    .fr-modal__title{font-size:1.25rem;font-weight:700;margin:0 0 .75rem;color:#000091}
+  </style>
+</head>
+<body>
+  <button class="fr-btn" id="button-fr-modal-1" data-fr-opened="false" aria-controls="fr-modal-1">Ouvrir la modale</button>
+  <dialog id="fr-modal-1" class="fr-modal" role="dialog" aria-labelledby="fr-modal-1-title">
+    <div class="fr-container fr-container--fluid fr-container-md">
+      <div class="fr-grid-row fr-grid-row--center">
+        <div class="fr-col-12 fr-col-md-8 fr-col-lg-6">
+          <div class="fr-modal__body">
+            <div class="fr-modal__header">
+              <button class="fr-btn--close fr-btn" title="Fermer la fenêtre modale" aria-controls="fr-modal-1">Fermer</button>
+            </div>
+            <div class="fr-modal__content">
+              <h2 id="fr-modal-1-title" class="fr-modal__title">Titre de la modale</h2>
+              <p>Contenu de la modale : informations complémentaires, confirmation ou formulaire court.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </dialog>
+  <div class="cap">modal default</div>
+</body>
+</html>
