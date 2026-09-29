@@ -670,7 +670,7 @@
       "resolvedView": "button/tertiary.resolved.html"
     },
     {
-      "file": "callout/brown-caramel/brown-caramel.html",
+      "file": "callout/brown-caramel.html",
       "title": "Callout (Caramel)",
       "_schemaVersion": 2,
       "dsfrComponentType": "callout",
@@ -701,6 +701,7 @@
         "brown-caramel"
       ],
       "description": "Highlighted key information block (fr-callout).",
+      "origin": "design-system",
       "piiHandling": "displays_only",
       "auditTrailCompatible": false,
       "nistControls": [],
@@ -714,7 +715,8 @@
       ],
       "prerequisites": [],
       "incompatibleWith": [],
-      "costTier": "cheap"
+      "costTier": "cheap",
+      "resolvedView": "callout/brown-caramel.resolved.html"
     },
     {
       "file": "callout/default.html",
@@ -817,7 +819,7 @@
       "resolvedView": "card/default.resolved.html"
     },
     {
-      "file": "card/download/download.html",
+      "file": "card/download.html",
       "title": "Carte (Téléchargeable)",
       "_schemaVersion": 2,
       "dsfrComponentType": "card",
@@ -852,7 +854,7 @@
         "download"
       ],
       "description": "Content card with enlarged link (fr-card).",
-      "origin": "live-site",
+      "origin": "design-system",
       "piiHandling": "displays_only",
       "auditTrailCompatible": false,
       "nistControls": [],
@@ -867,63 +869,11 @@
       ],
       "prerequisites": [],
       "incompatibleWith": [],
-      "costTier": "cheap"
+      "costTier": "cheap",
+      "resolvedView": "card/download.resolved.html"
     },
     {
-      "file": "card/horizontal/horizontal.html",
-      "title": "Carte (Horizontale)",
-      "_schemaVersion": 2,
-      "dsfrComponentType": "card",
-      "frClass": "fr-card fr-card--horizontal",
-      "section": "data-display",
-      "variant": "horizontal",
-      "requiresJs": "no",
-      "interaction": [
-        "click",
-        "focus"
-      ],
-      "a11y": {
-        "wcag21AA": true,
-        "keyboardNav": true,
-        "screenReader": true,
-        "reducedMotion": true,
-        "forcedColors": true,
-        "ariaAttributes": true
-      },
-      "govCompliance": [
-        "RGAA 4.1",
-        "WCAG 2.1 AA",
-        "Directive (UE) 2016/2102"
-      ],
-      "tier": "curated",
-      "tags": [
-        "card",
-        "carte",
-        "tuile",
-        "content",
-        "grid",
-        "horizontal"
-      ],
-      "description": "Content card with enlarged link (fr-card).",
-      "origin": "live-site",
-      "piiHandling": "displays_only",
-      "auditTrailCompatible": false,
-      "nistControls": [],
-      "touchTargetSize": "44px",
-      "supportedTokenProfiles": [
-        "highContrast"
-      ],
-      "relatedComponents": [
-        "badge",
-        "tag",
-        "download"
-      ],
-      "prerequisites": [],
-      "incompatibleWith": [],
-      "costTier": "cheap"
-    },
-    {
-      "file": "card/horizontal-half/horizontal-half.html",
+      "file": "card/horizontal-half.html",
       "title": "Carte (Horizontale demi)",
       "_schemaVersion": 2,
       "dsfrComponentType": "card",
@@ -958,7 +908,7 @@
         "horizontal-half"
       ],
       "description": "Content card with enlarged link (fr-card).",
-      "origin": "live-site",
+      "origin": "design-system",
       "piiHandling": "displays_only",
       "auditTrailCompatible": false,
       "nistControls": [],
@@ -973,7 +923,8 @@
       ],
       "prerequisites": [],
       "incompatibleWith": [],
-      "costTier": "cheap"
+      "costTier": "cheap",
+      "resolvedView": "card/horizontal-half.resolved.html"
     },
     {
       "file": "card/horizontal-media.html",
@@ -1029,7 +980,7 @@
       "resolvedView": "card/horizontal-media.resolved.html"
     },
     {
-      "file": "card/horizontal-tier/horizontal-tier.html",
+      "file": "card/horizontal-tier.html",
       "title": "Carte (Horizontale tiers)",
       "_schemaVersion": 2,
       "dsfrComponentType": "card",
@@ -1064,7 +1015,7 @@
         "horizontal-tier"
       ],
       "description": "Content card with enlarged link (fr-card).",
-      "origin": "live-site",
+      "origin": "design-system",
       "piiHandling": "displays_only",
       "auditTrailCompatible": false,
       "nistControls": [],
@@ -1079,10 +1030,65 @@
       ],
       "prerequisites": [],
       "incompatibleWith": [],
-      "costTier": "cheap"
+      "costTier": "cheap",
+      "resolvedView": "card/horizontal-tier.resolved.html"
     },
     {
-      "file": "card/no-border/no-border.html",
+      "file": "card/horizontal.html",
+      "title": "Carte (Horizontale)",
+      "_schemaVersion": 2,
+      "dsfrComponentType": "card",
+      "frClass": "fr-card fr-card--horizontal",
+      "section": "data-display",
+      "variant": "horizontal",
+      "requiresJs": "no",
+      "interaction": [
+        "click",
+        "focus"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "RGAA 4.1",
+        "WCAG 2.1 AA",
+        "Directive (UE) 2016/2102"
+      ],
+      "tier": "curated",
+      "tags": [
+        "card",
+        "carte",
+        "tuile",
+        "content",
+        "grid",
+        "horizontal"
+      ],
+      "description": "Content card with enlarged link (fr-card).",
+      "origin": "design-system",
+      "piiHandling": "displays_only",
+      "auditTrailCompatible": false,
+      "nistControls": [],
+      "touchTargetSize": "44px",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "badge",
+        "tag",
+        "download"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap",
+      "resolvedView": "card/horizontal.resolved.html"
+    },
+    {
+      "file": "card/no-border.html",
       "title": "Carte (Sans bordure)",
       "_schemaVersion": 2,
       "dsfrComponentType": "card",
@@ -1117,7 +1123,7 @@
         "no-border"
       ],
       "description": "Content card with enlarged link (fr-card).",
-      "origin": "live-site",
+      "origin": "design-system",
       "piiHandling": "displays_only",
       "auditTrailCompatible": false,
       "nistControls": [],
@@ -1132,10 +1138,11 @@
       ],
       "prerequisites": [],
       "incompatibleWith": [],
-      "costTier": "cheap"
+      "costTier": "cheap",
+      "resolvedView": "card/no-border.resolved.html"
     },
     {
-      "file": "card/shadow/shadow.html",
+      "file": "card/shadow.html",
       "title": "Carte (Ombre)",
       "_schemaVersion": 2,
       "dsfrComponentType": "card",
@@ -1170,7 +1177,7 @@
         "shadow"
       ],
       "description": "Content card with enlarged link (fr-card).",
-      "origin": "live-site",
+      "origin": "design-system",
       "piiHandling": "displays_only",
       "auditTrailCompatible": false,
       "nistControls": [],
@@ -1185,10 +1192,11 @@
       ],
       "prerequisites": [],
       "incompatibleWith": [],
-      "costTier": "cheap"
+      "costTier": "cheap",
+      "resolvedView": "card/shadow.resolved.html"
     },
     {
-      "file": "card/sm/sm.html",
+      "file": "card/sm.html",
       "title": "Carte (Petite)",
       "_schemaVersion": 2,
       "dsfrComponentType": "card",
@@ -1223,7 +1231,7 @@
         "sm"
       ],
       "description": "Content card with enlarged link (fr-card).",
-      "origin": "live-site",
+      "origin": "design-system",
       "piiHandling": "displays_only",
       "auditTrailCompatible": false,
       "nistControls": [],
@@ -1238,7 +1246,8 @@
       ],
       "prerequisites": [],
       "incompatibleWith": [],
-      "costTier": "cheap"
+      "costTier": "cheap",
+      "resolvedView": "card/sm.resolved.html"
     },
     {
       "file": "checkbox/default.html",
@@ -2000,7 +2009,7 @@
       "resolvedView": "radio/default.resolved.html"
     },
     {
-      "file": "radio/rich/rich.html",
+      "file": "radio/rich.html",
       "title": "Radio (Riche)",
       "_schemaVersion": 2,
       "dsfrComponentType": "radio",
@@ -2036,6 +2045,7 @@
         "pictogramme"
       ],
       "description": "Radio group with standard and rich (illustrated) variants.",
+      "origin": "design-system",
       "piiHandling": "accepts_input",
       "auditTrailCompatible": true,
       "nistControls": [],
@@ -2049,7 +2059,8 @@
       ],
       "prerequisites": [],
       "incompatibleWith": [],
-      "costTier": "cheap"
+      "costTier": "cheap",
+      "resolvedView": "radio/rich.resolved.html"
     },
     {
       "file": "search/default.html",
@@ -2544,7 +2555,7 @@
       "resolvedView": "tag/default.resolved.html"
     },
     {
-      "file": "tag/green-archipel/green-archipel.html",
+      "file": "tag/green-archipel.html",
       "title": "Tag (Vert archipel)",
       "_schemaVersion": 2,
       "dsfrComponentType": "tag",
@@ -2577,6 +2588,7 @@
         "green-archipel"
       ],
       "description": "Interactive or static keyword tags (fr-tag).",
+      "origin": "design-system",
       "piiHandling": "displays_only",
       "auditTrailCompatible": false,
       "nistControls": [],
@@ -2590,10 +2602,11 @@
       ],
       "prerequisites": [],
       "incompatibleWith": [],
-      "costTier": "cheap"
+      "costTier": "cheap",
+      "resolvedView": "tag/green-archipel.resolved.html"
     },
     {
-      "file": "tag/green-emeraude/green-emeraude.html",
+      "file": "tag/green-emeraude.html",
       "title": "Tag (Vert émeraude)",
       "_schemaVersion": 2,
       "dsfrComponentType": "tag",
@@ -2626,6 +2639,7 @@
         "green-emeraude"
       ],
       "description": "Interactive or static keyword tags (fr-tag).",
+      "origin": "design-system",
       "piiHandling": "displays_only",
       "auditTrailCompatible": false,
       "nistControls": [],
@@ -2639,10 +2653,11 @@
       ],
       "prerequisites": [],
       "incompatibleWith": [],
-      "costTier": "cheap"
+      "costTier": "cheap",
+      "resolvedView": "tag/green-emeraude.resolved.html"
     },
     {
-      "file": "tag/green-tilleul-verveine/green-tilleul-verveine.html",
+      "file": "tag/green-tilleul-verveine.html",
       "title": "Tag (Tilleul verveine)",
       "_schemaVersion": 2,
       "dsfrComponentType": "tag",
@@ -2675,6 +2690,7 @@
         "green-tilleul-verveine"
       ],
       "description": "Interactive or static keyword tags (fr-tag).",
+      "origin": "design-system",
       "piiHandling": "displays_only",
       "auditTrailCompatible": false,
       "nistControls": [],
@@ -2688,10 +2704,11 @@
       ],
       "prerequisites": [],
       "incompatibleWith": [],
-      "costTier": "cheap"
+      "costTier": "cheap",
+      "resolvedView": "tag/green-tilleul-verveine.resolved.html"
     },
     {
-      "file": "tag/pink-macaron/pink-macaron.html",
+      "file": "tag/pink-macaron.html",
       "title": "Tag (Rose macaron)",
       "_schemaVersion": 2,
       "dsfrComponentType": "tag",
@@ -2724,6 +2741,7 @@
         "pink-macaron"
       ],
       "description": "Interactive or static keyword tags (fr-tag).",
+      "origin": "design-system",
       "piiHandling": "displays_only",
       "auditTrailCompatible": false,
       "nistControls": [],
@@ -2737,10 +2755,11 @@
       ],
       "prerequisites": [],
       "incompatibleWith": [],
-      "costTier": "cheap"
+      "costTier": "cheap",
+      "resolvedView": "tag/pink-macaron.resolved.html"
     },
     {
-      "file": "tag/purple-glycine/purple-glycine.html",
+      "file": "tag/purple-glycine.html",
       "title": "Tag (Glycine)",
       "_schemaVersion": 2,
       "dsfrComponentType": "tag",
@@ -2773,6 +2792,7 @@
         "purple-glycine"
       ],
       "description": "Interactive or static keyword tags (fr-tag).",
+      "origin": "design-system",
       "piiHandling": "displays_only",
       "auditTrailCompatible": false,
       "nistControls": [],
@@ -2786,10 +2806,11 @@
       ],
       "prerequisites": [],
       "incompatibleWith": [],
-      "costTier": "cheap"
+      "costTier": "cheap",
+      "resolvedView": "tag/purple-glycine.resolved.html"
     },
     {
-      "file": "tag/sm/sm.html",
+      "file": "tag/sm.html",
       "title": "Tag (Petit)",
       "_schemaVersion": 2,
       "dsfrComponentType": "tag",
@@ -2822,6 +2843,7 @@
         "sm"
       ],
       "description": "Interactive or static keyword tags (fr-tag).",
+      "origin": "design-system",
       "piiHandling": "displays_only",
       "auditTrailCompatible": false,
       "nistControls": [],
@@ -2835,7 +2857,8 @@
       ],
       "prerequisites": [],
       "incompatibleWith": [],
-      "costTier": "cheap"
+      "costTier": "cheap",
+      "resolvedView": "tag/sm.resolved.html"
     },
     {
       "file": "textarea/default.html",
