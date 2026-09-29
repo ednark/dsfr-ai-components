@@ -1421,11 +1421,13 @@
         "overlay"
       ],
       "origin": "design-system",
+      "touchTargetSize": "44px",
       "relatedComponents": [
         "button",
         "header"
       ],
-      "costTier": "moderate"
+      "costTier": "moderate",
+      "resolvedView": "modal/default.resolved.html"
     },
     {
       "file": "notice/default.html",
@@ -1662,11 +1664,13 @@
         "formulaire"
       ],
       "origin": "design-system",
+      "touchTargetSize": "44px",
       "relatedComponents": [
         "header",
         "search"
       ],
-      "costTier": "cheap"
+      "costTier": "cheap",
+      "resolvedView": "search-bar/default.resolved.html"
     },
     {
       "file": "select/default.html",
@@ -2205,11 +2209,13 @@
         "lien"
       ],
       "origin": "design-system",
+      "touchTargetSize": "44px",
       "relatedComponents": [
         "card",
         "header"
       ],
-      "costTier": "cheap"
+      "costTier": "cheap",
+      "resolvedView": "tile/default.resolved.html"
     },
     {
       "file": "toggle/default.html",

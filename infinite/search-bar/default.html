@@ -5,67 +5,103 @@
   <meta name="description" content="Barre de recherche : champ de recherche avec bouton d'action.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Barre de recherche (Défaut)</title>
-  <script type="application/json" id="dsfr-agent-meta">
-  {
-    "file": "search-bar/default.html",
-    "title": "Barre de recherche (Défaut)",
-    "_schemaVersion": 2,
-    "discovery": {
-      "description": "Barre de recherche : champ de saisie de recherche avec bouton d'action, variante étiquetée disponible.",
-      "dsfrComponentType": "search-bar",
-      "frClass": "fr-search-bar",
-      "section": "navigation",
-      "variant": "default",
-      "requiresJs": "no",
-      "interaction": ["click", "focus", "submit"],
-      "a11y": { "wcag21AA": true, "keyboardNav": true },
-      "govCompliance": ["RGAA"],
-      "tier": "curated",
-      "tags": ["recherche", "search", "barre", "formulaire"],
-      "origin": "design-system"
+  <script type="application/json" id="dsfr-agent-meta">{
+  "file": "search-bar/default.html",
+  "title": "Barre de recherche (Défaut)",
+  "_schemaVersion": 2,
+  "discovery": {
+    "description": "Barre de recherche : champ de saisie de recherche avec bouton d'action, variante étiquetée disponible.",
+    "dsfrComponentType": "search-bar",
+    "frClass": "fr-search-bar",
+    "section": "navigation",
+    "variant": "default",
+    "requiresJs": "no",
+    "interaction": [
+      "click",
+      "focus",
+      "submit"
+    ],
+    "a11y": {
+      "wcag21AA": true,
+      "keyboardNav": true
     },
-    "selection": {
-      "useWhen": [
-        "proposer une recherche globale ou de section",
-        "en en-tête, seule ou dans la navigation principale"
-      ],
-      "avoidWhen": [
-        "la recherche est déjà portée par un composant d'en-tête dédié"
-      ],
-      "guidance": [
-        { "guidance": true, "description": "Conserver le label (masqué par défaut, visible avec fr-search-bar--labelled) relié à l'input" },
-        { "guidance": true, "description": "role=search sur le conteneur" }
-      ]
-    },
-    "instruction": {
-      "agentPrompt": "Adapter le label, le placeholder et le libellé du bouton. La variante fr-search-bar--labelled rend l'étiquette visible.",
-      "relatedComponents": ["header", "search"]
-    },
-    "coordination": {
-      "compositionCost": { "costTier": "cheap", "estimatedTokens": 900, "renderingTimeMs": 3, "recommendedModel": "haiku" }
-    },
-    "constraints": {
-      "preserve": [
-        "div.fr-search-bar avec role=search",
-        "label.fr-label relié à l'input (for ↔ id)",
-        "input.fr-input type=search",
-        "button.fr-btn d'action"
-      ],
-      "portableInvariants": [
-        "role=search",
-        "label/input pairing"
-      ],
-      "editable": ["Label, placeholder, libellé du bouton, cible du formulaire"],
-      "limitations": ["Le bouton porte une icône recherche (fr-icon-search-line) dans la version officielle — le libellé texte peut rester masqué visuellement"]
-    },
-    "provenance": {
-      "observed": "2026-09-29",
-      "method": "design-system documentation",
-      "source": "DSFR search.ejs (GouvernementFR/dsfr, version courante); canon vérifié dans le paquet officiel; observé live — agriculture.gouv.fr",
-      "designSystemVersion": "1.15"
+    "govCompliance": [
+      "RGAA"
+    ],
+    "tier": "curated",
+    "tags": [
+      "recherche",
+      "search",
+      "barre",
+      "formulaire"
+    ],
+    "origin": "design-system",
+    "mobileUX": {
+      "touchTargetSize": "44px",
+      "requiredMinSpacing": "8px",
+      "orientationLocked": false,
+      "fullscreenSafe": true
     }
+  },
+  "selection": {
+    "useWhen": [
+      "proposer une recherche globale ou de section",
+      "en en-tête, seule ou dans la navigation principale"
+    ],
+    "avoidWhen": [
+      "la recherche est déjà portée par un composant d'en-tête dédié"
+    ],
+    "guidance": [
+      {
+        "guidance": true,
+        "description": "Conserver le label (masqué par défaut, visible avec fr-search-bar--labelled) relié à l'input"
+      },
+      {
+        "guidance": true,
+        "description": "role=search sur le conteneur"
+      }
+    ]
+  },
+  "instruction": {
+    "agentPrompt": "Adapter le label, le placeholder et le libellé du bouton. La variante fr-search-bar--labelled rend l'étiquette visible.",
+    "relatedComponents": [
+      "header",
+      "search"
+    ]
+  },
+  "coordination": {
+    "compositionCost": {
+      "costTier": "cheap",
+      "estimatedTokens": 900,
+      "renderingTimeMs": 3,
+      "recommendedModel": "haiku"
+    }
+  },
+  "constraints": {
+    "preserve": [
+      "div.fr-search-bar avec role=search",
+      "label.fr-label relié à l'input (for ↔ id)",
+      "input.fr-input type=search",
+      "button.fr-btn d'action"
+    ],
+    "portableInvariants": [
+      "role=search",
+      "label/input pairing"
+    ],
+    "editable": [
+      "Label, placeholder, libellé du bouton, cible du formulaire"
+    ],
+    "limitations": [
+      "Le bouton porte une icône recherche (fr-icon-search-line) dans la version officielle — le libellé texte peut rester masqué visuellement"
+    ]
+  },
+  "provenance": {
+    "observed": "2026-09-29",
+    "method": "design-system documentation",
+    "source": "DSFR search.ejs (GouvernementFR/dsfr, version courante); canon vérifié dans le paquet officiel; observé live — agriculture.gouv.fr",
+    "designSystemVersion": "1.15"
   }
-  </script>
+}</script>
   <style>
     body{font-family:'Marianne',Arial,Helvetica,sans-serif;font-size:1rem;line-height:1.5rem;color:#161616;padding:2rem;background:#fff;margin:0}
     .cap{position:fixed;bottom:12px;left:16px;font-size:11px;letter-spacing:.08em;color:#666;text-transform:uppercase}

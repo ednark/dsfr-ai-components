@@ -5,66 +5,102 @@
   <meta name="description" content="Tuile : accès à une page de contenu avec titre, détail et pictogramme.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Tuile (Défaut)</title>
-  <script type="application/json" id="dsfr-agent-meta">
-  {
-    "file": "tile/default.html",
-    "title": "Tuile (Défaut)",
-    "_schemaVersion": 2,
-    "discovery": {
-      "description": "Tuile : bloc de liens vers une page de contenu, avec pictogramme et détail optionnel.",
-      "dsfrComponentType": "tile",
-      "frClass": "fr-tile",
-      "section": "navigation",
-      "variant": "default",
-      "requiresJs": "no",
-      "interaction": ["click", "focus", "hover"],
-      "a11y": { "wcag21AA": true, "keyboardNav": true },
-      "govCompliance": ["RGAA"],
-      "tier": "curated",
-      "tags": ["tuile", "tile", "navigation", "lien"],
-      "origin": "design-system"
+  <script type="application/json" id="dsfr-agent-meta">{
+  "file": "tile/default.html",
+  "title": "Tuile (Défaut)",
+  "_schemaVersion": 2,
+  "discovery": {
+    "description": "Tuile : bloc de liens vers une page de contenu, avec pictogramme et détail optionnel.",
+    "dsfrComponentType": "tile",
+    "frClass": "fr-tile",
+    "section": "navigation",
+    "variant": "default",
+    "requiresJs": "no",
+    "interaction": [
+      "click",
+      "focus",
+      "hover"
+    ],
+    "a11y": {
+      "wcag21AA": true,
+      "keyboardNav": true
     },
-    "selection": {
-      "useWhen": [
-        "proposer un accès à une page de contenu avec un pictogramme",
-        "grilles de liens thématiques (pages d'entrée)"
-      ],
-      "avoidWhen": [
-        "le contenu est plus riche qu'un titre et un détail — utiliser la carte (fr-card)"
-      ],
-      "guidance": [
-        { "guidance": true, "description": "fr-enlarge-link étend le lien sur toute la tuile — un seul lien interactif par tuile" },
-        { "guidance": false, "description": "Ne pas ajouter plusieurs liens ou boutons dans une tuile" }
-      ]
-    },
-    "instruction": {
-      "agentPrompt": "Adapter l'intitulé, le lien et le détail. Le pictogramme est un SVG inline remplaçable. fr-enlarge-link rend toute la tuile cliquable.",
-      "relatedComponents": ["card", "header"]
-    },
-    "coordination": {
-      "compositionCost": { "costTier": "cheap", "estimatedTokens": 1900, "renderingTimeMs": 5, "recommendedModel": "haiku" }
-    },
-    "constraints": {
-      "preserve": [
-        "div.fr-tile wrapper (avec fr-enlarge-link si le lien est étendu)",
-        "h3.fr-tile__title avec a.fr-tile__link",
-        "div.fr-tile__header avec pictogramme"
-      ],
-      "portableInvariants": [
-        "un seul lien interactif par tuile",
-        "structure body > content > title/detail"
-      ],
-      "editable": ["Intitulé, lien, détail, pictogramme (SVG)"],
-      "limitations": ["Variantes documentées : --sm, --horizontal, --vertical, --download, --grey, --no-background — demander avant d'en utiliser une hors tile par défaut"]
-    },
-    "provenance": {
-      "observed": "2026-09-29",
-      "method": "design-system documentation",
-      "source": "DSFR tile.ejs + tile-content.ejs + tile-header.ejs + tile-details.ejs (GouvernementFR/dsfr, version courante); observé live — impots.gouv.fr, service-public.fr",
-      "designSystemVersion": "1.15"
+    "govCompliance": [
+      "RGAA"
+    ],
+    "tier": "curated",
+    "tags": [
+      "tuile",
+      "tile",
+      "navigation",
+      "lien"
+    ],
+    "origin": "design-system",
+    "mobileUX": {
+      "touchTargetSize": "44px",
+      "requiredMinSpacing": "8px",
+      "orientationLocked": false,
+      "fullscreenSafe": true
     }
+  },
+  "selection": {
+    "useWhen": [
+      "proposer un accès à une page de contenu avec un pictogramme",
+      "grilles de liens thématiques (pages d'entrée)"
+    ],
+    "avoidWhen": [
+      "le contenu est plus riche qu'un titre et un détail — utiliser la carte (fr-card)"
+    ],
+    "guidance": [
+      {
+        "guidance": true,
+        "description": "fr-enlarge-link étend le lien sur toute la tuile — un seul lien interactif par tuile"
+      },
+      {
+        "guidance": false,
+        "description": "Ne pas ajouter plusieurs liens ou boutons dans une tuile"
+      }
+    ]
+  },
+  "instruction": {
+    "agentPrompt": "Adapter l'intitulé, le lien et le détail. Le pictogramme est un SVG inline remplaçable. fr-enlarge-link rend toute la tuile cliquable.",
+    "relatedComponents": [
+      "card",
+      "header"
+    ]
+  },
+  "coordination": {
+    "compositionCost": {
+      "costTier": "cheap",
+      "estimatedTokens": 1900,
+      "renderingTimeMs": 5,
+      "recommendedModel": "haiku"
+    }
+  },
+  "constraints": {
+    "preserve": [
+      "div.fr-tile wrapper (avec fr-enlarge-link si le lien est étendu)",
+      "h3.fr-tile__title avec a.fr-tile__link",
+      "div.fr-tile__header avec pictogramme"
+    ],
+    "portableInvariants": [
+      "un seul lien interactif par tuile",
+      "structure body > content > title/detail"
+    ],
+    "editable": [
+      "Intitulé, lien, détail, pictogramme (SVG)"
+    ],
+    "limitations": [
+      "Variantes documentées : --sm, --horizontal, --vertical, --download, --grey, --no-background — demander avant d'en utiliser une hors tile par défaut"
+    ]
+  },
+  "provenance": {
+    "observed": "2026-09-29",
+    "method": "design-system documentation",
+    "source": "DSFR tile.ejs + tile-content.ejs + tile-header.ejs + tile-details.ejs (GouvernementFR/dsfr, version courante); observé live — impots.gouv.fr, service-public.fr",
+    "designSystemVersion": "1.15"
   }
-  </script>
+}</script>
   <style>
     body{font-family:'Marianne',Arial,Helvetica,sans-serif;font-size:1rem;line-height:1.5rem;color:#161616;padding:2rem;background:#fff;margin:0}
     .cap{position:fixed;bottom:12px;left:16px;font-size:11px;letter-spacing:.08em;color:#666;text-transform:uppercase}
