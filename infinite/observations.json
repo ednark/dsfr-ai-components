@@ -47,7 +47,7 @@
       "url": "https://www.culture.gouv.fr",
       "kind": "extension",
       "extension": "fr-notation",
-      "note": "rating component; verified absent from DSFR 1.15 CSS — newer/custom",
+      "note": "rating component; verified absent from DSFR 1.15 CSS — newer/custom | FINAL (2026-09-29): absent from DSFR 1.15.0 through 1.15.3 (latest) — site-local, not a DSFR component",
       "source": "field-research/ds-survey campaign crawls (2026-09-29)"
     },
     {
