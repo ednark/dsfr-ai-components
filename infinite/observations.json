@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "note": "Field observations of sites extending or using dsfr-ai-components components. Records about the ecosystem — never tiles. See _base/protocol.md Surface 7.",
+  "observations": [
+    {
+      "observed": "2026-09-29",
+      "site": "culture.gouv.fr",
+      "url": "https://www.culture.gouv.fr",
+      "kind": "other",
+      "extension": "fr-card--horizontal / --horizontal-half / --horizontal-tier / --sm / --big / --shadow / --une / --no-border / --document / --project / --minister",
+      "note": "canon card variants observed live and verified in DSFR 1.15 CSS; several untiled — variant-tile candidates",
+      "source": "field-research/ds-survey campaign crawls (2026-09-29)"
+    },
+    {
+      "observed": "2026-09-29",
+      "site": "agriculture.gouv.fr",
+      "url": "https://www.agriculture.gouv.fr",
+      "family": "tag",
+      "kind": "other",
+      "extension": "fr-tag--green-archipel / --green-emeraude / --green-tilleul-verveine / --pink-macaron / --purple-glycine / --sm",
+      "note": "canon tag color variants verified in DSFR 1.15 CSS",
+      "source": "field-research/ds-survey campaign crawls (2026-09-29)"
+    },
+    {
+      "observed": "2026-09-29",
+      "site": "impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr",
+      "family": "callout",
+      "kind": "other",
+      "extension": "fr-callout--brown-caramel",
+      "note": "canon callout color variant verified in DSFR 1.15 CSS",
+      "source": "field-research/ds-survey campaign crawls (2026-09-29)"
+    },
+    {
+      "observed": "2026-09-29",
+      "site": "culture.gouv.fr",
+      "url": "https://www.culture.gouv.fr",
+      "family": "badge",
+      "kind": "extension",
+      "extension": "fr-badge--blue-france",
+      "note": "verified absent from DSFR 1.15 CSS — site-local extension",
+      "source": "field-research/ds-survey campaign crawls (2026-09-29)"
+    },
+    {
+      "observed": "2026-09-29",
+      "site": "culture.gouv.fr",
+      "url": "https://www.culture.gouv.fr",
+      "kind": "extension",
+      "extension": "fr-notation",
+      "note": "rating component; verified absent from DSFR 1.15 CSS — newer/custom",
+      "source": "field-research/ds-survey campaign crawls (2026-09-29)"
+    },
+    {
+      "observed": "2026-09-29",
+      "site": "culture.gouv.fr",
+      "url": "https://www.culture.gouv.fr",
+      "family": "header",
+      "kind": "composition",
+      "extension": "fr-mega-menu",
+      "note": "mega menu composed in the header — the L7 mega-menu signal, live on a French ministry",
+      "source": "field-research/ds-survey campaign crawls (2026-09-29)"
+    },
+    {
+      "observed": "2026-09-29",
+      "site": "impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr",
+      "family": "radio",
+      "kind": "other",
+      "extension": "fr-radio-rich",
+      "note": "canon radio variant verified in DSFR 1.15 CSS",
+      "source": "field-research/ds-survey campaign crawls (2026-09-29)"
+    },
+    {
+      "observed": "2026-09-29",
+      "site": "agriculture.gouv.fr",
+      "url": "https://www.agriculture.gouv.fr",
+      "kind": "other",
+      "extension": "fr-search-bar",
+      "note": "canon component verified in DSFR 1.15 CSS; no search-bar family in the registry — tile candidate",
+      "source": "field-research/ds-survey campaign crawls (2026-09-29)"
+    },
+    {
+      "observed": "2026-09-29",
+      "site": "impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr",
+      "kind": "other",
+      "extension": "fr-tile",
+      "note": "canon component (Tuile) verified in DSFR 1.15 CSS; no tile family in the registry — tile candidate",
+      "source": "field-research/ds-survey campaign crawls (2026-09-29)"
+    },
+    {
+      "observed": "2026-09-29",
+      "site": "impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr",
+      "kind": "other",
+      "extension": "fr-modal",
+      "note": "canon component verified in DSFR 1.15 CSS; no modal family in the registry — tile candidate",
+      "source": "field-research/ds-survey campaign crawls (2026-09-29)"
+    }
+  ]
+}
