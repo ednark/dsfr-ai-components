@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Méga menu de la navigation principale : panneau étendu de liens organisés en catégories.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Méga menu (Défaut)</title>
+  <script type="application/json" id="dsfr-agent-meta">{
+  "file": "mega-menu/default.html",
+  "title": "Méga menu (Défaut)",
+  "_schemaVersion": 2,
+  "discovery": {
+    "description": "Méga menu de la navigation principale : panneau étendu de liens organisés en catégories, avec texte éditorialisé.",
+    "dsfrComponentType": "mega-menu",
+    "frClass": "fr-mega-menu",
+    "section": "navigation",
+    "variant": "default",
+    "requiresJs": "required",
+    "interaction": [
+      "click",
+      "focus",
+      "keyboard"
+    ],
+    "a11y": {
+      "wcag21AA": true,
+      "keyboardNav": true
+    },
+    "govCompliance": [
+      "RGAA"
+    ],
+    "tier": "curated",
+    "tags": [
+      "mega-menu",
+      "navigation",
+      "menu",
+      "header",
+      "collapse",
+      "fr-nav"
+    ],
+    "origin": "design-system",
+    "mobileUX": {
+      "touchTargetSize": "44px",
+      "requiredMinSpacing": "8px",
+      "orientationLocked": false,
+      "fullscreenSafe": true
+    }
+  },
+  "selection": {
+    "useWhen": [
+      "l'arborescence est profonde et doit donner accès à plusieurs niveaux",
+      "la navigation principale doit éditorialiser les rubriques (texte leader)"
+    ],
+    "avoidWhen": [
+      "la navigation tient en une liste de liens simples",
+      "le panneau ne peut pas être rendu accessible au clavier dans le contexte cible"
+    ],
+    "guidance": [
+      {
+        "guidance": true,
+        "description": "Le bouton déclencheur et le panneau partagent l'id de collapse (aria-controls ↔ id)"
+      },
+      {
+        "guidance": true,
+        "description": "Fournir un bouton fr-btn--close contrôlant le même id, comme le fait le modèle DSFR"
+      },
+      {
+        "guidance": true,
+        "description": "Annoncer l'état via aria-expanded sur le déclencheur"
+      },
+      {
+        "guidance": false,
+        "description": "Ne pas imbriquer un second méga menu dans le panneau"
+      }
+    ]
+  },
+  "instruction": {
+    "agentPrompt": "Adapter les libellés (français par défaut) et les liens. Le tile montre l'état étendu pour la démonstration ; l'état de repos est replié (aria-expanded=\"false\", classe fr-collapse sans fr-collapse--expanded).",
+    "relatedComponents": [
+      "header",
+      "breadcrumb",
+      "search"
+    ],
+    "behavior": {
+      "requires": "required",
+      "source": "host",
+      "script": "dsfr.module.min.js",
+      "init": "auto — DSFR initialise les collapses (fr-collapse) au chargement",
+      "fallback": "panneau replié ; le contenu du méga menu reste masqué"
+    }
+  },
+  "coordination": {
+    "prerequisiteComponents": [
+      {
+        "name": "header",
+        "reason": "le méga menu s'intègre à la navigation principale du fr-header"
+      }
+    ],
+    "compositionCost": {
+      "costTier": "moderate",
+      "estimatedTokens": 4200,
+      "renderingTimeMs": 25,
+      "recommendedModel": "sonnet"
+    },
+    "agentPromptSequence": [
+      "1. Placer la fr-nav dans le fr-header",
+      "2. Ajouter l'entrée de menu (li.fr-nav__item) avec son bouton déclencheur",
+      "3. Ajouter le panneau fr-collapse fr-mega-menu relié par l'id de collapse",
+      "4. Vérifier la paire aria-controls ↔ id et la fermeture avant de finaliser"
+    ]
+  },
+  "constraints": {
+    "preserve": [
+      "div.fr-collapse.fr-mega-menu with id matching the trigger's aria-controls",
+      "button.fr-nav__btn with aria-expanded and aria-controls",
+      "h5.fr-mega-menu__category category headings with fr-nav__link",
+      "ul.fr-mega-menu__list link lists",
+      "button.fr-btn--close closing the same collapse id"
+    ],
+    "portableInvariants": [
+      "nav role=navigation with aria-label",
+      "trigger/panel id pairing (aria-expanded, aria-controls)",
+      "close control targeting the same id"
+    ],
+    "editable": [
+      "Libellés et cibles des liens",
+      "Nombre de catégories et de liens",
+      "Titre et texte du leader"
+    ],
+    "limitations": [
+      "Nécessite le JS DSFR (module collapse) ; sans JS, le panneau reste replié",
+      "Le tile montre l'état étendu ; l'état de repos est replié"
+    ]
+  },
+  "provenance": {
+    "observed": "2026-09-29",
+    "method": "design-system documentation",
+    "source": "DSFR navigation-mega-menu.ejs + navigation.ejs + navigation-btn.ejs + navigation-leader.ejs + navigation-link.ejs (GouvernementFR/dsfr, version courante) — composant Navigation principale"
+  }
+}</script>
+  <style>
+    body{font-family:'Marianne',Arial,Helvetica,sans-serif;font-size:1rem;line-height:1.5rem;color:#161616;padding:2rem;background:#fff;margin:0}
+    .cap{position:fixed;bottom:12px;left:16px;font-size:11px;letter-spacing:.08em;color:#666;text-transform:uppercase}
+    a{color:#000091}
+    :focus-visible{outline:2px solid #0a76f6;outline-offset:2px}
+    .fr-nav{background:#000091;max-width:60rem}
+    .fr-nav__list{list-style:none;margin:0;padding:0 1rem;display:flex}
+    .fr-nav__item{position:relative}
+    .fr-nav__btn{color:#fff;background:none;border:0;padding:1rem;font-family:inherit;font-size:1rem;font-weight:700;cursor:pointer;display:flex;align-items:center;gap:.5rem}
+    .fr-nav__btn::after{content:"";width:0;height:0;border-left:.3rem solid transparent;border-right:.3rem solid transparent;border-top:.35rem solid #fff;margin-left:.25rem}
+    .fr-collapse{display:none}
+    .fr-collapse--expanded{display:block}
+    .fr-mega-menu{background:#f6f6f6;padding:0 0 2rem}
+    .fr-container{max-width:78rem;margin:0 auto;padding:0 1rem}
+    .fr-grid-row{display:flex;flex-wrap:wrap;margin:0 -0.5rem}
+    .fr-grid-row>*{padding:0 .5rem;box-sizing:border-box}
+    .fr-col-12{width:100%}
+    @media(min-width:992px){
+      .fr-col-lg-3{width:25%}
+      .fr-col-lg-8{width:66.667%}
+      .fr-col-offset-lg-4--right{margin-left:auto;margin-right:0}
+      .fr-mega-menu{background:#f6f6f6;box-shadow:0 .5rem 1rem rgba(0,0,0,.15)}
+    }
+    .fr-mb-n3v{margin-bottom:-1.5rem}
+    .fr-btn--close{background:none;border:0;font-family:inherit;font-size:.85rem;font-weight:700;color:#000091;cursor:pointer;padding:.75rem 0;margin-left:auto;display:flex;align-items:center;gap:.4rem;text-align:right}
+    .fr-btn--close::after{content:"↧";transform:rotate(180deg);font-weight:400}
+    .fr-mega-menu__leader{background:#eee;border-bottom:2px solid #000091;padding:1rem;margin-bottom:1.5rem}
+    .fr-mega-menu__leader p{margin:.25rem 0 0}
+    .fr-h4{font-size:1.25rem;font-weight:700;margin:0 0 .5rem}
+    .fr-mb-2v{margin-bottom:.5rem}
+    .fr-mega-menu__category{font-size:1rem;margin:1rem 0 .25rem;padding-bottom:.25rem;border-bottom:1px solid #ddd}
+    .fr-mega-menu__category .fr-nav__link{font-weight:700;text-decoration:none}
+    .fr-mega-menu__list{list-style:none;margin:0;padding:0}
+    .fr-mega-menu__list .fr-nav__link{display:block;padding:.35rem 0;text-decoration:none;font-size:.9rem}
+    .fr-mega-menu__list .fr-nav__link:hover{text-decoration:underline}
+  </style>
+</head>
+<body>
+  <nav class="fr-nav" role="navigation" aria-label="Menu principal" id="navigation-1657">
+    <ul class="fr-nav__list">
+      <li class="fr-nav__item">
+        <button class="fr-nav__btn" id="mega-menu-btn-1657" type="button" aria-expanded="true" aria-controls="mega-menu-1657">Entrée méga menu</button>
+        <div class="fr-collapse fr-collapse--expanded fr-mega-menu" id="mega-menu-1657">
+          <div class="fr-container fr-container--fluid fr-container-lg">
+            <div class="fr-grid-row fr-grid-row-lg--gutters">
+              <div class="fr-col-12 fr-mb-n3v">
+                <button class="fr-btn--close fr-btn" type="button" aria-controls="mega-menu-1657">Fermer</button>
+              </div>
+              <div class="fr-col-12 fr-col-lg-8 fr-col-offset-lg-4--right">
+                <div class="fr-mega-menu__leader">
+                  <h4 class="fr-h4 fr-mb-2v">Titre éditorialisé</h4>
+                  <p>Texte de présentation de l'entrée méga menu, mettant en avant le contenu proposé.</p>
+                </div>
+              </div>
+              <div class="fr-col-12 fr-col-lg-3">
+                <h5 class="fr-mega-menu__category">
+                  <a class="fr-nav__link" id="mega-menu-category-1657-1" href="#">Nom de catégorie</a>
+                </h5>
+                <ul class="fr-mega-menu__list">
+                  <li><a class="fr-nav__link" id="mega-menu-link-1657-1" href="#">Lien 1</a></li>
+                  <li><a class="fr-nav__link" id="mega-menu-link-1657-2" href="#">Lien 2</a></li>
+                  <li><a class="fr-nav__link" id="mega-menu-link-1657-3" href="#">Lien 3</a></li>
+                </ul>
+              </div>
+              <div class="fr-col-12 fr-col-lg-3">
+                <h5 class="fr-mega-menu__category">
+                  <a class="fr-nav__link" id="mega-menu-category-1657-2" href="#">Nom de catégorie</a>
+                </h5>
+                <ul class="fr-mega-menu__list">
+                  <li><a class="fr-nav__link" id="mega-menu-link-1657-4" href="#">Lien 4</a></li>
+                  <li><a class="fr-nav__link" id="mega-menu-link-1657-5" href="#">Lien 5</a></li>
+                  <li><a class="fr-nav__link" id="mega-menu-link-1657-6" href="#">Lien 6</a></li>
+                </ul>
+              </div>
+              <div class="fr-col-12 fr-col-lg-3">
+                <h5 class="fr-mega-menu__category">
+                  <a class="fr-nav__link" id="mega-menu-category-1657-3" href="#">Nom de catégorie</a>
+                </h5>
+                <ul class="fr-mega-menu__list">
+                  <li><a class="fr-nav__link" id="mega-menu-link-1657-7" href="#">Lien 7</a></li>
+                  <li><a class="fr-nav__link" id="mega-menu-link-1657-8" href="#">Lien 8</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </nav>
+  <div class="cap">mega menu default</div>
+</body>
+</html>

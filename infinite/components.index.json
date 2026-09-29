@@ -3,11 +3,11 @@
   "metadataSchemaVersion": 2,
   "generatedBy": "_base/generate-index.mjs",
   "counts": {
-    "total": 42,
+    "total": 43,
     "bySection": {
       "data-display": 7,
       "feedback": 10,
-      "navigation": 6,
+      "navigation": 7,
       "forms": 19
     }
   },
@@ -750,6 +750,7 @@
         "grid"
       ],
       "description": "Content card with enlarged link (fr-card).",
+      "origin": "live-site",
       "piiHandling": "displays_only",
       "auditTrailCompatible": false,
       "nistControls": [],
@@ -802,6 +803,7 @@
         "grid"
       ],
       "description": "Content card with enlarged link (fr-card).",
+      "origin": "live-site",
       "piiHandling": "displays_only",
       "auditTrailCompatible": false,
       "nistControls": [],
@@ -954,6 +956,7 @@
         "abonnement"
       ],
       "description": "Newsletter subscription and social-media follow block (fr-follow).",
+      "origin": "live-site",
       "piiHandling": "accepts_input",
       "auditTrailCompatible": false,
       "nistControls": [],
@@ -1007,6 +1010,7 @@
         "abonnement"
       ],
       "description": "Newsletter subscription and social-media follow block (fr-follow).",
+      "origin": "live-site",
       "piiHandling": "accepts_input",
       "auditTrailCompatible": false,
       "nistControls": [],
@@ -1341,6 +1345,50 @@
         "multi-step-form"
       ],
       "resolvedView": "input/valid.resolved.html"
+    },
+    {
+      "file": "mega-menu/default.html",
+      "title": "Méga menu (Défaut)",
+      "_schemaVersion": 2,
+      "description": "Méga menu de la navigation principale : panneau étendu de liens organisés en catégories, avec texte éditorialisé.",
+      "dsfrComponentType": "mega-menu",
+      "frClass": "fr-mega-menu",
+      "section": "navigation",
+      "variant": "default",
+      "requiresJs": "required",
+      "interaction": [
+        "click",
+        "focus",
+        "keyboard"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true
+      },
+      "govCompliance": [
+        "RGAA"
+      ],
+      "tier": "curated",
+      "tags": [
+        "mega-menu",
+        "navigation",
+        "menu",
+        "header",
+        "collapse",
+        "fr-nav"
+      ],
+      "origin": "design-system",
+      "touchTargetSize": "44px",
+      "relatedComponents": [
+        "header",
+        "breadcrumb",
+        "search"
+      ],
+      "prerequisites": [
+        "header"
+      ],
+      "costTier": "moderate",
+      "resolvedView": "mega-menu/default.resolved.html"
     },
     {
       "file": "notice/default.html",

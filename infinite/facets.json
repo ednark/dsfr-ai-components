@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "metadataSchemaVersion": 2,
   "generatedBy": "_base/generate-index.mjs",
-  "total": 42,
+  "total": 43,
   "designSystem": "Système de Design de l'État (DSFR) 1.15",
   "facets": {
     "dsfrComponentType": {
@@ -20,6 +20,7 @@
       "header": 1,
       "highlight": 1,
       "input": 3,
+      "mega-menu": 1,
       "notice": 1,
       "pagination": 1,
       "radio": 1,
@@ -38,11 +39,11 @@
     "section": {
       "data-display": 7,
       "feedback": 10,
-      "navigation": 6,
+      "navigation": 7,
       "forms": 19
     },
     "variant": {
-      "default": 25,
+      "default": 26,
       "error": 5,
       "info": 1,
       "success": 1,
@@ -58,20 +59,20 @@
       "valid": 1
     },
     "requiresJs": {
-      "required": 2,
+      "required": 3,
       "optional": 9,
       "no": 31
     },
     "interaction": {
-      "click": 25,
-      "keyboard": 13,
-      "focus": 34,
+      "click": 26,
+      "keyboard": 14,
+      "focus": 35,
       "type": 8,
       "change": 2
     },
     "a11y": {
-      "wcag21AA": 42,
-      "keyboardNav": 37,
+      "wcag21AA": 43,
+      "keyboardNav": 38,
       "screenReader": 42,
       "reducedMotion": 42,
       "forcedColors": 42,
@@ -80,10 +81,11 @@
     "govCompliance": {
       "RGAA 4.1": 42,
       "WCAG 2.1 AA": 42,
-      "Directive (UE) 2016/2102": 42
+      "Directive (UE) 2016/2102": 42,
+      "RGAA": 1
     },
     "costTier": {
-      "moderate": 11,
+      "moderate": 12,
       "cheap": 31
     },
     "compositionRecipes": {
@@ -99,7 +101,7 @@
       "accepts_input": 14
     },
     "touchTargetSize": {
-      "44px": 37,
+      "44px": 38,
       "n/a": 5
     },
     "supportedTokenProfiles": {
