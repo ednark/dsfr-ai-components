@@ -3,12 +3,12 @@
   "metadataSchemaVersion": 2,
   "generatedBy": "_base/generate-index.mjs",
   "counts": {
-    "total": 46,
+    "total": 61,
     "bySection": {
-      "data-display": 7,
-      "feedback": 10,
+      "data-display": 20,
+      "feedback": 11,
       "navigation": 9,
-      "forms": 19,
+      "forms": 20,
       "overlays": 1
     }
   },
@@ -670,6 +670,53 @@
       "resolvedView": "button/tertiary.resolved.html"
     },
     {
+      "file": "callout/brown-caramel/brown-caramel.html",
+      "title": "Callout (Caramel)",
+      "_schemaVersion": 2,
+      "dsfrComponentType": "callout",
+      "frClass": "fr-callout fr-callout--brown-caramel",
+      "section": "feedback",
+      "variant": "brown-caramel",
+      "requiresJs": "no",
+      "interaction": [],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": false,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "RGAA 4.1",
+        "WCAG 2.1 AA",
+        "Directive (UE) 2016/2102"
+      ],
+      "tier": "curated",
+      "tags": [
+        "callout",
+        "mise",
+        "avant",
+        "emphasis",
+        "brown-caramel"
+      ],
+      "description": "Highlighted key information block (fr-callout).",
+      "piiHandling": "displays_only",
+      "auditTrailCompatible": false,
+      "nistControls": [],
+      "touchTargetSize": "n/a",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "highlight",
+        "alert"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap"
+    },
+    {
       "file": "callout/default.html",
       "title": "Callout (default)",
       "_schemaVersion": 2,
@@ -770,6 +817,165 @@
       "resolvedView": "card/default.resolved.html"
     },
     {
+      "file": "card/download/download.html",
+      "title": "Carte (Téléchargeable)",
+      "_schemaVersion": 2,
+      "dsfrComponentType": "card",
+      "frClass": "fr-card fr-card--download",
+      "section": "data-display",
+      "variant": "download",
+      "requiresJs": "no",
+      "interaction": [
+        "click",
+        "focus"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "RGAA 4.1",
+        "WCAG 2.1 AA",
+        "Directive (UE) 2016/2102"
+      ],
+      "tier": "curated",
+      "tags": [
+        "card",
+        "carte",
+        "tuile",
+        "content",
+        "grid",
+        "download"
+      ],
+      "description": "Content card with enlarged link (fr-card).",
+      "origin": "live-site",
+      "piiHandling": "displays_only",
+      "auditTrailCompatible": false,
+      "nistControls": [],
+      "touchTargetSize": "44px",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "badge",
+        "tag",
+        "download"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap"
+    },
+    {
+      "file": "card/horizontal/horizontal.html",
+      "title": "Carte (Horizontale)",
+      "_schemaVersion": 2,
+      "dsfrComponentType": "card",
+      "frClass": "fr-card fr-card--horizontal",
+      "section": "data-display",
+      "variant": "horizontal",
+      "requiresJs": "no",
+      "interaction": [
+        "click",
+        "focus"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "RGAA 4.1",
+        "WCAG 2.1 AA",
+        "Directive (UE) 2016/2102"
+      ],
+      "tier": "curated",
+      "tags": [
+        "card",
+        "carte",
+        "tuile",
+        "content",
+        "grid",
+        "horizontal"
+      ],
+      "description": "Content card with enlarged link (fr-card).",
+      "origin": "live-site",
+      "piiHandling": "displays_only",
+      "auditTrailCompatible": false,
+      "nistControls": [],
+      "touchTargetSize": "44px",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "badge",
+        "tag",
+        "download"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap"
+    },
+    {
+      "file": "card/horizontal-half/horizontal-half.html",
+      "title": "Carte (Horizontale demi)",
+      "_schemaVersion": 2,
+      "dsfrComponentType": "card",
+      "frClass": "fr-card fr-card--horizontal-half",
+      "section": "data-display",
+      "variant": "horizontal-half",
+      "requiresJs": "no",
+      "interaction": [
+        "click",
+        "focus"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "RGAA 4.1",
+        "WCAG 2.1 AA",
+        "Directive (UE) 2016/2102"
+      ],
+      "tier": "curated",
+      "tags": [
+        "card",
+        "carte",
+        "tuile",
+        "content",
+        "grid",
+        "horizontal-half"
+      ],
+      "description": "Content card with enlarged link (fr-card).",
+      "origin": "live-site",
+      "piiHandling": "displays_only",
+      "auditTrailCompatible": false,
+      "nistControls": [],
+      "touchTargetSize": "44px",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "badge",
+        "tag",
+        "download"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap"
+    },
+    {
       "file": "card/horizontal-media.html",
       "title": "Card (horizontal-media)",
       "_schemaVersion": 2,
@@ -821,6 +1027,218 @@
       "incompatibleWith": [],
       "costTier": "cheap",
       "resolvedView": "card/horizontal-media.resolved.html"
+    },
+    {
+      "file": "card/horizontal-tier/horizontal-tier.html",
+      "title": "Carte (Horizontale tiers)",
+      "_schemaVersion": 2,
+      "dsfrComponentType": "card",
+      "frClass": "fr-card fr-card--horizontal-tier",
+      "section": "data-display",
+      "variant": "horizontal-tier",
+      "requiresJs": "no",
+      "interaction": [
+        "click",
+        "focus"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "RGAA 4.1",
+        "WCAG 2.1 AA",
+        "Directive (UE) 2016/2102"
+      ],
+      "tier": "curated",
+      "tags": [
+        "card",
+        "carte",
+        "tuile",
+        "content",
+        "grid",
+        "horizontal-tier"
+      ],
+      "description": "Content card with enlarged link (fr-card).",
+      "origin": "live-site",
+      "piiHandling": "displays_only",
+      "auditTrailCompatible": false,
+      "nistControls": [],
+      "touchTargetSize": "44px",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "badge",
+        "tag",
+        "download"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap"
+    },
+    {
+      "file": "card/no-border/no-border.html",
+      "title": "Carte (Sans bordure)",
+      "_schemaVersion": 2,
+      "dsfrComponentType": "card",
+      "frClass": "fr-card fr-card--no-border",
+      "section": "data-display",
+      "variant": "no-border",
+      "requiresJs": "no",
+      "interaction": [
+        "click",
+        "focus"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "RGAA 4.1",
+        "WCAG 2.1 AA",
+        "Directive (UE) 2016/2102"
+      ],
+      "tier": "curated",
+      "tags": [
+        "card",
+        "carte",
+        "tuile",
+        "content",
+        "grid",
+        "no-border"
+      ],
+      "description": "Content card with enlarged link (fr-card).",
+      "origin": "live-site",
+      "piiHandling": "displays_only",
+      "auditTrailCompatible": false,
+      "nistControls": [],
+      "touchTargetSize": "44px",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "badge",
+        "tag",
+        "download"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap"
+    },
+    {
+      "file": "card/shadow/shadow.html",
+      "title": "Carte (Ombre)",
+      "_schemaVersion": 2,
+      "dsfrComponentType": "card",
+      "frClass": "fr-card fr-card--shadow",
+      "section": "data-display",
+      "variant": "shadow",
+      "requiresJs": "no",
+      "interaction": [
+        "click",
+        "focus"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "RGAA 4.1",
+        "WCAG 2.1 AA",
+        "Directive (UE) 2016/2102"
+      ],
+      "tier": "curated",
+      "tags": [
+        "card",
+        "carte",
+        "tuile",
+        "content",
+        "grid",
+        "shadow"
+      ],
+      "description": "Content card with enlarged link (fr-card).",
+      "origin": "live-site",
+      "piiHandling": "displays_only",
+      "auditTrailCompatible": false,
+      "nistControls": [],
+      "touchTargetSize": "44px",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "badge",
+        "tag",
+        "download"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap"
+    },
+    {
+      "file": "card/sm/sm.html",
+      "title": "Carte (Petite)",
+      "_schemaVersion": 2,
+      "dsfrComponentType": "card",
+      "frClass": "fr-card fr-card--sm",
+      "section": "data-display",
+      "variant": "sm",
+      "requiresJs": "no",
+      "interaction": [
+        "click",
+        "focus"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "RGAA 4.1",
+        "WCAG 2.1 AA",
+        "Directive (UE) 2016/2102"
+      ],
+      "tier": "curated",
+      "tags": [
+        "card",
+        "carte",
+        "tuile",
+        "content",
+        "grid",
+        "sm"
+      ],
+      "description": "Content card with enlarged link (fr-card).",
+      "origin": "live-site",
+      "piiHandling": "displays_only",
+      "auditTrailCompatible": false,
+      "nistControls": [],
+      "touchTargetSize": "44px",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "badge",
+        "tag",
+        "download"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap"
     },
     {
       "file": "checkbox/default.html",
@@ -1582,6 +2000,58 @@
       "resolvedView": "radio/default.resolved.html"
     },
     {
+      "file": "radio/rich/rich.html",
+      "title": "Radio (Riche)",
+      "_schemaVersion": 2,
+      "dsfrComponentType": "radio",
+      "frClass": "fr-radio-rich",
+      "section": "forms",
+      "variant": "rich",
+      "requiresJs": "no",
+      "interaction": [
+        "focus",
+        "click",
+        "keyboard"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "RGAA 4.1",
+        "WCAG 2.1 AA",
+        "Directive (UE) 2016/2102"
+      ],
+      "tier": "curated",
+      "tags": [
+        "radio",
+        "single-choice",
+        "form",
+        "rich",
+        "rich",
+        "pictogramme"
+      ],
+      "description": "Radio group with standard and rich (illustrated) variants.",
+      "piiHandling": "accepts_input",
+      "auditTrailCompatible": true,
+      "nistControls": [],
+      "touchTargetSize": "44px",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "checkbox",
+        "button"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap"
+    },
+    {
       "file": "search/default.html",
       "title": "Search bar (default)",
       "_schemaVersion": 2,
@@ -2072,6 +2542,300 @@
       "incompatibleWith": [],
       "costTier": "cheap",
       "resolvedView": "tag/default.resolved.html"
+    },
+    {
+      "file": "tag/green-archipel/green-archipel.html",
+      "title": "Tag (Vert archipel)",
+      "_schemaVersion": 2,
+      "dsfrComponentType": "tag",
+      "frClass": "fr-tag fr-tag--green-archipel",
+      "section": "data-display",
+      "variant": "green-archipel",
+      "requiresJs": "no",
+      "interaction": [
+        "click"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "RGAA 4.1",
+        "WCAG 2.1 AA",
+        "Directive (UE) 2016/2102"
+      ],
+      "tier": "curated",
+      "tags": [
+        "tag",
+        "label",
+        "filter",
+        "keyword",
+        "green-archipel"
+      ],
+      "description": "Interactive or static keyword tags (fr-tag).",
+      "piiHandling": "displays_only",
+      "auditTrailCompatible": false,
+      "nistControls": [],
+      "touchTargetSize": "44px",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "badge",
+        "card"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap"
+    },
+    {
+      "file": "tag/green-emeraude/green-emeraude.html",
+      "title": "Tag (Vert émeraude)",
+      "_schemaVersion": 2,
+      "dsfrComponentType": "tag",
+      "frClass": "fr-tag fr-tag--green-emeraude",
+      "section": "data-display",
+      "variant": "green-emeraude",
+      "requiresJs": "no",
+      "interaction": [
+        "click"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "RGAA 4.1",
+        "WCAG 2.1 AA",
+        "Directive (UE) 2016/2102"
+      ],
+      "tier": "curated",
+      "tags": [
+        "tag",
+        "label",
+        "filter",
+        "keyword",
+        "green-emeraude"
+      ],
+      "description": "Interactive or static keyword tags (fr-tag).",
+      "piiHandling": "displays_only",
+      "auditTrailCompatible": false,
+      "nistControls": [],
+      "touchTargetSize": "44px",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "badge",
+        "card"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap"
+    },
+    {
+      "file": "tag/green-tilleul-verveine/green-tilleul-verveine.html",
+      "title": "Tag (Tilleul verveine)",
+      "_schemaVersion": 2,
+      "dsfrComponentType": "tag",
+      "frClass": "fr-tag fr-tag--green-tilleul-verveine",
+      "section": "data-display",
+      "variant": "green-tilleul-verveine",
+      "requiresJs": "no",
+      "interaction": [
+        "click"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "RGAA 4.1",
+        "WCAG 2.1 AA",
+        "Directive (UE) 2016/2102"
+      ],
+      "tier": "curated",
+      "tags": [
+        "tag",
+        "label",
+        "filter",
+        "keyword",
+        "green-tilleul-verveine"
+      ],
+      "description": "Interactive or static keyword tags (fr-tag).",
+      "piiHandling": "displays_only",
+      "auditTrailCompatible": false,
+      "nistControls": [],
+      "touchTargetSize": "44px",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "badge",
+        "card"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap"
+    },
+    {
+      "file": "tag/pink-macaron/pink-macaron.html",
+      "title": "Tag (Rose macaron)",
+      "_schemaVersion": 2,
+      "dsfrComponentType": "tag",
+      "frClass": "fr-tag fr-tag--pink-macaron",
+      "section": "data-display",
+      "variant": "pink-macaron",
+      "requiresJs": "no",
+      "interaction": [
+        "click"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "RGAA 4.1",
+        "WCAG 2.1 AA",
+        "Directive (UE) 2016/2102"
+      ],
+      "tier": "curated",
+      "tags": [
+        "tag",
+        "label",
+        "filter",
+        "keyword",
+        "pink-macaron"
+      ],
+      "description": "Interactive or static keyword tags (fr-tag).",
+      "piiHandling": "displays_only",
+      "auditTrailCompatible": false,
+      "nistControls": [],
+      "touchTargetSize": "44px",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "badge",
+        "card"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap"
+    },
+    {
+      "file": "tag/purple-glycine/purple-glycine.html",
+      "title": "Tag (Glycine)",
+      "_schemaVersion": 2,
+      "dsfrComponentType": "tag",
+      "frClass": "fr-tag fr-tag--purple-glycine",
+      "section": "data-display",
+      "variant": "purple-glycine",
+      "requiresJs": "no",
+      "interaction": [
+        "click"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "RGAA 4.1",
+        "WCAG 2.1 AA",
+        "Directive (UE) 2016/2102"
+      ],
+      "tier": "curated",
+      "tags": [
+        "tag",
+        "label",
+        "filter",
+        "keyword",
+        "purple-glycine"
+      ],
+      "description": "Interactive or static keyword tags (fr-tag).",
+      "piiHandling": "displays_only",
+      "auditTrailCompatible": false,
+      "nistControls": [],
+      "touchTargetSize": "44px",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "badge",
+        "card"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap"
+    },
+    {
+      "file": "tag/sm/sm.html",
+      "title": "Tag (Petit)",
+      "_schemaVersion": 2,
+      "dsfrComponentType": "tag",
+      "frClass": "fr-tag fr-tag--sm",
+      "section": "data-display",
+      "variant": "sm",
+      "requiresJs": "no",
+      "interaction": [
+        "click"
+      ],
+      "a11y": {
+        "wcag21AA": true,
+        "keyboardNav": true,
+        "screenReader": true,
+        "reducedMotion": true,
+        "forcedColors": true,
+        "ariaAttributes": true
+      },
+      "govCompliance": [
+        "RGAA 4.1",
+        "WCAG 2.1 AA",
+        "Directive (UE) 2016/2102"
+      ],
+      "tier": "curated",
+      "tags": [
+        "tag",
+        "label",
+        "filter",
+        "keyword",
+        "sm"
+      ],
+      "description": "Interactive or static keyword tags (fr-tag).",
+      "piiHandling": "displays_only",
+      "auditTrailCompatible": false,
+      "nistControls": [],
+      "touchTargetSize": "44px",
+      "supportedTokenProfiles": [
+        "highContrast"
+      ],
+      "relatedComponents": [
+        "badge",
+        "card"
+      ],
+      "prerequisites": [],
+      "incompatibleWith": [],
+      "costTier": "cheap"
     },
     {
       "file": "textarea/default.html",

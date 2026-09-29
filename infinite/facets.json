@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "metadataSchemaVersion": 2,
   "generatedBy": "_base/generate-index.mjs",
-  "total": 46,
+  "total": 61,
   "designSystem": "Système de Design de l'État (DSFR) 1.15",
   "facets": {
     "dsfrComponentType": {
@@ -11,8 +11,8 @@
       "badge": 1,
       "breadcrumb": 1,
       "button": 5,
-      "callout": 1,
-      "card": 2,
+      "callout": 2,
+      "card": 9,
       "checkbox": 1,
       "download": 1,
       "follow": 2,
@@ -24,7 +24,7 @@
       "modal": 1,
       "notice": 1,
       "pagination": 1,
-      "radio": 1,
+      "radio": 2,
       "search": 1,
       "search-bar": 1,
       "select": 2,
@@ -33,17 +33,17 @@
       "summary": 1,
       "table": 1,
       "tabs": 1,
-      "tag": 1,
+      "tag": 7,
       "textarea": 2,
       "tile": 1,
       "toggle": 1,
       "upload": 2
     },
     "section": {
-      "data-display": 7,
-      "feedback": 10,
+      "data-display": 20,
+      "feedback": 11,
       "navigation": 9,
-      "forms": 19,
+      "forms": 20,
       "overlays": 1
     },
     "variant": {
@@ -57,42 +57,56 @@
       "icon-left": 1,
       "secondary": 1,
       "tertiary": 1,
+      "brown-caramel": 1,
+      "download": 1,
+      "horizontal": 1,
+      "horizontal-half": 1,
       "horizontal-media": 1,
+      "horizontal-tier": 1,
+      "no-border": 1,
+      "shadow": 1,
+      "sm": 2,
       "newsletter": 1,
       "social": 1,
-      "valid": 1
+      "valid": 1,
+      "rich": 1,
+      "green-archipel": 1,
+      "green-emeraude": 1,
+      "green-tilleul-verveine": 1,
+      "pink-macaron": 1,
+      "purple-glycine": 1
     },
     "requiresJs": {
       "required": 4,
       "optional": 9,
-      "no": 33
+      "no": 48
     },
     "interaction": {
-      "click": 29,
-      "keyboard": 15,
-      "focus": 38,
+      "click": 43,
+      "keyboard": 16,
+      "focus": 46,
       "type": 8,
       "submit": 1,
       "change": 2,
       "hover": 1
     },
     "a11y": {
-      "wcag21AA": 46,
-      "keyboardNav": 41,
-      "screenReader": 42,
-      "reducedMotion": 42,
-      "forcedColors": 42,
-      "ariaAttributes": 42
+      "wcag21AA": 61,
+      "keyboardNav": 55,
+      "screenReader": 57,
+      "reducedMotion": 57,
+      "forcedColors": 57,
+      "ariaAttributes": 57
     },
     "govCompliance": {
-      "RGAA 4.1": 42,
-      "WCAG 2.1 AA": 42,
-      "Directive (UE) 2016/2102": 42,
+      "RGAA 4.1": 57,
+      "WCAG 2.1 AA": 57,
+      "Directive (UE) 2016/2102": 57,
       "RGAA": 4
     },
     "costTier": {
       "moderate": 13,
-      "cheap": 33
+      "cheap": 48
     },
     "compositionRecipes": {
       "confirmation-page": 9,
@@ -102,16 +116,16 @@
       "search-results": 3
     },
     "piiHandling": {
-      "displays_only": 20,
+      "displays_only": 34,
       "none": 8,
-      "accepts_input": 14
+      "accepts_input": 15
     },
     "touchTargetSize": {
-      "44px": 41,
-      "n/a": 5
+      "44px": 55,
+      "n/a": 6
     },
     "supportedTokenProfiles": {
-      "highContrast": 42
+      "highContrast": 57
     }
   }
 }
