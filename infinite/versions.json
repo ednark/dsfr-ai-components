@@ -1,15 +1,39 @@
 {
   "schemaVersion": 1,
   "registry": "dsfr-ai-components",
-  "designSystem": { "name": "Système de Design de l'État (DSFR)", "version": "1.15", "url": "https://www.systeme-de-design.gouv.fr" },
+  "designSystem": {
+    "name": "Système de Design de l'État (DSFR)",
+    "version": "1.15.3",
+    "url": "https://www.systeme-de-design.gouv.fr"
+  },
   "versions": [
     {
       "version": "0.1.0",
       "releaseDate": "2026-09-06",
       "componentCount": 39,
       "breakingChanges": [],
-      "addedCategories": ["discovery", "selection", "instruction", "coordination", "constraints", "portability"],
-      "addedFacets": ["dsfrComponentType", "section", "variant", "requiresJs", "interaction", "a11y", "govCompliance", "costTier", "compositionRecipes", "piiHandling", "touchTargetSize", "supportedTokenProfiles"],
+      "addedCategories": [
+        "discovery",
+        "selection",
+        "instruction",
+        "coordination",
+        "constraints",
+        "portability"
+      ],
+      "addedFacets": [
+        "dsfrComponentType",
+        "section",
+        "variant",
+        "requiresJs",
+        "interaction",
+        "a11y",
+        "govCompliance",
+        "costTier",
+        "compositionRecipes",
+        "piiHandling",
+        "touchTargetSize",
+        "supportedTokenProfiles"
+      ],
       "migrationPath": "Version initiale.",
       "notes": "27 familles de composants DSFR ; 5 recettes de patterns ; cartes de compatibilité dsfr→uswds et dsfr→govuk ; métadonnées en anglais, classes fr-* faisant autorité"
     },
@@ -18,14 +42,39 @@
       "releaseDate": "2026-09-06",
       "componentCount": 42,
       "breakingChanges": [],
-      "addedCategories": ["provenance"],
+      "addedCategories": [
+        "provenance"
+      ],
       "addedFacets": [],
-      "metadataChanges": ["provenance block on field-observed tiles"],
+      "metadataChanges": [
+        "provenance block on field-observed tiles"
+      ],
       "migrationPath": "Fully additive.",
       "notes": "Field-research pass (service-public.gouv.fr): card/horizontal-media, follow/newsletter + follow/social; provenance.json session log added"
+    },
+    {
+      "version": "0.2.0",
+      "releaseDate": "2026-09-29",
+      "componentCount": 61,
+      "breakingChanges": [
+        "Pin 1.15 (minor range) -> 1.15.3 (exact). 12 tiles carry pre-1.15 classes and are left unstamped; see the classCheck drift register."
+      ],
+      "addedFacets": [],
+      "metadataChanges": [
+        "designSystem.package",
+        "designSystem.verification",
+        "staticView.classCheck (fr- prefix, 7 documented drift entries)"
+      ],
+      "migrationPath": "Re-fetch agents.json and facets.json. Install the ground truth with: npm i --save-dev --ignore-scripts @gouvfr/dsfr@1.15.3 (the package postinstall expects a DSFR app).",
+      "designSystemVersion": "1.15.3",
+      "notes": "Deep check 2026-09-29. Two stylesheets are required (core + dist/utility/icons/icons.min.css) because fr-icon-* lives only in the icon utility bundle. tile/default was corrected: it wrapped its anchor in fr-tile__link, which the DSFR tile template does not use (bare <a> inside fr-tile__title + fr-enlarge-link on the root). Drift discovered in card/default propagated to the 7 card variants cloned from it."
     }
   ],
   "designSystemVersions": [
-    { "version": "1.15", "status": "current", "notes": "Tuiles ciblant le balisage des composants DSFR v1.15" }
+    {
+      "version": "1.15",
+      "status": "current",
+      "notes": "Tuiles ciblant le balisage des composants DSFR v1.15"
+    }
   ]
 }

@@ -3,7 +3,7 @@
   "metadataSchemaVersion": 2,
   "generatedBy": "_base/generate-index.mjs",
   "total": 61,
-  "designSystem": "Système de Design de l'État (DSFR) 1.15",
+  "designSystem": "Système de Design de l'État (DSFR) 1.15.3",
   "facets": {
     "dsfrComponentType": {
       "accordion": 1,

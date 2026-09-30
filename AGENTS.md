@@ -73,3 +73,25 @@ Registry mandates that act as gates:
 2. `constraints.limitations` — respect
 3. `instruction.agentPrompt` — adapt within boundaries
 4. `constraints.editable` — prefer
+
+## Version Sync
+
+This registry is a faithful snapshot of **DSFR 1.15.3** (`designSystem.version`),
+pinned exactly to `@gouvfr/dsfr` in `package.json` and declared to
+`staticView.classCheck`.
+
+Installing the ground truth requires `--ignore-scripts` (the package postinstall
+expects a DSFR application):
+
+```sh
+npm i --save-dev --ignore-scripts @gouvfr/dsfr@1.15.3
+```
+
+**Two stylesheets are required** — `dist/dsfr.min.css` *and*
+`dist/utility/icons/icons.min.css`. The `fr-icon-*` classes exist only in the
+icon utility bundle, so a core-only check misreads them as drift.
+
+`staticView.classCheck.allowlist` holds 7 documented pre-1.15 entries awaiting
+rework. Note that the 7 `card/*` variant tiles inherited `fr-card__link` from
+`card/default` when they were cloned — fixing the base tile fixes all of them.
+49 of 61 tiles are verified and version-stamped.

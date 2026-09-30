@@ -11,8 +11,16 @@
   "tileFetchPattern": "https://raw.githubusercontent.com/ednark/dsfr-ai-components/main/infinite/{file}",
   "designSystem": {
     "name": "Système de Design de l'État (DSFR)",
-    "version": "1.15",
-    "url": "https://www.systeme-de-design.gouv.fr"
+    "version": "1.15.3",
+    "url": "https://www.systeme-de-design.gouv.fr",
+    "package": "@gouvfr/dsfr",
+    "verification": {
+      "markup": "package-templates",
+      "styling": "package-css",
+      "packagePath": "node_modules/@gouvfr/dsfr/dist",
+      "groundTruth": "installed-package"
+    },
+    "notes": "Ground truth: @gouvfr/dsfr installed as an EXACT devDependency (npm install needs --ignore-scripts; the package postinstall expects a DSFR app). TWO stylesheets are required: the core bundle plus dist/utility/icons/icons.min.css — fr-icon-* classes exist only in the icon utility bundle, so a core-only check misreads them as drift."
   },
   "agentMetaId": "dsfr-agent-meta",
   "tileDir": "infinite",
@@ -94,12 +102,50 @@
     }
   ],
   "staticView": {
-    "css": [],
+    "css": [
+      "node_modules/@gouvfr/dsfr/dist/dsfr.min.css",
+      "node_modules/@gouvfr/dsfr/dist/utility/icons/icons.min.css"
+    ],
     "viewport": {
       "width": 1280,
       "height": 4000
     },
-    "note": "Resolved-view generation input (see _base/generate-resolved-view.mjs). Tiles are self-contained; no design-system CSS injection needed."
+    "note": "Resolved-view generation input (see _base/generate-resolved-view.mjs). Tiles are self-contained; no design-system CSS injection needed.",
+    "classCheck": {
+      "prefix": [
+        "fr-"
+      ],
+      "allowlist": [
+        {
+          "class": "fr-btn--disabled",
+          "reason": "Pre-1.15 drift: not in @gouvfr/dsfr 1.15.3 (v5 uses the disabled attribute). Rework pending."
+        },
+        {
+          "class": "fr-card__link",
+          "reason": "Pre-1.15 drift: the 1.15 card puts fr-enlarge-link on the root; there is no inner link class. Rework pending. NOTE: inherited by the 7 card variant tiles, which were cloned from card/default before this drift was found — fixing card/default fixes all of them."
+        },
+        {
+          "class": "fr-card__media",
+          "reason": "Pre-1.15 drift: not in 1.15.3 (the card uses __body/__header). Rework pending."
+        },
+        {
+          "class": "fr-responsive-img-wrapper",
+          "reason": "Pre-1.15 drift: not in 1.15.3. Rework pending."
+        },
+        {
+          "class": "fr-download__name",
+          "reason": "Pre-1.15 drift: not in 1.15.3 (download uses __link/__desc). Rework pending."
+        },
+        {
+          "class": "fr-download__meta",
+          "reason": "Pre-1.15 drift: not in 1.15.3. Rework pending."
+        },
+        {
+          "class": "fr-summary__list",
+          "reason": "Pre-1.15 drift: not in 1.15.3. Rework pending."
+        }
+      ]
+    }
   },
   "modifierSeparators": [
     "--",

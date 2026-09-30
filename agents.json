@@ -11,7 +11,7 @@
   "tileFetchPattern": "https://raw.githubusercontent.com/ednark/dsfr-ai-components/main/infinite/{file}",
   "designSystem": {
     "name": "Système de Design de l'État (DSFR)",
-    "version": "1.15"
+    "version": "1.15.3"
   },
   "agentMetaId": "dsfr-agent-meta",
   "tileDir": "infinite",
