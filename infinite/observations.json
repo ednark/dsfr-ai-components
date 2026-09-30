@@ -9,7 +9,7 @@
       "kind": "other",
       "extension": "fr-card--horizontal / --horizontal-half / --horizontal-tier / --sm / --big / --shadow / --une / --no-border / --document / --project / --minister",
       "note": "canon card variants observed live and verified in DSFR 1.15 CSS; several untiled — variant-tile candidates",
-      "source": "field-research/ds-survey campaign crawls (2026-09-29)"
+      "source": "live-site field observation (2026-09-29); the observed site and url are this entry's site/url fields"
     },
     {
       "observed": "2026-09-29",
@@ -19,7 +19,7 @@
       "kind": "other",
       "extension": "fr-tag--green-archipel / --green-emeraude / --green-tilleul-verveine / --pink-macaron / --purple-glycine / --sm",
       "note": "canon tag color variants verified in DSFR 1.15 CSS",
-      "source": "field-research/ds-survey campaign crawls (2026-09-29)"
+      "source": "live-site field observation (2026-09-29); the observed site and url are this entry's site/url fields"
     },
     {
       "observed": "2026-09-29",
@@ -29,7 +29,7 @@
       "kind": "other",
       "extension": "fr-callout--brown-caramel",
       "note": "canon callout color variant verified in DSFR 1.15 CSS",
-      "source": "field-research/ds-survey campaign crawls (2026-09-29)"
+      "source": "live-site field observation (2026-09-29); the observed site and url are this entry's site/url fields"
     },
     {
       "observed": "2026-09-29",
@@ -39,7 +39,7 @@
       "kind": "extension",
       "extension": "fr-badge--blue-france",
       "note": "verified absent from DSFR 1.15 CSS — site-local extension",
-      "source": "field-research/ds-survey campaign crawls (2026-09-29)"
+      "source": "live-site field observation (2026-09-29); the observed site and url are this entry's site/url fields"
     },
     {
       "observed": "2026-09-29",
@@ -48,7 +48,7 @@
       "kind": "extension",
       "extension": "fr-notation",
       "note": "rating component; verified absent from DSFR 1.15 CSS — newer/custom | FINAL (2026-09-29): absent from DSFR 1.15.0 through 1.15.3 (latest) — site-local, not a DSFR component",
-      "source": "field-research/ds-survey campaign crawls (2026-09-29)"
+      "source": "live-site field observation (2026-09-29); the observed site and url are this entry's site/url fields"
     },
     {
       "observed": "2026-09-29",
@@ -58,7 +58,7 @@
       "kind": "composition",
       "extension": "fr-mega-menu",
       "note": "mega menu composed in the header — the L7 mega-menu signal, live on a French ministry",
-      "source": "field-research/ds-survey campaign crawls (2026-09-29)"
+      "source": "live-site field observation (2026-09-29); the observed site and url are this entry's site/url fields"
     },
     {
       "observed": "2026-09-29",
@@ -68,7 +68,7 @@
       "kind": "other",
       "extension": "fr-radio-rich",
       "note": "canon radio variant verified in DSFR 1.15 CSS",
-      "source": "field-research/ds-survey campaign crawls (2026-09-29)"
+      "source": "live-site field observation (2026-09-29); the observed site and url are this entry's site/url fields"
     },
     {
       "observed": "2026-09-29",
@@ -77,7 +77,7 @@
       "kind": "other",
       "extension": "fr-search-bar",
       "note": "canon component verified in DSFR 1.15 CSS; no search-bar family in the registry — tile candidate",
-      "source": "field-research/ds-survey campaign crawls (2026-09-29)"
+      "source": "live-site field observation (2026-09-29); the observed site and url are this entry's site/url fields"
     },
     {
       "observed": "2026-09-29",
@@ -86,7 +86,7 @@
       "kind": "other",
       "extension": "fr-tile",
       "note": "canon component (Tuile) verified in DSFR 1.15 CSS; no tile family in the registry — tile candidate",
-      "source": "field-research/ds-survey campaign crawls (2026-09-29)"
+      "source": "live-site field observation (2026-09-29); the observed site and url are this entry's site/url fields"
     },
     {
       "observed": "2026-09-29",
@@ -95,7 +95,7 @@
       "kind": "other",
       "extension": "fr-modal",
       "note": "canon component verified in DSFR 1.15 CSS; no modal family in the registry — tile candidate",
-      "source": "field-research/ds-survey campaign crawls (2026-09-29)"
+      "source": "live-site field observation (2026-09-29); the observed site and url are this entry's site/url fields"
     }
   ]
 }
