@@ -95,3 +95,23 @@ icon utility bundle, so a core-only check misreads them as drift.
 rework. Note that the 7 `card/*` variant tiles inherited `fr-card__link` from
 `card/default` when they were cloned — fixing the base tile fixes all of them.
 49 of 61 tiles are verified and version-stamped.
+
+
+## Before you change a tile: read the findings ledger
+
+`infinite/findings.json` is this registry's epistemic record — what was tested,
+what broke, and what changed. It is the highest-leverage file here for one
+reason: it records the fixes, so they do not get undone by an agent that reads
+a drift register without knowing it is a register.
+
+Check the ledger before:
+- editing a tile body (a pre-migration class is not a gap — `changed` says so)
+- removing a class from the classCheck allowlist (it may be canonical markup the
+  stylesheet simply does not style)
+- changing an `origin` label, a stamp, or a `gaps` entry
+- retiring a family (it may be deprecated upstream rather than unused)
+
+A summary is generated at `registry-health.json` under `findings`, including
+`openItems` — findings that broke something and have no recorded change.
+Those are the open items; they should be closed with a fix, or re-scoped.
+See `_base/findings-ledger.md` for the schema.
