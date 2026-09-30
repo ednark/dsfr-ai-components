@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "registry": "dsfr-ai-components",
+  "description": "Machine-readable trust surface: what this registry claims, and how far that claim has been checked. A registry with drift or unstamped tiles is telling you where not to trust it.",
+  "designSystem": {
+    "name": "Système de Design de l'État (DSFR)",
+    "pin": "1.15.3",
+    "package": "@gouvfr/dsfr",
+    "groundTruth": "installed-package",
+    "verification": {
+      "markup": "package-templates",
+      "styling": "package-css"
+    }
+  },
+  "classCheck": {
+    "enabled": true,
+    "prefixes": [
+      "fr-"
+    ],
+    "allowlistSize": 2,
+    "categories": {
+      "canonicalUnstyled": 0,
+      "appLayer": 0,
+      "siteLayer": 0,
+      "extension": 0,
+      "drift": 2,
+      "compat": 0,
+      "registryInternal": 0,
+      "unclassified": 0
+    }
+  },
+  "stamps": {
+    "verified": 60,
+    "total": 61,
+    "percent": 98
+  },
+  "tiles": 61,
+  "families": 32,
+  "coreClasses": 22,
+  "observations": 10,
+  "convergenceWatchlist": 0,
+  "findings": {
+    "count": 4,
+    "lastDeepCheck": "2026-09-29",
+    "byResult": {
+      "broke": 2,
+      "recorded": 1,
+      "deprecated": 1
+    }
+  },
+  "conformance": "pass",
+  "generatedBy": "_base/generate-health.mjs",
+  "generatedAt": "2026-09-30"
+}

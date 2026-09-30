@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "registry": "dsfr-ai-components",
+  "note": "DSFR registry epistemic record. See _base/findings-ledger.md. Backfilled from 2026-09-29/30 sessions; earlier evidence lives in the project workspace (workspace/docs/lessons-learned.md).",
+  "findings": [
+    {
+      "id": "F-001",
+      "date": "2026-09-29",
+      "kind": "deep-check",
+      "result": "broke",
+      "target": [
+        "card/default",
+        "card/horizontal-media",
+        "download/default",
+        "summary/default",
+        "button/disabled"
+      ],
+      "changed": [
+        "registry: verification mechanism added (@gouvfr/dsfr 1.15.3 exact pin, two stylesheets, classCheck with 7 documented drift entries)",
+        "registry: pin tightened 1.15 -> 1.15.3",
+        "registry: 60/61 tiles verified and stamped"
+      ],
+      "evidence": [
+        "@gouvfr/dsfr@1.15.3 dist/dsfr.min.css",
+        "@gouvfr/dsfr@1.15.3 dist/utility/icons/icons.min.css (fr-icon-* lives only there)"
+      ],
+      "summary": "Five tiles used structure absent from DSFR 1.15, and the pin was an unverifiable minor range.",
+      "detail": "The registry was pinned to \"1.15\" — stated but not checkable. Installing @gouvfr/dsfr at the exact patch made the drift enumerable: fr-card__link, fr-card__media, fr-responsive-img-wrapper, fr-download__name/__meta, fr-summary__list and fr-btn--disabled do not exist in 1.15.3. The tile family also predates the icons-in-utility-bundle discovery, which would have made icon tiles false-positives under a core-only check."
+    },
+    {
+      "id": "F-002",
+      "date": "2026-09-29",
+      "kind": "rework",
+      "result": "broke",
+      "target": [
+        "card/*",
+        "card/horizontal-media",
+        "summary/default",
+        "button/disabled"
+      ],
+      "changed": [
+        "registry: 11 tiles corrected against the current templates (fr-enlarge-link on the card root, bare link in fr-card__title, fr-card__header>fr-card__img>fr-responsive-img, bare <ol> in summary, disabled attribute on the button)",
+        "registry: reworked tiles relabeled origin: design-system",
+        "registry: classCheck allowlist pruned 7 -> 2"
+      ],
+      "evidence": [
+        "src/dsfr/component/card/template/ejs/card.ejs + card-content.ejs + card-header.ejs",
+        "src/dsfr/component/summary/template/ejs/summary-list.ejs (bare <ol>)",
+        "src/dsfr/component/button/template/ejs (disabled attribute)",
+        "core/template/ejs/media/responsive-img.ejs"
+      ],
+      "summary": "Eleven pre-1.15 tiles corrected; fixing card/default cleared drift inherited by the six cloned card variants.",
+      "detail": "A mechanical finding worth recording: the six card variants were cloned from card/default before its drift was known, so they inherited fr-card__link. Drift propagates through cloned variant tiles — a base-tile fix silently fixes its whole family, and the drift register has to say so or the allowlist lies about how many tiles are affected."
+    },
+    {
+      "id": "F-003",
+      "date": "2026-09-29",
+      "kind": "observation",
+      "result": "recorded",
+      "target": [
+        "card",
+        "tag",
+        "callout",
+        "radio",
+        "header",
+        "search"
+      ],
+      "changed": [
+        "registry: 15 canon variant tiles added (card horizontal/half/tier/sm/shadow/no-border/download, 5 tag colours + sm, callout--brown-caramel, radio rich)",
+        "registry: 3 new families added (tile, modal, search-bar)",
+        "registry: 10 observations recorded"
+      ],
+      "evidence": [
+        "impots.gouv.fr (135 fr- families — richest site surveyed), culture.gouv.fr (76), agriculture.gouv.fr (58), service-public.fr (68)",
+        "@gouvfr/dsfr@1.15.3 (every candidate verified before authoring)"
+      ],
+      "summary": "A field survey of French ministry sites found 3 missing families and a documented variant range the registry covered only in part.",
+      "detail": "Every candidate was verified against the pinned CSS before a tile was written, which rejected three: fr-card--big, fr-card--une and fr-notation. The last is absent from 1.15.0 through 1.15.3 (latest) — a site-local rating component on culture.gouv.fr, recorded as an extension rather than a component."
+    },
+    {
+      "id": "F-004",
+      "date": "2026-09-30",
+      "kind": "decision",
+      "result": "deprecated",
+      "target": [
+        "download/default"
+      ],
+      "changed": [
+        "tile: download/default labeled a live-site observation of a deprecated component, stamp withdrawn",
+        "registry: 60/61 tiles verified; the one unstamped tile has a documented reason"
+      ],
+      "evidence": [
+        "GouvernementFR/dsfr src/dsfr/component/download/deprecated (verified 2026-09-30)"
+      ],
+      "summary": "The DSFR download component is deprecated upstream, so its tile cannot be corrected against a live component.",
+      "detail": "Recorded rather than removed: retiring a family is a maintainer decision. The tile stays as a labelled live-site observation with its pre-1.15 classes intact, and carries no version stamp because there is nothing in the pin to verify it against."
+    }
+  ]
+}
