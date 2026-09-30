@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="description" content="Système de Design de l'État card demonstrating the default variant.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Card (default)</title>
+<title>Carte (Horizontale)</title>
 <script type="application/json" id="dsfr-agent-meta">{
   "_schemaVersion": 2,
   "discovery": {
@@ -37,6 +37,8 @@
       "tuile",
       "content",
       "grid",
+      "lien",
+      "enlarge-link",
       "horizontal"
     ],
     "description": "Content card with enlarged link (fr-card).",
@@ -86,9 +88,11 @@
   },
   "constraints": {
     "preserve": [
-      "fr-card__title with fr-card__link inside (h3 default)",
-      "fr-enlarge-link mechanism for whole-card click",
-      "Body/media structure"
+      "div.fr-card (with fr-enlarge-link when the card links somewhere)",
+      "div.fr-card__body",
+      "div.fr-card__content",
+      "h3.fr-card__title containing a bare link (the card has no link class)",
+      "p.fr-card__desc"
     ],
     "editable": [
       "Title",
@@ -111,7 +115,8 @@
   "provenance": {
     "observed": "2026-09-29",
     "method": "design-system documentation",
-    "source": "Class inventory verified against @gouvfr/dsfr@1.15.3 (dist/dsfr.min.css + dist/utility/icons/icons.min.css); DSFR card.ejs (GouvernementFR/dsfr) — variante canon vérifiée dans le CSS officiel 1.15 (paquet npm @gouvfr/dsfr); observé live — impots.gouv.fr, culture.gouv.fr"
+    "source": "DSFR card.ejs + card-content.ejs (GouvernementFR/dsfr, version courante), verified against @gouvfr/dsfr@1.15.3. The tile used pre-1.15 classes (fr-card__link, fr-card__media): the current card puts fr-enlarge-link on the root and wraps a bare <a> in fr-card__title, with fr-card__body/fr-card__content/fr-card__desc as the only elements.",
+    "designSystemVersion": "1.15.3"
   },
   "file": "card/horizontal.html",
   "title": "Carte (Horizontale)",
@@ -148,11 +153,11 @@ a{color:#000091}
 </style>
 </head>
 <body>
-<div class="fr-card fr-card--horizontal">
+<div class="fr-card fr-enlarge-link fr-card--horizontal">
   <div class="fr-card__body">
     <div class="fr-card__content">
       <h3 class="fr-card__title">
-        <a class="fr-card__link" href="#">Titre de la carte</a>
+        <a href="#">Titre de la carte</a>
       </h3>
       <p class="fr-card__desc">Description courte du contenu proposé.</p>
     </div>

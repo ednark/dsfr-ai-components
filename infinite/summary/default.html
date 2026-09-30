@@ -80,8 +80,10 @@
   },
   "constraints": {
     "preserve": [
-      "nav with aria-labelledby pointing at fr-summary__title",
-      "ol structure with fr-summary__link anchors"
+      "nav.fr-summary[role=navigation][aria-labelledby]",
+      "p.fr-summary__title with the id referenced by aria-labelledby",
+      "bare <ol> list (no class) — 1.15 does not define fr-summary__list",
+      "a.fr-summary__link per item"
     ],
     "editable": [
       "Anchor texts",
@@ -100,7 +102,10 @@
   "file": "summary/default.html",
   "title": "Summary (table of contents) (default)",
   "provenance": {
-    "source": "Class inventory verified against @gouvfr/dsfr@1.15.3 (dist/dsfr.min.css + dist/utility/icons/icons.min.css)"
+    "observed": "2026-09-29",
+    "method": "design-system documentation",
+    "source": "DSFR summary.ejs + summary-list.ejs (GouvernementFR/dsfr, version courante), verified against @gouvfr/dsfr@1.15.3. The tile used fr-summary__list, which 1.15 does not define: the summary list is a bare <ol> whose items carry fr-summary__link.",
+    "designSystemVersion": "1.15.3"
   }
 }</script>
 <style>
@@ -134,7 +139,7 @@ a{color:#000091}
 <body>
 <nav class="fr-summary" role="navigation" aria-labelledby="fr-summary-title">
   <p class="fr-summary__title" id="fr-summary-title">Sommaire</p>
-  <ol class="fr-summary__list">
+  <ol>
     <li>
       <a class="fr-summary__link" href="#section-1">Titre de la première section</a>
     </li>

@@ -54,7 +54,7 @@
       "orientationLocked": false,
       "fullscreenSafe": true
     },
-    "origin": "live-site"
+    "origin": "design-system"
   },
   "selection": {
     "useWhen": [
@@ -85,9 +85,11 @@
   },
   "constraints": {
     "preserve": [
-      "fr-card__title with fr-card__link inside (h3 default)",
-      "fr-enlarge-link mechanism for whole-card click",
-      "Body/media structure"
+      "div.fr-card fr-card--horizontal (fr-enlarge-link on the root when it links)",
+      "div.fr-card__header > div.fr-card__img > img.fr-responsive-img",
+      "div.fr-card__body > div.fr-card__content",
+      "h3.fr-card__title containing a bare link (no link class)",
+      "p.fr-card__desc"
     ],
     "editable": [
       "Title",
@@ -108,9 +110,10 @@
     "highContrast"
   ],
   "provenance": {
-    "observed": "2026-09-06",
-    "source": "Class inventory verified against @gouvfr/dsfr@1.15.3 (dist/dsfr.min.css + dist/utility/icons/icons.min.css); https://www.service-public.gouv.fr/particuliers",
-    "method": "live-site observation"
+    "observed": "2026-09-29",
+    "method": "design-system documentation",
+    "source": "DSFR card.ejs + card-header.ejs + card-content.ejs, and core/template/ejs/media/responsive-img.ejs (GouvernementFR/dsfr, version courante), verified against @gouvfr/dsfr@1.15.3. The tile used the pre-1.15 media slot (fr-card__media > fr-responsive-img-wrapper); the current card uses fr-card__header > fr-card__img > fr-responsive-img, and the card root carries fr-enlarge-link with a bare link in fr-card__title.",
+    "designSystemVersion": "1.15.3"
   },
   "file": "card/horizontal-media.html",
   "title": "Card (horizontal-media)",
@@ -148,17 +151,17 @@ a{color:#000091}
 </head>
 <body>
 <div class="fr-card fr-card--horizontal fr-enlarge-link">
-  <div class="fr-card__media">
-    <div class="fr-responsive-img-wrapper">
+  <div class="fr-card__header">
+    <div class="fr-card__img">
       <img class="fr-responsive-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='260'%3E%3Crect width='400' height='260' fill='%23e3e3fd'/%3E%3Ctext x='200' y='135' fill='%23000091' text-anchor='middle' font-size='18'%3EImage%3C/text%3E%3C/svg%3E" alt="">
     </div>
   </div>
   <div class="fr-card__body">
     <div class="fr-card__content">
       <h3 class="fr-card__title">
-        <a class="fr-card__link" href="#">Ce qui change en septembre 2026</a>
+        <a href="#">Titre de la carte</a>
       </h3>
-      <p class="fr-card__desc">Retraite - Assurance chômage - Arrêt de travail.</p>
+      <p class="fr-card__desc">Description courte du contenu proposé.</p>
     </div>
   </div>
 </div>

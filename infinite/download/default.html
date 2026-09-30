@@ -51,7 +51,8 @@
       "requiredMinSpacing": "8px",
       "orientationLocked": false,
       "fullscreenSafe": true
-    }
+    },
+    "origin": "live-site"
   },
   "selection": {
     "useWhen": [
@@ -89,6 +90,8 @@
       "href"
     ],
     "limitations": [
+      "DEPRECATED COMPONENT: the DSFR download component is marked deprecated in the DSFR repository (src/dsfr/component/download/deprecated). This tile is kept for reference and is left unstamped; new work should not use it.",
+      "The fr-download__name / fr-download__meta element classes predate 1.15 and are not defined in 1.15.3; they come from the deprecated component.",
       "Direct downloads only — no interstitial pages"
     ],
     "portableInvariants": [
@@ -101,7 +104,9 @@
   "file": "download/default.html",
   "title": "Download (default)",
   "provenance": {
-    "source": "Class inventory verified against @gouvfr/dsfr@1.15.3 (dist/dsfr.min.css + dist/utility/icons/icons.min.css)"
+    "observed": "2026-09-29",
+    "method": "live-site observation",
+    "source": "Live-site observation of the DSFR download component on a French ministry site; the component is DEPRECATED upstream (src/dsfr/component/download/deprecated, verified 2026-09-29). Kept for reference, not reworked, and left unstamped pending a decision to retire the family."
   }
 }</script>
 <style>

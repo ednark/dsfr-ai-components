@@ -68,6 +68,21 @@
       "migrationPath": "Re-fetch agents.json and facets.json. Install the ground truth with: npm i --save-dev --ignore-scripts @gouvfr/dsfr@1.15.3 (the package postinstall expects a DSFR app).",
       "designSystemVersion": "1.15.3",
       "notes": "Deep check 2026-09-29. Two stylesheets are required (core + dist/utility/icons/icons.min.css) because fr-icon-* lives only in the icon utility bundle. tile/default was corrected: it wrapped its anchor in fr-tile__link, which the DSFR tile template does not use (bare <a> inside fr-tile__title + fr-enlarge-link on the root). Drift discovered in card/default propagated to the 7 card variants cloned from it."
+    },
+    {
+      "version": "0.2.0",
+      "releaseDate": "2026-09-29",
+      "componentCount": 39,
+      "breakingChanges": [
+        "Pre-migration drift tiles corrected against the current templates; see notes."
+      ],
+      "addedFacets": [],
+      "metadataChanges": [
+        "classCheck allowlist pruned to the classes still in use"
+      ],
+      "migrationPath": "Re-fetch the affected tiles. Reworked tiles changed body markup; agents must not preserve the retired classes.",
+      "designSystemVersion": "1.15.3",
+      "notes": "Drift rework 2026-09-29: 11 pre-1.15 tiles corrected against the current DSFR templates — card/default and the 6 card variants (fr-card__media/fr-responsive-img-wrapper/fr-card__link are gone; v1.15 uses fr-enlarge-link on the root with a bare link in fr-card__title), card/horizontal-media (fr-card__header > fr-card__img > fr-responsive-img), summary/default (bare <ol>; fr-summary__list does not exist), button/disabled (the disabled attribute, not a modifier). Reworked tiles are canon and relabeled origin: design-system. download/default NOT reworked: the DSFR download component is deprecated upstream, so it stays a live-site observation, unstamped, pending a decision to retire the family. 60/61 tiles verified."
     }
   ],
   "designSystemVersions": [

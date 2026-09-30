@@ -90,9 +90,9 @@
   },
   "constraints": {
     "preserve": [
-      ".fr-btn class on a <button> element for form submission",
-      "type='submit' inside forms",
-      "fr-btn--disabled + disabled + aria-disabled for disabled state"
+      "button.fr-btn",
+      "disabled attribute (this is how DSFR disables a button — there is no --disabled modifier)",
+      "aria-disabled=\"true\""
     ],
     "editable": [
       "Label text",
@@ -100,6 +100,7 @@
       "Icon class (fr-icon-*)"
     ],
     "limitations": [
+      "Do not add fr-btn--disabled: it is not a DSFR 1.15 class. Disabling is the native attribute.",
       "One primary button per view",
       "Icon-only buttons require an accessible label"
     ],
@@ -123,7 +124,10 @@
     }
   },
   "provenance": {
-    "source": "Class inventory verified against @gouvfr/dsfr@1.15.3 (dist/dsfr.min.css + dist/utility/icons/icons.min.css)"
+    "observed": "2026-09-29",
+    "method": "design-system documentation",
+    "source": "DSFR button.ejs + core/template/ejs/action/action.ejs (GouvernementFR/dsfr, version courante), verified against @gouvfr/dsfr@1.15.3. The tile used the pre-1.15 fr-btn--disabled modifier; DSFR expresses a disabled button with the native disabled attribute (plus aria-disabled), not a class.",
+    "designSystemVersion": "1.15.3"
   }
 }</script>
 <style>
@@ -152,7 +156,7 @@ a{color:#000091}
 </style>
 </head>
 <body>
-<button class="fr-btn fr-btn--disabled" type="button" disabled aria-disabled="true">Envoyer</button>
+<button class="fr-btn" type="button" disabled aria-disabled="true">Envoyer</button>
 <div class="cap">button disabled</div>
 </body>
 </html>

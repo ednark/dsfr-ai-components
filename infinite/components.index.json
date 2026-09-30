@@ -797,10 +797,12 @@
         "carte",
         "tuile",
         "content",
-        "grid"
+        "grid",
+        "lien",
+        "enlarge-link"
       ],
       "description": "Content card with enlarged link (fr-card).",
-      "origin": "live-site",
+      "origin": "design-system",
       "piiHandling": "displays_only",
       "auditTrailCompatible": false,
       "nistControls": [],
@@ -851,6 +853,8 @@
         "tuile",
         "content",
         "grid",
+        "lien",
+        "enlarge-link",
         "download"
       ],
       "description": "Content card with enlarged link (fr-card).",
@@ -905,6 +909,8 @@
         "tuile",
         "content",
         "grid",
+        "lien",
+        "enlarge-link",
         "horizontal-half"
       ],
       "description": "Content card with enlarged link (fr-card).",
@@ -961,7 +967,7 @@
         "grid"
       ],
       "description": "Content card with enlarged link (fr-card).",
-      "origin": "live-site",
+      "origin": "design-system",
       "piiHandling": "displays_only",
       "auditTrailCompatible": false,
       "nistControls": [],
@@ -1012,6 +1018,8 @@
         "tuile",
         "content",
         "grid",
+        "lien",
+        "enlarge-link",
         "horizontal-tier"
       ],
       "description": "Content card with enlarged link (fr-card).",
@@ -1066,6 +1074,8 @@
         "tuile",
         "content",
         "grid",
+        "lien",
+        "enlarge-link",
         "horizontal"
       ],
       "description": "Content card with enlarged link (fr-card).",
@@ -1120,6 +1130,8 @@
         "tuile",
         "content",
         "grid",
+        "lien",
+        "enlarge-link",
         "no-border"
       ],
       "description": "Content card with enlarged link (fr-card).",
@@ -1174,6 +1186,8 @@
         "tuile",
         "content",
         "grid",
+        "lien",
+        "enlarge-link",
         "shadow"
       ],
       "description": "Content card with enlarged link (fr-card).",
@@ -1228,6 +1242,8 @@
         "tuile",
         "content",
         "grid",
+        "lien",
+        "enlarge-link",
         "sm"
       ],
       "description": "Content card with enlarged link (fr-card).",
@@ -1333,6 +1349,7 @@
         "file"
       ],
       "description": "File download link with visible format and size metadata.",
+      "origin": "live-site",
       "piiHandling": "none",
       "auditTrailCompatible": false,
       "nistControls": [],
